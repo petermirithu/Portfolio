@@ -1,0 +1,43 @@
+/* homepage message */
+.message {
+  display: inline-block;
+  line-height: 1.2;
+  transition: line-height .2s, width .2s;
+  overflow: hidden;
+}
+
+.message,
+.hidden {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+}
+
+.hidden {
+  color: #FFF;
+}
+/* end................................................... */
+
+/* navbar......................................................... */
+.navbar{  
+  position: fixed;  
+  top: 0;  
+  
+}
+.navbar-color {
+  background-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #000000, #12070a, #1d0d11, #261117, #3e1622, #571a2c, #721e35, #8d203e);
+  width: 100% !important;
+}  
+/* navbar end ......................................................................*/
+
+/* scroll bar */
+body::-webkit-scrollbar {
+  width: 1em;
+} 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} 
+body::-webkit-scrollbar-thumb {
+  background-image: radial-gradient(circle, #000000, #000000, #000000, #000000, #000000, #12070a, #1d0d11, #261117, #3e1622, #571a2c, #721e35, #8d203e);
+  border-radius: 10px 10px 10px 10px;  
+}
+/* end of scroll bar */
