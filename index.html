@@ -4,34 +4,401 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
   <title>Portfolio.</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/profile.png">  
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo/profile.png">  
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">  
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><img src="images/profile.png" style="border-radius:10px 20px 10px 20px" width="50px"></a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#home"><img src="images/logo/profile.png" style="border-radius:10px 20px 10px 20px" width="50px"></a>      
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
         <ul class="navbar-nav mr-auto">
+
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <div class="button" id="button-4">
+              <div id="underline"></div>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <div class="button" id="button-4">
+              <div id="underline"></div>
+                <a class="nav-link" href="#about">About</a>              
+            </div>
+          </li>   
+          <li class="nav-item">
+            <div class="button" id="button-4">
+              <div id="underline"></div>
+                <a class="nav-link" href="#skills">Skills</a>              
+            </div>
+          </li>                    
+          <li class="nav-item">
+            <div class="button" id="button-4">
+              <div id="underline"></div>
+                <a class="nav-link" href="#projects">Projects</a>              
+            </div>
+          </li>                    
+          <li class="nav-item">
+            <div class="button" id="button-4">
+              <div id="underline"></div>
+                <a class="nav-link" href="#contacts">Contacts</a>              
+            </div>
           </li>                    
         </ul>        
       </div>
-    </nav>
-    <div class="container-fluid" style="margin-top:90%">
-      <span class="message" id="js-whoops"></span> <span class="message" id="js-appears"></span> <span class="message" id="js-error"></span> <span class="message" id="js-apology"></span>
-      <div><span class="hidden" id="js-hidden">Message Here</span></div>      
+    </nav>  
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" style="z-index: 10;margin-top:40px;" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+         <div class="button" id="button-4">
+          <div id="underline"></div>
+          <a style="color:white;font-size:15px" href="#home">Home <span class="sr-only">(current)</span></a>
+        </div>
+        <div class="button" id="button-4">
+          <div id="underline"></div>
+            <a style="color:white;font-size:15px" href="#about">About</a>              
+        </div>
+        <div class="button" id="button-4">
+          <div id="underline"></div>
+            <a style="color:white;font-size:15px" href="#skills">Skills</a>              
+        </div>
+        <div class="button" id="button-4">
+          <div id="underline"></div>
+            <a style="color:white;font-size:15px" href="#projects">Projects</a>              
+        </div>
+        <div class="button" id="button-4">
+          <div id="underline"></div>
+            <a style="color:white;font-size:15px" href="#contacts">Contacts</a>              
+        </div>
+      </div>
+    </div>  
+
+    <div id="mnbar">
+      <span style="font-size:40px;cursor:pointer" class="menubar" id="menubar"onclick="openNav()">&#9776;</span>
+    </div>  
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }     
+    </script>  
+    <div class="section1">
+      <div id="home" class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="pyra" src="images/pyra.jpg" rel="pyra">        
+          </div>          
+          <div class="col-md-6">
+            <div class="meso">
+              <div class="message" id="js-whoops"></div>
+              <div class="message" id="js-appears"></div><br>
+              <div class="message" id="js-error"></div><br>
+              <div class="message" id="js-apology"></div>   
+              <div class="message">In Nairobi.</div>   
+            </div>
+          </div>
+        </div>
+      </div>        
+    </div>        
+  
+    <br>
+    <br>
+    <div id="about" class="section2">
+      <h1 style="color: rgb(175, 25, 100);"class="text-center">About</h1>
+      <div class="container">
+      
+        <div style="padding:10px;float:left;clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);background-color: rgb(175, 25, 100);">Mission!</div>      
+        <p id="mission"></p>
+
+        <div style="padding:10px;float:right;clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);background-color: rgb(175, 25, 100);">More of Me!</div>              
+        <p id="mything"></p>
+
+        <script>
+          var i = 0;
+          var txt = 'Objective-Oriented full stack developer with a passion for thoughtful websites & web apps development, collaboration & ready to Learn more.';
+          var speed = 50;
+
+          function typeWriterone() {
+            if (i < txt.length) {
+              document.getElementById("mission").innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(typeWriterone, speed);
+            }
+          }
+        </script>
+        <script>
+          var x = 0;
+          var txtx = "I ’ve always sought out opportunities and challenges that are meaningful to me. Although my professional path has taken a few twists and turns, I have never stopped engaging my passion to help others and solve problems. As a web developer, I enjoy solving problems, making new apps, and my objective-oriented personality which steers me to literally look forward in change the world. That's why I’m excited to make a big impact whenever I go.";
+          var speedx = 50;
+
+          function typeWritertwo() {
+            if (x < txtx.length) {
+              document.getElementById("mything").innerHTML += txtx.charAt(x);
+              x++;
+              setTimeout(typeWritertwo, speedx);
+            }
+          }
+        </script>                  
+      </div>
     </div>
+
+    <br>
+    <br>
+    <div id="skills" class="section3">
+      <h1 class="text-center">Skills</h1>
+      <div class="container">        
+        <div class="row">
+          <div class="col-md-6 cardx">
+            <h5>Python</h5>
+            <hr>
+            <img src="images/tech/python.png" width="70px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/django.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/flask.png" width="100px">
+          </div>   
+          <div class="col-md-6 cardx">
+            <h5>User Interface</h5>
+            <hr>
+            <img src="images/tech/html5.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/css.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/bootstrap.png" width="150px">
+          </div>
+        </div>                    
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-6 cardx">
+            <h5>Javascript</h5>
+            <hr>
+            <img src="images/tech/js.png" width="70px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/angular.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/jquery.jpg" width="100px">                          
+          </div>
+          <div class="col-md-6 cardx">
+            <h5>Databases</h5>
+            <hr>
+            <img src="images/tech/psql.png" width="150px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/mysql.jpg" width="100px">
+          </div>
+        </div>      
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-6 cardx">
+            <h5>PHP</h5>
+            <hr>
+            <img src="images/tech/php.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/laravel.png" width="100px">
+          </div>
+          <div class="col-md-6 cardx">
+            <h5>Other Tools</h5>
+            <hr>
+            <img src="images/tech/agile.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/git.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/github.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/gitlab.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/bitbucket.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/heroku.png" width="100px"> 
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <div id="projects" class="section4">
+      <h1 class="text-center">Projects</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="container-3d">
+              <div class="front">
+                  <img width="200px" src="images/hakilogo.png" class="img-responsive" rel="hobby lab">
+                  <h5>Haki Mobile App.</h5>                  
+                  <span>Java, PHP, Laravel framework & Mysql database.</span>
+                </div>
+                <div class="back text-center">
+                  <div class="back-wrap">
+                      <p>Haki Law App a project of KnownAfrique LLP is a mobile based platform that enables legal e-consult. Those in need of legal assistance will “find a lawyer” one click away!</p>                      
+                      <p>I was the Scrum Master in integrating a booking feature and lawyer making schedule feature.</p>
+                      <div class="button" id="button-6">
+                        <div id="spin"></div>
+                        <a href="https://play.google.com/store/apps/details?id=com.knownafrique.haki&hl=en">View Site!</a>
+                      </div>                                                                    
+                    </div>
+                </div>
+            </div>                        
+          </div>
+          <div class="col-md-4">
+            <div class="container-3d">
+              <div class="front">
+                  <img width="350px" src="https://github.com/petermirithu/hooby_lab/raw/master/hobbylab.png" class="img-responsive" rel="hobby lab">
+                  <h5>Hobby Lab Web App.</h5>
+                  <span>Python, Django Framework, PSQL Database, Javascript, Vue js, CSS, & Sendgrid.</span>
+                </div>
+                <div class="back text-center">
+                  <div class="back-wrap">
+                    <p>Hobby lab is a web application that connects people who share a hobby e.g: game and music. It spears the world to be a better living place for two or more hobby lovers.</p>               
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="button" id="button-6">
+                          <div id="spin"></div>
+                          <a href="https://hobbylab254.herokuapp.com/">View Site!</a>
+                        </div>         
+                      </div>
+                      <div class="col-md-6">
+                        <div class="button" id="button-5">
+                          <div id="translate"></div>
+                          <a href="https://github.com/petermirithu/hooby_lab">View Git Hub Repo</a>                        
+                        </div>                                                                                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>                         
+          </div>
+          <div class="col-md-4">
+            <div class="container-3d">
+                <div class="front">
+                    <img width="350px" src="https://github.com/petermirithu/my_hoody/raw/master/my_hoody.png" class="img-responsive" rel="hood app">                    
+                    <h5>My_hoody Web App.</h5>    
+                    <span>Python, Django Framework, PSQL Database & CSS</span>
+                </div>
+                <div class="back text-center">
+                  <div class="back-wrap">
+                    <p>My_Hoody is a web application that gives people a chance to know whats going on in their neighbourhood and also have a check on the various departments and businesses around their neighbour hood.</p>                     
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="button" id="button-6">
+                          <div id="spin"></div>
+                          <a href="https://myhood254.herokuapp.com/">View site</a>
+                          
+                        </div>         
+                      </div>
+                      <div class="col-md-6">
+                        <div class="button" id="button-5">
+                          <div id="translate"></div>
+                          <a href="https://github.com/petermirithu/my_hoody">View Git Hub Repo</a>                            
+                        </div>                                                                                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>           
+          </div>          
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="container-3d">
+                <div class="front">
+                    <img width="350px" src="https://github.com/petermirithu/Grant_py/raw/master/grant_py.png" class="img-responsive" rel="hood app">                    
+                    <h5>Grant_py app</h5>      
+                    <span>Python, Django Framework, PSQL Database, CSS <br> 
+                    & Javascript</span>
+                </div>
+                <div class="back text-center">
+                  <div class="back-wrap">
+                    <p>Grant_py is an awards web app giving users a chance to post projects and their live link for them to be rated and reviewed. The winner project gets to be displayed on the home page.</p>              
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="button" id="button-6">
+                          <div id="spin"></div>
+                          <a href="https://grantpy254.herokuapp.com/">View site</a>
+                        </div>         
+                      </div>
+                      <div class="col-md-6">
+                        <div class="button" id="button-5">
+                          <div id="translate"></div>
+                          <a href="https://github.com/petermirithu/Grant_py">View Git Hub Repo</a>                            
+                        </div>                                                                                       
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+            </div>              
+          </div> 
+          <div class="col-md-4">
+            <div class="container-3d">
+              <div class="front">
+                  <img width="350px" src="images/emay.png" class="img-responsive" rel="hood app">                    
+                  <h5>Emay app</h5>     
+                  <span>Python, Flask Framework, PSQL Database, CSS<br>
+                   & Javascript</span>
+              </div>
+              <div class="back text-center">
+                <div class="back-wrap">
+                  <p>Emay web app allows users to post an emergency and comment on various posts helping their friends. It also provides solutions to various emergencies and a help centre.</p>          
+                  <p>I was the Scrum master in designing and making of the app.</p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="button" id="button-6">
+                        <div id="spin"></div>
+                        <a href="https://emergencyapp254.herokuapp.com/">View site</a>                          
+                      </div>         
+                    </div>
+                    <div class="col-md-6">
+                      <div class="button" id="button-5">
+                        <div id="translate"></div>
+                        <a href="https://github.com/petermirithu/Emergency_app">View Git Hub Repo</a>                          
+                      </div>                                                                                       
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>                        
+          </div> 
+          <div class="col-md-4">
+             <div class="container-3d">
+              <div class="front">
+                  <img width="350px" src="images/gitsearch.png" class="img-responsive" rel="hood app">                    
+                  <h5>Git Search web site</h5>  
+                  <span>Javascript, Angular Framework, CSS & Bootstrap</span>
+              </div>
+              <div class="back text-center">
+                <div class="back-wrap">
+                  <p>Git search is an Angular web application that gives a user a chance to search for any user name on git hub and get the profile data and repositories belonging to that user name.</p>       
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="button" id="button-6">
+                        <div id="spin"></div>
+                        <a href="https://gitsearch-handsome-masked-palm-civet.now.sh/home">View site</a>                        
+                      </div>         
+                    </div>
+                    <div class="col-md-6">
+                      <div class="button" id="button-5">
+                        <div id="translate"></div>
+                        <a href="https://github.com/petermirithu/GitSearch">View Git Hub Repo</a>                        
+                      </div>                                                                                       
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>                                               
+          </div> 
+        <div>        
+      </div>
+    </div>            
+    <br>
+    <br>
+    <br>
+    <div id="contacts" class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+           <img style="border-radius:30px 0px 30px 0px;margin-top:10px" width="50%" src="images/logo/logop.png" class="img-responsive"><span><h3>Peter Mirithu.</h3></span>
+        </div>
+        <div class="col-md-6">
+          <h1>
+            <a href="#contacts" style="color:white" class="typewrite" data-period="2000" data-type='[ "Get in touch with me via", "You can contact me via", "Find me via"]'>
+              <span class="wrap"></span>
+            </a>            
+          </h1> 
+          <a><i class="fas fa-phone-square-alt"></i> 0790476167</a><br>
+          <a><i class="fas fa-envelope"></i> <a href="mailto: pyra_m.k@yahoo.com">pyra_m.k@yahoo.com</a></a>      
+          <br>
+          <br>
+          <br>
+          <br>
+          <h6>copyright &copy; 2020</h6>
+        </div>
+      </div>
+    </div>        
   </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://kit.fontawesome.com/8311960bd4.js" crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/jquery.ripples-min.js"></script>
+  <script src="js/script.js"></script>  
 </html>  

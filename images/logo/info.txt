@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Mothproof_Script
+font link: https://www.fontsquirrel.com/fonts/MothproofScript
+font author: 
+font author site: 
+Slogan Font: KaushanScript-Regular.ttf
+
+icon designer: IconsGhost 
+icon designer link: /iconghost
+        
+{"bg":"#F1E4E9","icon-gradient-0":"#0D2545","icon-gradient-1":"#A21F44","font":"#13182E","slogan":"#272c42"}
+      

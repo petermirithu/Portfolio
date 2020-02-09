@@ -1,9 +1,9 @@
 /* homepage message .............................................................................*/
 const messages = [
-  ['Greetings!', 'How are You!', 'Buenos dias!', 'Hello!', 'Hi!','Shalom!.', 'Bonjour!'],
-  ['I','Personally, I ', 'Solely I', 'I,', 'I','I'],
-  ['would like to', 'would be delighted to', 'would be glad to', 'would be happy to', 'would be much more obliged to', 'would prefer to', 'would be cheerful to ', 'would be lucky to', 'would be greatful to'],
-  ['warmly welcome you to My Portfolio Site!.', 'heartly welcome you to My Portfolio Site!', 'cheefully welcome you to My Portfolio Site!!', 'cordially welcome you to My Portfolio Site!', 'genially welcome you to My Portfolio Site!', 'convivialy welcome you to My Portfolio Site!']
+  ['Greetings', 'How are You', 'Buenos dias', 'Hello', 'Hi','Shalom', 'Bonjour'],
+  ['!','!!', '!!!'],
+  ['I am Peter Mirithu.','I am Peter Mirithu. ', 'I am Peter Mirithu.  ', 'I am Peter Mirithu.    ', 'I am Peter Mirithu.     '],
+  ['A Software Developer','A Full-stack Web Developer', 'A Front end & backend Web Developer', 'A Professional Web developer'],  
 ];
 
 const messageElements = [
@@ -53,7 +53,7 @@ function swapMessage() {
 
 function checkWidthSet(index, message) {
   if (false == messageElements[index].style.width) {
-    messageElements[index].style.width = `${messageElements[index].clientWidth}px`;
+    messageElements[index].style.width = `${message}px`;
   }
 }
 
@@ -78,15 +78,80 @@ function getNewMessage(toSwapIndex) {
 }
 // the end.............................................................................................
 
-$(document).ready(function(){
-  var $navbar = $('.navbar');
+$(document).ready(function(){  
+  $('.section1').ripples({
+    dropRadius: 12,
+    perturbance: 0.05,
+  });
+  window.onload=typeWriterone(); 
+  window.onload=typeWritertwo(); 
+
+  var $navbar = $('.navbar');  
   $(window).scroll(function(event){
     var $current = $(this).scrollTop();
   	if( $current > 0 ){
-      $navbar.addClass('navbar-color');      	  
+      $navbar.addClass('navbar-color');      	        
     }
     else{
-      $navbar.removeClass('navbar-color');      	  
+      $navbar.removeClass('navbar-color');      	        
     }
   });
 });
+
+// typewriter effect
+var TxtType = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+  this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+  this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+  delta = this.period;
+  this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+  this.isDeleting = false;
+  this.loopNum++;
+  delta = 500;
+  }
+
+  setTimeout(function() {
+  that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+  }  
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000000}";
+  document.body.appendChild(css);
+};
