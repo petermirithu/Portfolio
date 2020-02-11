@@ -1,14 +1,10 @@
 /* homepage message .............................................................................*/
-const messages = [
-  ['Greetings', 'How are You', 'Buenos dias', 'Hello', 'Hi','Shalom', 'Bonjour'],
-  ['!','!!', '!!!'],
-  ['I am Peter Mirithu.','I am Peter Mirithu. ', 'I am Peter Mirithu.  ', 'I am Peter Mirithu.    ', 'I am Peter Mirithu.     '],
-  ['A Software Developer','A Full-stack Web Developer', 'A Front end & backend Web Developer', 'A Professional Web developer'],  
+const messages = [    
+  ['I am Peter Mirithu,','I am Peter Mirithu, ', 'I am Peter Mirithu,  ', 'I am Peter Mirithu,    ', 'I am Peter Mirithu,     '],
+  ['Professional Software Developer','Full-stack Web Developer', 'Front-end & Back-end Web Developer', 'Professional Web developer'],        
 ];
 
-const messageElements = [
-  document.querySelector('#js-whoops'),
-  document.querySelector('#js-appears'),
+const messageElements = [    
   document.querySelector('#js-error'),
   document.querySelector('#js-apology')
 ];
@@ -28,15 +24,11 @@ function setupMessages() {
     element.innerText = newMessage;
   });
 }
-
-
 function calculateWidth(element, message) {  
   widthElement.innerText = message;
   let newWidth = widthElement.getBoundingClientRect().width;
   element.style.width = `${newWidth}px`;
 }
-
-
 function swapMessage() {
   let toSwapIndex = getNewSwapIndex();
   let newMessage  = getNewMessage(toSwapIndex);  
@@ -77,26 +69,6 @@ function getNewMessage(toSwapIndex) {
   return newMessage;
 }
 // the end.............................................................................................
-
-$(document).ready(function(){  
-  $('.section1').ripples({
-    dropRadius: 12,
-    perturbance: 0.05,
-  });
-  window.onload=typeWriterone(); 
-  window.onload=typeWritertwo(); 
-
-  var $navbar = $('.navbar');  
-  $(window).scroll(function(event){
-    var $current = $(this).scrollTop();
-  	if( $current > 0 ){
-      $navbar.addClass('navbar-color');      	        
-    }
-    else{
-      $navbar.removeClass('navbar-color');      	        
-    }
-  });
-});
 
 // typewriter effect
 var TxtType = function(el, toRotate, period) {
@@ -155,3 +127,56 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000000}";
   document.body.appendChild(css);
 };
+
+// scroll master...........................................
+AOS.init();
+// 
+$(document).ready(function(){  
+  $('.section1').ripples({
+    dropRadius: 12,
+    perturbance: 0.05,
+  });  
+  var $navbar = $('.navbar');  
+  $(window).scroll(function(event){
+  var $current = $(this).scrollTop();
+  if( $current > 0 ){
+    $navbar.addClass('navbar-color');      	        
+  }
+  else{
+    $navbar.removeClass('navbar-color');      	        
+  }
+});
+
+// modal............................
+  $('.trigger1').on('click', function() {
+     $('.modal-wrapper1').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+  $('.trigger2').on('click', function() {
+     $('.modal-wrapper2').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+  $('.trigger3').on('click', function() {
+     $('.modal-wrapper3').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+  $('.trigger4').on('click', function() {
+     $('.modal-wrapper4').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });  
+  $('.trigger5').on('click', function() {
+     $('.modal-wrapper5').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+  $('.trigger6').on('click', function() {
+     $('.modal-wrapper6').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+});
+// end.............................

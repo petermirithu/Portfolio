@@ -4,50 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
   <title>Portfolio.</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="images/logo/profile.png">  
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo/profile.png">    
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">    
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
   <link href="css/styles.css" rel="stylesheet" type="text/css">  
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#home"><img src="images/logo/profile.png" style="border-radius:10px 20px 10px 20px" width="50px"></a>      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
+    <div id="loader">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 200 82.7" style="enable-background:new 0 0 200 82.7;" xml:space="preserve">      
+      <g id="Calque_2">
+      <g>
+        <path id="XMLID_11_" d="M81.8,29.2c4.1-5.7,10.7-9.4,18.3-9.4c6.3,0,12.1,2.7,16.1,6.9c0.6-0.4,1.1-0.7,1.7-1.1
+          c-4.4-4.8-10.8-7.9-17.8-7.9c-8.3,0-15.6,4.2-20,10.6C80.7,28.5,81.3,28.8,81.8,29.2z"/>
+          <path id="XMLID_2_" d="M118.1,53.7c-4,5.7-10.7,9.5-18.2,9.5c-6.3,0-12.1-2.6-16.2-6.8c-0.6,0.4-1.1,0.7-1.7,1.1
+          c4.4,4.8,10.8,7.8,17.9,7.8c8.3,0,15.6-4.3,19.9-10.7C119.2,54.5,118.6,54.1,118.1,53.7z"/>
+          <animateTransform attributeName="transform" type="rotate" from="360 100 41.3" to="0 100 41.3" dur="10s" repeatCount="indefinite" />
+        </g>
+        <g id="XMLID_6_">
+        <g  id="XMLID_18_">	                      
+            <circle class="circle"  cx="100" cy="41" r="1"></circle>
+          </g>
+        </g><defs>
+            <filter id="blurFilter4" x="-20" y="-20" width="200" height="200">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+            </filter>
+          </defs>
+        <path    id="XMLID_5_" class="st2" d="M103.8,16.7c0.1,0.3,0.1,0.6,0.1,0.9c11.6,1.9,20.4,11.9,20.4,24.1c0,13.5-10.9,24.4-24.4,24.4
+        S75.6,55.1,75.6,41.7c0-3.2,0.6-6.3,1.7-9.1c-0.3-0.2-0.5-0.3-0.7-0.5c-1.2,3-1.9,6.2-1.9,9.6c0,14,11.3,25.3,25.3,25.3
+        s25.3-11.3,25.3-25.3C125.3,29,115.9,18.5,103.8,16.7z"/>
+      </g>
+      </svg>
+    </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">      
+      <a class="navbar-brand" href="#home"><img src="images/logo/profile.png" style="border-radius: 50%" width="50px"></a>                  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">      
         <ul class="navbar-nav mr-auto">
-
           <li class="nav-item active">
             <div class="button" id="button-4">
               <div id="underline"></div>
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
             </div>
           </li>
           <li class="nav-item">
             <div class="button" id="button-4">
               <div id="underline"></div>
-                <a class="nav-link" href="#about">About</a>              
+                <a class="nav-link" href="#about"><i class="far fa-address-card"></i> About</a>              
             </div>
           </li>   
           <li class="nav-item">
             <div class="button" id="button-4">
               <div id="underline"></div>
-                <a class="nav-link" href="#skills">Skills</a>              
+                <a class="nav-link" href="#skills"><i class="fas fa-user-graduate"></i> Skills</a>              
             </div>
           </li>                    
           <li class="nav-item">
             <div class="button" id="button-4">
               <div id="underline"></div>
-                <a class="nav-link" href="#projects">Projects</a>              
+                <a class="nav-link" href="#projects"><i class="fas fa-tasks"></i> Projects</a>              
             </div>
           </li>                    
           <li class="nav-item">
             <div class="button" id="button-4">
               <div id="underline"></div>
-                <a class="nav-link" href="#contacts">Contacts</a>              
+                <a class="nav-link" href="#contacts"><i class="fas fa-address-book"></i> Contacts</a>              
             </div>
           </li>                    
-        </ul>        
-      </div>
+        </ul>     
+      </div>      
     </nav>  
 
     <div id="myNav" class="overlay">
@@ -55,23 +81,23 @@
       <div class="overlay-content">
          <div class="button" id="button-4">
           <div id="underline"></div>
-          <a style="color:white;font-size:15px" href="#home">Home <span class="sr-only">(current)</span></a>
-        </div>
+          <a style="color:white;font-size:15px" href="#home"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </div><br>
         <div class="button" id="button-4">
           <div id="underline"></div>
-            <a style="color:white;font-size:15px" href="#about">About</a>              
-        </div>
+            <a style="color:white;font-size:15px" href="#about"><i class="far fa-address-card"></i> About</a>              
+        </div><br>
         <div class="button" id="button-4">
           <div id="underline"></div>
-            <a style="color:white;font-size:15px" href="#skills">Skills</a>              
-        </div>
+            <a style="color:white;font-size:15px" href="#skills"><i class="fas fa-user-graduate"></i> Skills</a>              
+        </div><br>
         <div class="button" id="button-4">
           <div id="underline"></div>
-            <a style="color:white;font-size:15px" href="#projects">Projects</a>              
-        </div>
+            <a style="color:white;font-size:15px" href="#projects"><i class="fas fa-tasks"></i> Projects</a>              
+        </div><br>
         <div class="button" id="button-4">
           <div id="underline"></div>
-            <a style="color:white;font-size:15px" href="#contacts">Contacts</a>              
+            <a style="color:white;font-size:15px" href="#contacts"><i class="fas fa-address-book"></i> Contacts</a>              
         </div>
       </div>
     </div>  
@@ -95,11 +121,13 @@
           </div>          
           <div class="col-md-6">
             <div class="meso">
-              <div class="message" id="js-whoops"></div>
-              <div class="message" id="js-appears"></div><br>
+              <a style="color:rgb(194, 0, 97)" class="typewrite" data-period="2000" data-type='[ "Looking for a Software developer? ", "In pursuit for a Software Developer? ", "Searching for a Software Developer? "]'>
+                <span class="wrap"></span>
+              </a><br>                                        
               <div class="message" id="js-error"></div><br>
-              <div class="message" id="js-apology"></div>   
-              <div class="message">In Nairobi.</div>   
+              <div style="font-size: 17px"><i>An objective-oriented <span style="color:rgb(194, 0, 97)" class="message" id="js-apology"></span> with a passion for thoughtful websites & web applications development, collaboration & always ready to Learn more.</i></div>              
+              <br>
+              <div class="message"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya.</div>   
             </div>
           </div>
         </div>
@@ -109,57 +137,39 @@
     <br>
     <br>
     <div id="about" class="section2">
-      <h1 style="color: rgb(175, 25, 100);"class="text-center">About</h1>
-      <div class="container">
-      
-        <div style="padding:10px;float:left;clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);background-color: rgb(175, 25, 100);">Mission!</div>      
-        <p id="mission"></p>
-
-        <div style="padding:10px;float:right;clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);background-color: rgb(175, 25, 100);">More of Me!</div>              
-        <p id="mything"></p>
-
-        <script>
-          var i = 0;
-          var txt = 'Objective-Oriented full stack developer with a passion for thoughtful websites & web apps development, collaboration & ready to Learn more.';
-          var speed = 50;
-
-          function typeWriterone() {
-            if (i < txt.length) {
-              document.getElementById("mission").innerHTML += txt.charAt(i);
-              i++;
-              setTimeout(typeWriterone, speed);
-            }
-          }
-        </script>
-        <script>
-          var x = 0;
-          var txtx = "I ’ve always sought out opportunities and challenges that are meaningful to me. Although my professional path has taken a few twists and turns, I have never stopped engaging my passion to help others and solve problems. As a web developer, I enjoy solving problems, making new apps, and my objective-oriented personality which steers me to literally look forward in change the world. That's why I’m excited to make a big impact whenever I go.";
-          var speedx = 50;
-
-          function typeWritertwo() {
-            if (x < txtx.length) {
-              document.getElementById("mything").innerHTML += txtx.charAt(x);
-              x++;
-              setTimeout(typeWritertwo, speedx);
-            }
-          }
-        </script>                  
+      <h1 style="color: rgb(175, 25, 100);"class="text-center"><i class="far fa-address-card"></i> About</h1>
+      <div data-aos="fade-up" data-aos-duration="3000" class="container aboutcont">        
+        <p>As a web developer, I enjoy solving problems, making new applications and posing a big impact whenever I go.</p>
+        <p>Since I was in High School, my interest in coding grew as I participated in Computer Symposiums and interacting with real-time software developers.</p> 
+        <p>I was in Daystar doing a short course in ICDL where I started coding on my own and finally decided to join Moringa in order to boost my knowledge and efficiency in coding. In Moringa, I learned Javascript, specialized in python and taught myself PHP which was a great achievement in a week sprint while developing a real-time application.</p>
+        <p>I was able to enhance my leadership skills through working as a scrum master in two group projects namely Emay which was an emergency application giving people solutions to various emergencies and also giving users the ability to post emergencies and receive help. The other application was Haki mobile application belonging to KnownAfrique LLP and enables legal e-consult and finding a lawyer. Our part in Haki mobile application was adding more features such as a booking feature for clients and a lawyer schedule making  feature with an online mpesa payment system.</p>
+        <p>For Emay application we were able to meet all application specifications in one week while for Haki mobile application I was able to learn a new language and develop the needed features in two weeks sprint.</p>
       </div>
     </div>
 
     <br>
     <br>
     <div id="skills" class="section3">
-      <h1 class="text-center">Skills</h1>
+      <h1 class="text-center"><i class="fas fa-user-graduate"></i> Skills</h1>
       <div class="container">        
         <div class="row">
-          <div class="col-md-6 cardx">
-            <h5>Python</h5>
+          <div data-aos="zoom-out-left" class="col-md-6 cardx">
+            <h5>Language: Python</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                Efficiency 85%
+              </div>
+            </div>
             <hr>
             <img src="images/tech/python.png" width="70px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/django.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/flask.png" width="100px">
           </div>   
-          <div class="col-md-6 cardx">
+          <div data-aos="zoom-out-right"class="col-md-6 cardx">
             <h5>User Interface</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                Efficiency 80%
+              </div>
+            </div>
             <hr>
             <img src="images/tech/html5.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/css.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/bootstrap.png" width="150px">
           </div>
@@ -167,13 +177,23 @@
         <br>
         <br>
         <div class="row">
-          <div class="col-md-6 cardx">
-            <h5>Javascript</h5>
+          <div data-aos="zoom-out-left"  class="col-md-6 cardx">
+            <h5>Language: Javascript</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                Efficiency 75%
+              </div>
+            </div>
             <hr>
             <img src="images/tech/js.png" width="70px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/angular.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/jquery.jpg" width="100px">                          
           </div>
-          <div class="col-md-6 cardx">
+          <div data-aos="zoom-out-right"  class="col-md-6 cardx">
             <h5>Databases</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:82%">
+                Efficiency 82%
+              </div>
+            </div>
             <hr>
             <img src="images/tech/psql.png" width="150px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/mysql.jpg" width="100px">
           </div>
@@ -181,13 +201,23 @@
         <br>
         <br>
         <div class="row">
-          <div class="col-md-6 cardx">
-            <h5>PHP</h5>
+          <div data-aos="zoom-out-left"  class="col-md-6 cardx">
+            <h5>Language: PHP</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                Efficiency 60%
+              </div>
+            </div>
             <hr>
             <img src="images/tech/php.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/laravel.png" width="100px">
           </div>
-          <div class="col-md-6 cardx">
+          <div data-aos="zoom-out-right"  class="col-md-6 cardx">
             <h5>Other Tools</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                Efficiency 90%
+              </div>
+            </div>
             <hr>
             <img src="images/tech/agile.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/git.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/github.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/gitlab.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/bitbucket.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/tech/heroku.png" width="100px"> 
           </div>
@@ -198,83 +228,106 @@
     <br>
     <br>
     <div id="projects" class="section4">
-      <h1 class="text-center">Projects</h1>
+      <h1 class="text-center"><i class="fas fa-tasks"></i> Projects</h1>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="container-3d">
-              <div class="front">
-                  <img width="200px" src="images/hakilogo.png" class="img-responsive" rel="hobby lab">
-                  <h5>Haki Mobile App.</h5>                  
-                  <span>Java, PHP, Laravel framework & Mysql database.</span>
-                </div>
-                <div class="back text-center">
-                  <div class="back-wrap">
-                      <p>Haki Law App a project of KnownAfrique LLP is a mobile based platform that enables legal e-consult. Those in need of legal assistance will “find a lawyer” one click away!</p>                      
-                      <p>I was the Scrum Master in integrating a booking feature and lawyer making schedule feature.</p>
+            <div class="container-3d">              
+              <img data-aos="fade-up-right" height="200px" src="images/hakiphone.png" class="img-responsive" rel="hobby lab">
+              <a class="btn trigger1" href="#">Haki Mobile App. <i class="fas fa-caret-down"></i></a>                                
+              <div class="modal-wrapper1">
+                <div class="modal">
+                  <div class="head">
+                    <a class="btn-close trigger1" href="#">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="good-job">
+                      <img data-aos="fade-up-right" width="50px" src="images/hakiphone.png" class="img-responsive" rel="hobby lab">
+                      <p>Haki Law App a project of KnownAfrique LLP is a mobile based platform that enables legal e-consult and finding a lawyer.</p>                      
+                      <p>I was the Scrum Master in integrating a booking feature and lawyer making schedule feature in Haki app.</p>                        
+                      <p class="text-muted">Technologies: Java, PHP, Laravel framework & Mysql database.</p>
                       <div class="button" id="button-6">
                         <div id="spin"></div>
                         <a href="https://play.google.com/store/apps/details?id=com.knownafrique.haki&hl=en">View Site!</a>
                       </div>                                                                    
                     </div>
+                  </div>
                 </div>
+              </div>                                                                                                           
             </div>                        
           </div>
           <div class="col-md-4">
-            <div class="container-3d">
-              <div class="front">
-                  <img width="350px" src="https://github.com/petermirithu/hooby_lab/raw/master/hobbylab.png" class="img-responsive" rel="hobby lab">
-                  <h5>Hobby Lab Web App.</h5>
-                  <span>Python, Django Framework, PSQL Database, Javascript, Vue js, CSS, & Sendgrid.</span>
-                </div>
-                <div class="back text-center">
-                  <div class="back-wrap">
-                    <p>Hobby lab is a web application that connects people who share a hobby e.g: game and music. It spears the world to be a better living place for two or more hobby lovers.</p>               
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="button" id="button-6">
-                          <div id="spin"></div>
-                          <a href="https://hobbylab254.herokuapp.com/">View Site!</a>
-                        </div>         
-                      </div>
-                      <div class="col-md-6">
-                        <div class="button" id="button-5">
-                          <div id="translate"></div>
-                          <a href="https://github.com/petermirithu/hooby_lab">View Git Hub Repo</a>                        
-                        </div>                                                                                       
-                      </div>
+            <div class="container-3d">            
+              <img data-aos="fade-up" data-aos-duration="3000" width="300px" src="https://github.com/petermirithu/hooby_lab/raw/master/hobbylab.png" class="img-responsive" rel="hobby lab">
+              <a class="btn trigger2" href="#">Hobby Lab Web App. <i class="fas fa-caret-down"></i></a>                                                
+              <div class="modal-wrapper2">
+                <div class="modal">
+                  <div class="head">
+                    <a class="btn-close trigger2" href="#">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="good-job">
+                      <img data-aos="fade-up" data-aos-duration="3000" width="100px" src="https://github.com/petermirithu/hooby_lab/raw/master/hobbylab.png" class="img-responsive" rel="hobby lab">
+                      <p>Hobby lab is a web application that connects people who share a hobby e.g: game and music. It spears the world to be a better living place for two or more hobby lovers.</p>                                       
+                      <p class="text-muted">Technologies: Python, Django Framework, PSQL Database, Javascript, Vue js, CSS, & Sendgrid.</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="button" id="button-6">
+                            <div id="spin"></div>
+                            <a href="https://hobbylab254.herokuapp.com/">View Site!</a>
+                          </div>         
+                        </div>
+                        <div class="col-md-6">
+                          <div class="button" id="button-5">
+                            <div id="translate"></div>
+                            <a href="https://github.com/petermirithu/hooby_lab">View Git Hub Repo</a>                        
+                          </div>                                                                                       
+                        </div>
+                      </div>                  
                     </div>
                   </div>
                 </div>
+              </div>                                            
             </div>                         
-          </div>
+          </div>        
           <div class="col-md-4">
-            <div class="container-3d">
-                <div class="front">
-                    <img width="350px" src="https://github.com/petermirithu/my_hoody/raw/master/my_hoody.png" class="img-responsive" rel="hood app">                    
-                    <h5>My_hoody Web App.</h5>    
-                    <span>Python, Django Framework, PSQL Database & CSS</span>
-                </div>
-                <div class="back text-center">
-                  <div class="back-wrap">
-                    <p>My_Hoody is a web application that gives people a chance to know whats going on in their neighbourhood and also have a check on the various departments and businesses around their neighbour hood.</p>                     
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="button" id="button-6">
-                          <div id="spin"></div>
-                          <a href="https://myhood254.herokuapp.com/">View site</a>
-                          
-                        </div>         
-                      </div>
-                      <div class="col-md-6">
-                        <div class="button" id="button-5">
-                          <div id="translate"></div>
-                          <a href="https://github.com/petermirithu/my_hoody">View Git Hub Repo</a>                            
-                        </div>                                                                                       
-                      </div>
+            <div class="container-3d">          
+              <img data-aos="fade-up-left" width="300px" src="https://github.com/petermirithu/my_hoody/raw/master/my_hoody.png" class="img-responsive" rel="hood app">                    
+              <a class="btn trigger3" href="#">My_hoody Web App. <i class="fas fa-caret-down"></i></a>                                                    
+              <div class="modal-wrapper3">
+                <div class="modal">
+                  <div class="head">
+                    <a class="btn-close trigger3" href="#">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="good-job">
+                      <img data-aos="fade-up-left" width="100px" src="https://github.com/petermirithu/my_hoody/raw/master/my_hoody.png" class="img-responsive" rel="hood app">                    
+                      <p>My_Hoody is a web application that gives people a chance to know whats going on in their neighbourhood and also have a check on the various departments and businesses around their neighbour hood.</p>                                           
+                      <p class="text-muted">Technologies: Python, Django Framework, PSQL Database & CSS</p>                                              
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="button" id="button-6">
+                            <div id="spin"></div>
+                            <a href="https://myhood254.herokuapp.com/">View site</a>                          
+                          </div>         
+                        </div>
+                        <div class="col-md-6">
+                          <div class="button" id="button-5">
+                            <div id="translate"></div>
+                            <a href="https://github.com/petermirithu/my_hoody">View Git Hub Repo</a>                            
+                          </div>                                                                                       
+                        </div>
+                      </div>                                                                                                                              
                     </div>
                   </div>
-                </div>
+                </div>                                  
+              </div>
             </div>           
           </div>          
         </div>
@@ -282,123 +335,154 @@
         <br>
         <div class="row">
           <div class="col-md-4">
-            <div class="container-3d">
-                <div class="front">
-                    <img width="350px" src="https://github.com/petermirithu/Grant_py/raw/master/grant_py.png" class="img-responsive" rel="hood app">                    
-                    <h5>Grant_py app</h5>      
-                    <span>Python, Django Framework, PSQL Database, CSS <br> 
-                    & Javascript</span>
-                </div>
-                <div class="back text-center">
-                  <div class="back-wrap">
-                    <p>Grant_py is an awards web app giving users a chance to post projects and their live link for them to be rated and reviewed. The winner project gets to be displayed on the home page.</p>              
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="button" id="button-6">
-                          <div id="spin"></div>
-                          <a href="https://grantpy254.herokuapp.com/">View site</a>
-                        </div>         
-                      </div>
-                      <div class="col-md-6">
-                        <div class="button" id="button-5">
-                          <div id="translate"></div>
-                          <a href="https://github.com/petermirithu/Grant_py">View Git Hub Repo</a>                            
-                        </div>                                                                                       
-                      </div>
-                    </div>                    
+            <div class="container-3d">                
+              <img data-aos="fade-up-right" width="300px" src="https://github.com/petermirithu/Grant_py/raw/master/grant_py.png" class="img-responsive" rel="hood app">                                        
+              <a class="btn trigger4" href="#">Grant_py app. <i class="fas fa-caret-down"></i></a>                                                  
+              <div class="modal-wrapper4">
+                <div class="modal">
+                  <div class="head">
+                    <a class="btn-close trigger4" href="#">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
                   </div>
-                </div>
+                  <div class="content">
+                    <div class="good-job">
+                      <img data-aos="fade-up-right" width="100px" src="https://github.com/petermirithu/Grant_py/raw/master/grant_py.png" class="img-responsive" rel="hood app">                                        
+                      <p>Grant_py is an awards web app giving users a chance to post projects and their live link for them to be rated and reviewed. The winner project gets to be displayed on the home page.</p>                                    
+                      <p class="text-muted">Technologies: Python, Django Framework, PSQL Database, CSS & Javascript</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="button" id="button-6">
+                            <div id="spin"></div>
+                            <a href="https://grantpy254.herokuapp.com/">View site</a>
+                          </div>         
+                        </div>
+                        <div class="col-md-6">
+                          <div class="button" id="button-5">
+                            <div id="translate"></div>
+                            <a href="https://github.com/petermirithu/Grant_py">View Git Hub Repo</a>                            
+                          </div>                                                                                       
+                        </div>                                                                                                                   
+                      </div>
+                    </div>
+                  </div>
+                </div>                                  
+              </div>                                                                             
             </div>              
           </div> 
           <div class="col-md-4">
-            <div class="container-3d">
-              <div class="front">
-                  <img width="350px" src="images/emay.png" class="img-responsive" rel="hood app">                    
-                  <h5>Emay app</h5>     
-                  <span>Python, Flask Framework, PSQL Database, CSS<br>
-                   & Javascript</span>
-              </div>
-              <div class="back text-center">
-                <div class="back-wrap">
-                  <p>Emay web app allows users to post an emergency and comment on various posts helping their friends. It also provides solutions to various emergencies and a help centre.</p>          
-                  <p>I was the Scrum master in designing and making of the app.</p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="button" id="button-6">
-                        <div id="spin"></div>
-                        <a href="https://emergencyapp254.herokuapp.com/">View site</a>                          
-                      </div>         
+            <div class="container-3d">              
+              <img data-aos="fade-up"  data-aos-duration="3000" width="300px" src="images/emay.png" class="img-responsive" rel="hood app">                                      
+              <a class="btn trigger5" href="#">Emay app. <i class="fas fa-caret-down"></i></a>                                                         
+              <div class="modal-wrapper5">
+                <div class="modal">
+                  <div class="head">
+                    <a class="btn-close trigger5" href="#">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="good-job">
+                      <img data-aos="fade-up"  data-aos-duration="3000" width="100px" src="images/emay.png" class="img-responsive" rel="hood app">                                      
+                       <p>Emay web app allows users to post an emergency and comment on various posts helping their friends. It also provides solutions to various emergencies and a help centre.</p>          
+                      <p>I was the Scrum master in designing and making of the app.</p>                      
+                      <p class="text-muted">Technologies: Python, Flask Framework, PSQL Database, CSS & Javascript</p>   
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="button" id="button-6">
+                            <div id="spin"></div>
+                            <a href="https://emergencyapp254.herokuapp.com/">View site</a>                          
+                          </div>         
+                        </div>
+                        <div class="col-md-6">
+                          <div class="button" id="button-5">
+                            <div id="translate"></div>
+                            <a href="https://github.com/petermirithu/Emergency_app">View Git Hub Repo</a>                          
+                          </div>                                                                                       
+                        </div>
+                      </div>                    
                     </div>
-                    <div class="col-md-6">
-                      <div class="button" id="button-5">
-                        <div id="translate"></div>
-                        <a href="https://github.com/petermirithu/Emergency_app">View Git Hub Repo</a>                          
-                      </div>                                                                                       
-                    </div>
-                  </div>    
-                </div>
-              </div>
+                  </div>
+                </div>                                  
+              </div>                                                           
             </div>                        
           </div> 
           <div class="col-md-4">
-             <div class="container-3d">
-              <div class="front">
-                  <img width="350px" src="images/gitsearch.png" class="img-responsive" rel="hood app">                    
-                  <h5>Git Search web site</h5>  
-                  <span>Javascript, Angular Framework, CSS & Bootstrap</span>
-              </div>
-              <div class="back text-center">
-                <div class="back-wrap">
-                  <p>Git search is an Angular web application that gives a user a chance to search for any user name on git hub and get the profile data and repositories belonging to that user name.</p>       
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="button" id="button-6">
-                        <div id="spin"></div>
-                        <a href="https://gitsearch-handsome-masked-palm-civet.now.sh/home">View site</a>                        
-                      </div>         
+            <div class="container-3d">              
+              <img data-aos="fade-up-left" width="300px" src="images/gitsearch.png" class="img-responsive" rel="hood app">                                      
+              <a class="btn trigger6" href="#">Git Search website. <i class="fas fa-caret-down"></i></a>                      
+              <div class="modal-wrapper6">
+                <div class="modal">
+                  <div class="head">
+                    <a class="btn-close trigger6" href="#">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="content">
+                    <div class="good-job">
+                      <img data-aos="fade-up-left" width="100px" src="images/gitsearch.png" class="img-responsive" rel="hood app">                                      
+                      <p>Git search is an Angular web application that gives a user a chance to search for any user name on git hub and get the profile data and repositories belonging to that user name.</p>                             
+                      <p class="text-muted">Technologies: Javascript, Angular Framework, CSS & Bootstrap</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="button" id="button-6">
+                            <div id="spin"></div>
+                            <a href="https://gitsearch-handsome-masked-palm-civet.now.sh/home">View site</a>                        
+                          </div>         
+                        </div>
+                        <div class="col-md-6">
+                          <div class="button" id="button-5">
+                            <div id="translate"></div>
+                            <a href="https://github.com/petermirithu/GitSearch">View Git Hub Repo</a>                        
+                          </div>                                                                                       
+                        </div>
+                      </div>                                                                          
                     </div>
-                    <div class="col-md-6">
-                      <div class="button" id="button-5">
-                        <div id="translate"></div>
-                        <a href="https://github.com/petermirithu/GitSearch">View Git Hub Repo</a>                        
-                      </div>                                                                                       
-                    </div>
-                  </div>    
-                </div>
-              </div>
+                  </div>
+                </div>                                  
+              </div>                                                                           
             </div>                                               
           </div> 
         <div>        
-      </div>
-    </div>            
+      </div>      
+    </div>    
     <br>
     <br>
     <br>
-    <div id="contacts" class="container-fluid">
+    <div id="contacts" class="container">      
       <div class="row">
-        <div class="col-md-6">
-           <img style="border-radius:30px 0px 30px 0px;margin-top:10px" width="50%" src="images/logo/logop.png" class="img-responsive"><span><h3>Peter Mirithu.</h3></span>
+        <div class="col-md-4">
+          <img style="border-radius:30px 0px 30px 0px;margin-top:10px" width="50%" src="images/logo/logop.png" class="img-responsive"><h3><b>Peter Mirithu.</b></h3>
         </div>
-        <div class="col-md-6">
-          <h1>
-            <a href="#contacts" style="color:white" class="typewrite" data-period="2000" data-type='[ "Get in touch with me via", "You can contact me via", "Find me via"]'>
-              <span class="wrap"></span>
-            </a>            
-          </h1> 
-          <a><i class="fas fa-phone-square-alt"></i> 0790476167</a><br>
-          <a><i class="fas fa-envelope"></i> <a href="mailto: pyra_m.k@yahoo.com">pyra_m.k@yahoo.com</a></a>      
-          <br>
-          <br>
-          <br>
-          <br>
-          <h6>copyright &copy; 2020</h6>
+        <div class="col-md-4">
+           <h3><u>Services</u></h3>
+           <p><i class="fas fa-pencil-ruler"></i>&nbsp;&nbsp;Web site designing.</p>
+           <p><i class="fas fa-desktop"></i>&nbsp;&nbsp;Front-end web developement.</p>
+           <p><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Back-end web developement.</p>
+        </div>
+        <div class="col-md-4">
+          <h3><i class="fas fa-address-book"></i> Contacts</h3> 
+          <i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;0790476167<br>
+          <i class="fas fa-envelope"></i>&nbsp;&nbsp;<a href="mailto: pyra_m.k@yahoo.com">pyra_m.k@yahoo.com</a><br>      
+          <i class="fab fa-github"></i>&nbsp;&nbsp;<a href="https://github.com/petermirithu">Git Hub</a><br>
+          <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a href=" https://www.linkedin.com/in/peter-mirithu-1b24201a2/">LinkedIn</a><br>
+          <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Nairobi, Kenya.</p>                    
         </div>
       </div>
+      <br>
+      <br>
+      <h6 style="color:white" class="text-center">copyright &copy; 2020</h6>
     </div>        
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://kit.fontawesome.com/8311960bd4.js" crossorigin="anonymous"></script>
-  <script src="js/jquery.js"></script>
+  <script src="https://kit.fontawesome.com/8311960bd4.js" crossorigin="anonymous"></script>  
   <script src="js/jquery.ripples-min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>  
   <script src="js/script.js"></script>  
+  <script>
+    $(window).on("load",function(){
+     $("#loader").fadeOut("slow");
+    });    
+  </script>
 </html>  
