@@ -271,7 +271,12 @@ body::-webkit-scrollbar-thumb {
 .cardx {
     border-radius: 10px 10px 10px 10px;
     transition: all .5s ease-Out;
-    box-shadow: 1px 1px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardx:hover {
+    transition: all .5s ease-Out;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button {
