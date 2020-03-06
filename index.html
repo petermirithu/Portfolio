@@ -6,12 +6,14 @@
   <title>Portfolio.</title>
   <link rel="icon" type="image/png" sizes="16x16" href="images/logo/profile.png">    
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:300italic' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">    
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">  
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+  
   <link href="css/styles.css" rel="stylesheet" type="text/css">  
   </head>
-  <body>
+  <body onload="changeClass()">
     <div id="loader">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 200 82.7" style="enable-background:new 0 0 200 82.7;" xml:space="preserve">      
@@ -40,6 +42,9 @@
     </div>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">      
       <a class="navbar-brand" href="#home"><img src="images/logo/profile.png" style="border-radius: 50%" width="50px"></a>                  
+      <div id="mnbar">
+        <span style="font-size:40px;cursor:pointer" class="menubar" id="menubar"onclick="openNav()">&#9776;</span>
+      </div>  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">      
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -82,29 +87,37 @@
          <div class="button" id="button-4">
           <div id="underline"></div>
           <a style="color:white;font-size:15px" href="#home"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-        </div><br>
+        </div>
+        <br>
+        <br>
+        <br>
         <div class="button" id="button-4">
           <div id="underline"></div>
             <a style="color:white;font-size:15px" href="#about"><i class="far fa-address-card"></i> About</a>              
-        </div><br>
+        </div>
+        <br>
+        <br>
+        <br>
         <div class="button" id="button-4">
           <div id="underline"></div>
             <a style="color:white;font-size:15px" href="#skills"><i class="fas fa-user-graduate"></i> Skills</a>              
-        </div><br>
+        </div>
+        <br>
+        <br>
+        <br>
         <div class="button" id="button-4">
           <div id="underline"></div>
             <a style="color:white;font-size:15px" href="#projects"><i class="fas fa-tasks"></i> Projects</a>              
-        </div><br>
+        </div>
+        <br>
+        <br>
+        <br>
         <div class="button" id="button-4">
           <div id="underline"></div>
             <a style="color:white;font-size:15px" href="#contacts"><i class="fas fa-address-book"></i> Contacts</a>              
         </div>
       </div>
-    </div>  
-
-    <div id="mnbar">
-      <span style="font-size:40px;cursor:pointer" class="menubar" id="menubar"onclick="openNav()">&#9776;</span>
-    </div>  
+    </div>   
     <script>
       function openNav() {
         document.getElementById("myNav").style.width = "100%";
@@ -122,7 +135,7 @@
           </div>          
           <div class="col-md-6">
             <div class="meso">
-              <a style="color:rgb(194, 0, 97)" class="typewrite" data-period="2000" data-type='[ "Looking for a Software developer? ", "In pursuit for a Software Developer? ", "Searching for a Software Developer? "]'>
+              <a style="color:rgb(194, 0, 97);font-style: italic; font-family: Merriweather, serif;" class="typewrite" data-period="2000" data-type='[ "Looking for a Software developer? ", "In pursuit for a Software Developer? ", "Searching for a Software Developer? "]'>
                 <span class="wrap"></span>
               </a><br>                                        
               <div class="message" id="js-error"></div><br>
@@ -137,7 +150,12 @@
     </div>              
     <br>
     <br>
-    <h1 style="color: black;"class="text-center"><i class="far fa-address-card"></i> About</h1>            
+    <h1 class="ml14 text-center">
+      <span class="text-wrapper">
+        <span><i class="far fa-address-card"></i></span><span class="letters"> About Me.</span>
+        <span class="line"></span>
+      </span>
+    </h1>    
     <div id="about" class="section2">    
       <div data-aos="fade-up" data-aos-duration="3000" class="container aboutcont">        
         <p>As a web developer, I enjoy solving problems, making new applications and posing a big impact whenever I go.</p>        
@@ -146,16 +164,21 @@
       </div>
     </div>    
     <br>
-    <br>    
-    <div id="skills" class="section3">
-      <h1 class="text-center"><i class="fas fa-user-graduate"></i> Skills</h1>
+    <br>        
+    <div id="skills" class="section3">            
+      <h1 class="ml11 text-center">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span><i class="fas fa-user-graduate"></i></span><span class="letters"> Skills.</span>          
+        </span>
+      </h1>
       <div class="container">        
         <div class="row">
           <div data-aos="zoom-out-left" class="col-md-6 cardx">
             <h5>Language: Python</h5>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%;background-color:rgb(194, 0, 97)">
-                Efficiency 90%
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+                <b>Strong</b>
               </div>
             </div>
             <hr>
@@ -164,8 +187,8 @@
           <div data-aos="zoom-out-right"class="col-md-6 cardx">
             <h5>User Interface</h5>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%;background-color:rgb(194, 0, 97)">
-                Efficiency 80%
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+                <b>Strong</b>
               </div>
             </div>
             <hr>
@@ -178,8 +201,8 @@
           <div data-aos="zoom-out-left"  class="col-md-6 cardx">
             <h5>Language: Javascript</h5>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%;background-color:rgb(194, 0, 97)">
-                Efficiency 75%
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+                <b>Strong</b>
               </div>
             </div>
             <hr>
@@ -188,8 +211,8 @@
           <div data-aos="zoom-out-right"  class="col-md-6 cardx">
             <h5>Databases</h5>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%;background-color:rgb(194, 0, 97)">
-                Efficiency 85%
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+                <b>Strong</b>
               </div>
             </div>
             <hr>
@@ -202,8 +225,8 @@
           <div data-aos="zoom-out-left"  class="col-md-6 cardx">
             <h5>Language: PHP</h5>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%;background-color:rgb(194, 0, 97)">
-                Efficiency 60%
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+                <b>Experienced</b>
               </div>
             </div>
             <hr>
@@ -212,8 +235,8 @@
           <div data-aos="zoom-out-right"  class="col-md-6 cardx">
             <h5>Other Tools</h5>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%;background-color:rgb(194, 0, 97)">
-                Efficiency 90%
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+                <b>Strong</b>
               </div>
             </div>
             <hr>
@@ -225,7 +248,13 @@
     <br>
     <br>
     <div id="projects" class="section4">
-      <h1 class="text-center"><i class="fas fa-tasks"></i> Projects</h1>
+      <h1 class="ml1 text-center">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span><i class="fas fa-tasks"></i></span> <span class="letters"> Projects.</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>            
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -444,23 +473,34 @@
       </div>      
     </div>    
     </div>
-    </div>    
-    <hr>    
-    <div  id="contacts" class="container-fluid">      
+    </div>            
+
+    <h1 class="ml5 text-center">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters letters-left"><i class="fas fa-concierge-bell"></i> Services</span>        
+        <span class="letters ampersand">&amp;</span>
+        <span class="letters letters-right"><i class="fas fa-address-book"></i> Contacts.</span>
+        <span class="line line2"></span>
+      </span>
+    </h1>
+    <div  id="contacts" class="container-fluid">          
       <div class="contacts">
         <div class="row">
-          <div class="col-md-4">
-            <img style="border-radius:30px 0px 30px 0px;margin-top:10px;" width="50%" src="images/logo/logop.png" class="img-responsive"><h3 style="color:rgb(194, 0, 97)"><b>Peter Mirithu.</b></h3>
+          <div class="col-md-4">                               
+            <img style="border-radius:30px 0px 30px 0px;margin-top:10px;" width="50%" src="images/logo/logop.png" class="img-responsive">
+            <h3 style="color:rgb(194, 0, 97)"><b><span class="enclosed">Peter</span>Mirithu.</b></h3>
+            
           </div>
           <div class="col-md-4">
-            <h3 style="color:rgb(194, 0, 97)"><u>Services</u></h3>
+            <h3 style="color:rgb(194, 0, 97)"><i class="fas fa-concierge-bell"></i> Services</h3>
             <p><i class="fas fa-pencil-ruler"></i>&nbsp;&nbsp;Web site designing.</p>
             <p><i class="fas fa-desktop"></i>&nbsp;&nbsp;Front-end web developement.</p>
             <p><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Back-end web developement.</p>
           </div>
           <div class="col-md-4">
             <h3 style="color:rgb(194, 0, 97)"><i class="fas fa-address-book"></i> Contacts</h3> 
-            <i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;0790476167<br>
+            <i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;+254790476167<br>
             <i class="fas fa-envelope"></i>&nbsp;&nbsp;<a href="mailto: pyra_m.k@yahoo.com">pyra_m.k@yahoo.com</a><br>      
             <i class="fab fa-github"></i>&nbsp;&nbsp;<a href="https://github.com/petermirithu">Git Hub</a><br>
             <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/peter-mirithu">LinkedIn</a><br>          
@@ -476,8 +516,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://kit.fontawesome.com/8311960bd4.js" crossorigin="anonymous"></script>  
   <script src="js/jquery.ripples-min.js"></script>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="js/script.js"></script>  
   <script>
     $(window).on("load",function(){
