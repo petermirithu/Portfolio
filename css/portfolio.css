@@ -1,0 +1,202 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* pulse */
+
+.navbar-brand {
+    animation: pulse 3s infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* end */
+
+
+/* cardx */
+
+.cardx {
+    border-radius: 10px 10px 10px 10px;
+    transition: all .5s ease-Out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardx:hover {
+    transition: all .5s ease-Out;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* end */
+
+
+/* button */
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .7em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px
+}
+
+
+/* end */
+
+
+/* button 6 */
+
+#button-6 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: black;
+    color: azure;
+}
+
+#button-6 a {
+    position: relative;
+    color: azure;
+    transition: all .45s ease-Out;
+}
+
+#button-6::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    background: linear-gradient(225deg, rgb(0, 0, 0) 45%, #aaa 50%, #ccc 56%, rgb(255, 255, 255) 80%);
+    transition-duration: 0.3s;
+}
+
+#button-6:hover:before {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* end */
+
+
+/* button 5 */
+
+#button-5 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s ease-Out;
+}
+
+#button-5 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    color: rgb(0, 0, 0);
+}
+
+#translate {
+    transform: rotate(50deg);
+    width: 100%;
+    height: 250%;
+    left: -200px;
+    top: -30px;
+    background: white;
+    position: absolute;
+    transition: all .5s ease-Out;
+}
+
+#button-5:hover {
+    background-color: black;
+    transform: translateY( -7px);
+    transition: all .8s ease-Out;
+}
+
+#button-5:hover #translate {
+    left: 0;
+}
+
+#button-5:hover a {
+    color: black;
+}
+
+
+/* end */
+
+
+/* skills section */
+
+#skills {
+    overflow: hidden !important;
+}
+
+
+/* end */
+
+#home {
+    overflow: hidden;
+}
+
+
+/* message homepage */
+
+.message {
+    display: inline-block;
+    transition: line-height .2s, width .2s;
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+/* end */
+
+
+/* icons */
+
+.iconx {
+    color: rgb(194, 0, 97);
+    font-size: 200%;
+}
+
+
+/* end */

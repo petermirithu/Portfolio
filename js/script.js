@@ -134,52 +134,6 @@ window.onload = function() {
 AOS.init();
 // 
 $(document).ready(function() {
-    $('.section1').ripples({
-        dropRadius: 12,
-        perturbance: 0.05,
-    });
-    var $navbar = $('.navbar');
-    $(window).scroll(function(event) {
-        var $current = $(this).scrollTop();
-        if ($current > 0) {
-            $navbar.addClass('navbar-color');
-        } else {
-            $navbar.removeClass('navbar-color');
-        }
-    });
-
-    // modal............................
-    $('.trigger1').on('click', function() {
-        $('.modal-wrapper1').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
-        return false;
-    });
-    $('.trigger2').on('click', function() {
-        $('.modal-wrapper2').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
-        return false;
-    });
-    $('.trigger3').on('click', function() {
-        $('.modal-wrapper3').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
-        return false;
-    });
-    $('.trigger4').on('click', function() {
-        $('.modal-wrapper4').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
-        return false;
-    });
-    $('.trigger5').on('click', function() {
-        $('.modal-wrapper5').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
-        return false;
-    });
-    $('.trigger6').on('click', function() {
-        $('.modal-wrapper6').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
-        return false;
-    });
-
     function changeClass() {
         var x = document.getElementsByClassName('section1');
         var width = (window.innerHeight > 0) ? window.innerHeight : screen.Height;
