@@ -200,3 +200,7 @@ html {
 
 
 /* end */
+
+.text-muted {
+    color: rgb(179, 163, 163) !important;
+}
