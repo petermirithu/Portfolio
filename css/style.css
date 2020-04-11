@@ -1456,7 +1456,11 @@ ul {
 /* line 567, */
 
 .blog-info-link li a {
-    color: #999999;
+    color: rgb(100, 100, 100) !important;
+}
+
+.blog-info-link li a:hover {
+    color: rgb(194, 0, 97) !important;
 }
 
 
