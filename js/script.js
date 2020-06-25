@@ -102,6 +102,7 @@ function onScroll(event){
      auto:true,
      continuous:true
    });
+   
   
     //mobilemenu
     $('.mobile').click(function(){
@@ -163,7 +164,7 @@ function onScroll(event){
   }); 
   
   $(document).on("scroll", onScroll);
-  
-  
-  
-  
+      
+  $(window).load(function() {        
+    $("#loader").fadeOut();
+  });
