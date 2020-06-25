@@ -1,11 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-#home{
-    background: rgba(0,0,0,0.5);	
-}
-
 /* pulse */
 
 .navbar-brand {
@@ -172,11 +167,6 @@ html {
 
 /* end */
 
-#home {
-    overflow: hidden;
-}
-
-
 /* message homepage */
 
 .message {
@@ -286,3 +276,32 @@ html {
   .no-cssanimations .cb-slideshow li span {
       opacity: 1;
   }
+.meso{
+    padding: 16px 0px 26px 0px; 
+    font-size: 16px; 
+    color: #fff; 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 600; 
+    font-style: italic; 
+    margin: 0px; 
+    word-spacing: 2px; 
+    line-height: 22px; 
+}      
+
+@media only screen and (max-width: 766px){    
+    .Banner_sec .rightside #slider {margin-top: 0px;}
+}
+
+@media only screen and (min-width: 766px) and (max-width: 837px) {    
+    .Banner_sec .rightside .Slider .text {display: none; }    
+}
+
+@media only screen and (max-width: 550px) {
+    .Banner_sec .rightside #slider li img {height: 200px !important; width: 100%;}	
+    .Banner_sec .rightside .Slider .text {display: none; }    
+}
+
+@media only screen and (max-width: 460px) {
+    .Banner_sec .rightside #slider li img {height: 200px !important; width: 100%;}	
+    .Banner_sec .rightside .Slider .text {display: inline; }    
+}
