@@ -290,21 +290,24 @@ html {
 }      
 
 #loader{
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0,0.8);
 	width:100vw;
 	height:100vh;  
 	position: fixed;    	
 	z-index: 999 !important;  	   
-	overflow: hidden;      
-	justify-content: center !important;
+    overflow: hidden;  
+    display: flex;    
+    justify-content: center !important;
+    text-align: center;
 }
 
 .sk-cube-grid {
     width: 40px;
-    height: 40px;    
-    margin-top: 50vh;
-    margin-left: 50% !important;    
-	justify-content: center !important;	
+    height: 40px;        
+    margin: auto;    
+	display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
   }
   
   .sk-cube-grid .sk-cube {
