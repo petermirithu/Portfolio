@@ -170,11 +170,13 @@ html {
 
 /* message homepage */
 
-.message {
-    display: inline-block;
-    transition: line-height .2s, width .2s;
-    overflow: hidden;
-    line-height: 1.2;
+.message {    
+    transition: line-height .5s, width .5s;
+    overflow: hidden;        
+}
+
+#js-name,#js-developer{
+    line-height: 2.0;
 }
 
 .hidden {

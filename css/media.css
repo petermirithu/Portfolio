@@ -113,7 +113,7 @@
 	
 	#mobile_sec { position: fixed; width: 100%;}
 	#mobile_sec .mobile { display: block; position: relative; float: right; }
-	#mobile_sec .menumobile { display: none; width: 100%; position: absolute; top: 55px; right: 0%; background: rgba(0, 0, 0, 0.5);  }
+	#mobile_sec .menumobile { display: none; width: 100%; position: absolute; top: 55px; right: 0%; background: rgba(0, 0, 0, 0.8);  }
 	#mobile_sec .menumobile .Navigation { width: 100%; float: none; }
 	#mobile_sec .menumobile .Navigation ul { float: none;}
 	#mobile_sec .menumobile .Navigation li { float: none; width: 100%; border-bottom: solid 1px rgb(194, 0, 97); }

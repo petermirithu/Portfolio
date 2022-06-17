@@ -1,12 +1,12 @@
 /* homepage message .............................................................................*/
 const messages = [
     ['I am Peter Mirithu,', 'I am Peter Mirithu, ', 'I am Peter Mirithu,  ', 'I am Peter Mirithu,    ', 'I am Peter Mirithu,     '],
-    ['Professional Software Developer', 'Back-end Developer', 'Full-stak Web Developer', 'Professional Web developer'],
+    ['Professional Software Engineer', 'Back-end Developer', 'Full-stak Web Developer', 'Professional Web developer'],
 ];
 
 const messageElements = [
-    document.querySelector('#js-error'),
-    document.querySelector('#js-apology')
+    document.querySelector('#js-name'),
+    document.querySelector('#js-developer')
 ];
 const widthElement = document.querySelector('#js-hidden');
 let lastMessageType = -1;
@@ -41,7 +41,7 @@ function swapMessage() {
         calculateWidth(messageElements[toSwapIndex], newMessage);
     }, 200);
     setTimeout(() => {
-        messageElements[toSwapIndex].style.lineHeight = '1.2';
+        messageElements[toSwapIndex].style.lineHeight = '2.0';
     }, 400);
 }
 
