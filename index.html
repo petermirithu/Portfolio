@@ -1,630 +1,927 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-<head>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio</title>    
-    <link rel="icon" type="image/png" sizes="16x16" style="border-radius:50%" href="img/logo_me.jpg">        
-    <link rel="stylesheet" href="css/bootstrap.min.css">    
-    <link rel="stylesheet" href="css/animate.css">        
-    <link rel="stylesheet" href="css/themify-icons.css">                
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">      
-    <link rel="stylesheet" href="css/font-awesome.min.css">    
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/media.css">    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/portfolio.css">    
+<head>
+	<title>Portfolio</title>
 
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="https://petermirithu.github.io/Portfolio"/>
-    <meta property="og:title" content="Portfolio" />
-    <meta property="og:image" content="https://res.cloudinary.com/pyra-z/image/upload/v1655465695/banner_bg_qsg4gq.png"/>
-    <meta property="og:description" content="I am Peter Mirithu, an objective-oriented Professional Software Engineer with a passion in solving problems." />
+	<meta charset="utf-8">
+	<meta name="author" content="Peter Mirithu">
+	<meta name="description"
+		content="I’m Peter Mirithu, a dynamic and goal-driven Software Engineer with a burning passion for Artificial Intelligence, Software Development, Mobile Apps, and Web Solutions.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="https://petermirithu.github.io/Portfolio">
-    <meta name="twitter:creator" content="Peter Mirithu">
-    <meta name="twitter:title" content="Portfolio"/>
-    <meta name="twitter:description" content="I am Peter Mirithu, an objective-oriented Professional Software Engineer with a passion in solving problems." />
-    <meta name="twitter:image" content="https://res.cloudinary.com/pyra-z/image/upload/v1655465695/banner_bg_qsg4gq.png"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor.css">
+
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://petermirithu.github.io/Portfolio" />
+	<meta property="og:title" content="Portfolio" />
+	<meta property="og:image"
+		content="https://res.cloudinary.com/pyra-z/image/upload/v1655465695/banner_bg_qsg4gq.png" />
+	<meta property="og:description"
+		content="I’m Peter Mirithu, a dynamic and goal-driven Software Engineer with a burning passion for Artificial Intelligence, Software Development, Mobile Apps, and Web Solutions." />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="https://petermirithu.github.io/Portfolio">
+	<meta name="twitter:creator" content="Peter Mirithu">
+	<meta name="twitter:title" content="Portfolio" />
+	<meta name="twitter:description"
+		content="I’m Peter Mirithu, a dynamic and goal-driven Software Engineer with a burning passion for Artificial Intelligence, Software Development, Mobile Apps, and Web Solutions." />
+	<meta name="twitter:image"
+		content="https://res.cloudinary.com/pyra-z/image/upload/v1655465695/banner_bg_qsg4gq.png" />
+
 </head>
 
-<body>        
-    <div id="loader">
-        <div class="sk-cube-grid">
-            <div class="sk-cube sk-cube1"></div>
-            <div class="sk-cube sk-cube2"></div>
-            <div class="sk-cube sk-cube3"></div>
-            <div class="sk-cube sk-cube4"></div>
-            <div class="sk-cube sk-cube5"></div>
-            <div class="sk-cube sk-cube6"></div>
-            <div class="sk-cube sk-cube7"></div>
-            <div class="sk-cube sk-cube8"></div>
-            <div class="sk-cube sk-cube9"></div>
-        </div>
-    </div>
-        
-    <header>
-        <div class="Center">
-            <div class="site-logo">                
-                <h1><a href="#">Port<span>fo</span>lio</a></h1>                
-            </div>
-            <div id="mobile_sec">
-                <div class="mobile"><i class="fa fa-bars"></i><i class="fa fa-times"></i></div>
-                    <div class="menumobile">
-                        <!-- \\ Begin Navigation \\ -->
-                        <nav class="Navigation">
-                            <ul>
-                                <li class="active">                                
-                                    <a href="#home">Home</a>
-                                    <span class="menu-item-bg"></span>
-                                </li>
-                                <li>
-                                    <a href="#about">About</a>
-                                    <span class="menu-item-bg"></span>
-                                </li>
-                                <li>
-                                    <a href="#skills">Skills</a>
-                                    <span class="menu-item-bg"></span>
-                                </li>
-                                <li>
-                                    <a href="#projects">Projects</a>
-                                    <span class="menu-item-bg"></span>
-                                </li>
-                                <li>
-                                    <a href="#footer">Contact</a>
-                                    <span class="menu-item-bg"></span>
-                                </li>
-                            </ul>
-                        </nav>                    
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </header>    
+<body id="top">
+	<!-- Navbar Section -->
+	<header>
+		<div class="row">
+			<div class="top-bar">
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-    <!--::header part start::-->
-    <div class="Banner_sec" id="home">        
-        <div class="bannerside">
-            <div class="Center">                
-                <div class="leftside">
-                    <div data-aos="fade-down" data-aos-duration="2000" class="banner_text_iner">                                                
-                        <h3>Looking For a <span>Software Engineer?</span></h3>                                                                        
-                        <div class="meso">
-                            <div class="message" id="js-name"></div>
-                            <div class="message"><i>An objective-oriented <span style="color:#007dfa" class="message" id="js-developer"></span> with a passion in solving problems.</i></div>              
-                        </div>   
+				<div class="logo">
+					<a href="index.html"></a>
+				</div>
 
-                        <a href="https://www.linkedin.com/in/peter-mirithu" class="btn_1"><i class="fa fa-linkedin"></i> LinkedIn</a>                        
-                        <a href="https://github.com/petermirithu" class="btn_2"><i class="fa fa-github"></i> Git Hub</a>                        
-                    </div>                                                                    
-                </div>                        								
-                <div class="rightside">
-                    <ul id="slider">	
-                        <li>
-                            <div class="Slider">
-                                <figure><img src="img/pet-rite.png"  alt="image"></figure>
-                                <div class="text">
-                                    <div class="Icon">
-                                        <ul>                                                                                        
-                                            <li><a href="https://petrite-bay.now.sh/"><i class="fa fa-eye"></i>View Site</a></li>                                            
-                                        </ul>	
-                                    </div>                        								
-                                    <div class="Lorem">
-                                        <p>Petrite Bay<span>Angular & Python</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+				<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll" href="#about" title="">About</a></li>
+						<li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll" href="#services" title="">Services</a></li>
+						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 
-                        <li>
-                            <div class="Slider">
-                                <figure><img src="img/kulapoaland.png"  alt="image"></figure>
-                                <div class="text">
-                                    <div class="Icon">
-                                        <ul>                                                                                        
-                                            <li><a href="https://kula-poa.now.sh/"><i class="fa fa-eye"></i>View Site</a></li>                                            
-                                        </ul>	
-                                    </div>                        								
-                                    <div class="Lorem">
-                                        <p>Kula Poa<span>Angular & Python</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+		</div>
+	</header>
 
-                        <li>
-                            <div class="Slider">
-                                <figure><img src="img/pimp&ride.png"  alt="image"></figure>
-                                <div class="text">
-                                    <div class="Icon">
-                                        <ul>                                                                                        
-                                            <li><a href="https://pimpandride.herokuapp.com/"><i class="fa fa-eye"></i>View Site</a></li>                                            
-                                        </ul>	
-                                    </div>                        								
-                                    <div class="Lorem">
-                                        <p>Pimp & Ride <span>Nodejs & Express</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+	<!-- Top Banner Section -->
+	<section id="intro">
 
-                        <li>
-                            <div class="Slider">
-                                <figure><img src="img/trans.png"  alt="image"></figure>
-                                <div class="text">
-                                    <div class="Icon">
-                                        <ul>                                                                                        
-                                            <li><a href="https://transcribex.herokuapp.com/"><i class="fa fa-eye"></i>View Site</a></li>                                            
-                                        </ul>	
-                                    </div>                        								
-                                    <div class="Lorem">
-                                        <p>Transcriber_x <span>Python & Django</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Slider">
-                                <figure><img src="img/enlighten.png" alt="image"></figure>
-                                <div class="text">
-                                    <div class="Icon">
-                                        <ul>
-                                            <li><a href="https://enlightenment254.herokuapp.com"><i class="fa fa-eye"></i>View Site</a></li>                                            
-                                        </ul>	
-                                    </div>                        								
-                                    <div class="Lorem">
-                                        <p>The Enlightenment <span>Nodejs & Express</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>                        
-                        <li>
-                            <div class="Slider">
-                                <figure><img src="img/hobbylab.png" alt="image"></figure>
-                                <div class="text">
-                                    <div class="Icon">
-                                        <ul>
-                                            <li><a href="https://hobbylab254.herokuapp.com/"><i class="fa fa-eye"></i>View Site</a></li>                                            
-                                        </ul>	
-                                    </div>                        								
-                                    <div class="Lorem">
-                                        <p>Hobby Lab<span>Python & Django</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>                                                
-                    </ul>                         
-                    <figure><img src="img/Shadow-img.png" alt="image" class="Shadow"></figure>                                                        
-                </div>                
-            </div>
-        </div>        
-        <div class="clear"></div>
-    </div>    
-    <div class="bgcolor"></div>         
-    <!-- banner part start-->
+		<div class="intro-overlay"></div>
 
-    <!-- about part start-->
-    <section id="about" class="about_part">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-4 col-lg-6">
-                    <div class="about_img ">                        
-                        <img data-aos="fade-up-right" src="animations/helloWorld.gif" class="about_img_1" alt="Hello world animatation">
-                        <img data-aos="fade-up-left" data-aos-duration="3000" src="img/banner_bg.png" class="about_img_2" alt="Peter Mirithu">
-                        <img data-aos="fade-up" src="animations/programming.gif" class="about_img_3" alt="Computer animatation">
-                    </div>
-                </div>
-                <div class="col-md-7 offset-md-1 col-lg-3 offset-lg-1">
-                    <div class="about_text">
-                        <h5><span class="ti-id-badge"></span> About Me</h5>
-                            <h2>Connect with a passionate developer</h2>
-                            <blockquote class="generic-blockquote">
-                                <p>As a web developer, I enjoy solving problems, making new applications and posing a big impact whenever I go.</p>
-                            </blockquote>                          
-                            <blockquote class="generic-blockquote">  
-                                <p>I was in Daystar doing a short course in ICDL where I started coding on my own and finally decided to join Moringa in order to boost my knowledge and efficiency in coding. In Moringa, I learned Javascript, specialized in python and taught myself PHP which was a great achievement in a week sprint while developing a real-time application.</p>
-                            </blockquote>
-                            <blockquote class="generic-blockquote">
-                                <p>Ever since my knowledge in coding has increased and I have learnt how to work under pressure thanks to Moringa School's Curriculum.</p>
-                            </blockquote>                                                            
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about part end-->
+		<div class="intro-content">
+			<div class="row">
 
-    <!-- Skills part start-->
-    <section id="skills" class="service_part section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-lg-6 col-sm-10">
-                    <div class="section_tittle">
-                        <span class="ti-stats-up iconx"></span>                    
-                        <h2>Skills</h2>                               
-                        <p>Below are the skills I posses as a web developer.</p>                        
-                    </div>
-                </div>                      
-                <div class="container">        
-                    <div class="row">
-                    <div data-aos="zoom-out-left" class="col-md-6 cardx">
-                        <h5 id="python">Language: Python</h5>
-                        <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
-                            <b style="color: white;">Strong</b>
-                        </div>
-                        </div>
-                        <hr>
-                        <img src="img/tech/python.png" width="70px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/django.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/flask.png" width="100px">
-                    </div>   
-                    <div data-aos="zoom-out-right"class="col-md-6 cardx">
-                        <h5 id="ui">User Interface</h5>
-                        <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
-                            <b style="color: white;">Strong</b>
-                        </div>
-                        </div>
-                        <hr>
-                        <img src="img/tech/html5.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/css.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/bootstrap.png" width="150px"><img src="img/tech/pug.png" width="150px">
-                    </div>
-                    </div>                    
-                    <br>
-                    <br>
-                    <div class="row">
-                    <div data-aos="zoom-out-left"  class="col-md-6 cardx">
-                        <h5 id="js">Language: Javascript</h5>
-                        <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
-                            <b style="color: white;">Strong</b>
-                        </div>
-                        </div>
-                        <hr>
-                        <img src="img/tech/js.png" width="70px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/angular.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/jquery.jpg" width="100px"><img src="img/tech/nodejs.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/express.png" width="100px">                                                  
-                    </div>
-                    <div data-aos="zoom-out-right"  class="col-md-6 cardx">
-                        <h5 id="db">Databases</h5>
-                        <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
-                            <b style="color: white;">Strong</b>
-                        </div>
-                        </div>
-                        <hr>
-                        <img src="img/tech/psql.png" width="150px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/mysql.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/mongodb.png" width="150px">
-                    </div>
-                    </div>      
-                    <br>
-                    <br>
-                    <div class="row">
-                        <div data-aos="zoom-out-left"  class="col-md-6 cardx">
-                            <h5>Language: PHP</h5>
-                            <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
-                                <b style="color: white;">Experienced</b>
-                            </div>
-                            </div>
-                            <hr>
-                            <img src="img/tech/php.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/laravel.png" width="100px">
-                        </div>                        
-                        <div data-aos="zoom-out-right"  class="col-md-6 cardx">
-                            <h5>Other Tools</h5>
-                            <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%;background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
-                                <b style="color: white;">Strong</b>
-                            </div>
-                            </div>
-                            <hr>
-                            <img src="img/tech/agile.png" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/git.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/github.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/sendgrid.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/paypal.jpg" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/tech/heroku.png" width="100px"> 
-                        </div>
-                    </div>                                                                      
-                </div>                 
-            </div>            
-        </div>
-    </section>
-    <!-- Skills part end-->
+				<div class="col-twelve">
+					
+					<h5 class="typewrite" data-period="2000" data-type='[ "Hi there!", "Welcome to my space.", "Hello, World.", "Glad you are here!", "Greetings! Step right in." ]'>
+						<span class="wrap"></span>
+					</h5>	
 
-    <!-- project part start-->
-    <section id="projects" class="blog_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-lg-6 col-sm-10">
-                    <div class="section_tittle">
-                        <span  class="ti-notepad iconx"></span>                    
-                        <h2>Projects</h2>
-                        <p>Here are a few of the projects I have worked on so far since is started programming.</p>
-                    </div>
-                </div>
-            </div>  
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-                    <div class="blog_left_sidebar">
-                        <article id="pet-rite" class="blog_item">
-                            <div class="blog_item_img">
-                                <img data-aos="fade-up" data-aos-duration="3000" class="card-img rounded-0" src="img/pet-rite.png" alt="">
-                                <div class="blog_item_date">
-                                    <h3>10</h3>
-                                    <p>December, <span style="font-size:60%">2020<span></p>
-                                    
-                                </div>
-                            </div>
+					<h1>I'm Peter Mirithu.</h1>
 
-                            <div class="blog_details">                            
-                                <h2>Petrite Bay Web Application</h2>                                
-                                <p>This is an e-commerce website which brings dog services such as dog walking, dog grooming and pet sitting closer to potential clients. It also enables clients to buy dog food remotely.</p>
-                                <p class="text-muted">Technologies: Angular, Python, Django, Javascript, CSS, Sendgrid</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="https://petrite-bay.now.sh"><span class="ti-eye"></span> View Site</a></li>
-                                    <li><a><span class="ti-info-alt"></span> Code is private</a></li>
-                                </ul>
-                            </div>
-                        </article>
+					<p class="intro-position">
+						<span>Software Engineer</span>
+					</p>
 
-                        <article id="kulapoa" class="blog_item">
-                            <div class="blog_item_img">
-                                <img data-aos="fade-up" data-aos-duration="3000" class="card-img rounded-0" src="img/kulapoaland.png" alt="">
-                                <div class="blog_item_date">
-                                    <h3>07</h3>
-                                    <p>August, <span style="font-size:60%">2020<span></p>
-                                    
-                                </div>
-                            </div>
+					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
 
-                            <div class="blog_details">                            
-                                <h2>Kula Poa Cereals and Fresh Produce Web Application</h2>                                
-                                <p>This is a progressive web app under the ecommerce website category selling  groceries and cereals. The website is installable on desktop machines as well as mobile phones.</p>
-                                <p class="text-muted">Technologies: Angular, Python, Django, Javascript, CSS, Sendgrid, Service Workers</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="https://kula-poa.now.sh/"><span class="ti-eye"></span> View Site</a></li>
-                                    <li><a><span class="ti-info-alt"></span> Code is private</a></li>
-                                </ul>
-                            </div>
-                        </article>
+				</div>
 
-                        <article id="pimp&ride" class="blog_item">
-                            <div class="blog_item_img">
-                                <img data-aos="fade-up" data-aos-duration="3000" class="card-img rounded-0" src="img/pimp&ride.png" alt="">
-                                <div class="blog_item_date">
-                                    <h3>26</h3>
-                                    <p>June, <span style="font-size:60%">2020<span></p>
-                                    
-                                </div>
-                            </div>
+			</div>
+		</div>
 
-                            <div class="blog_details">                            
-                                <h2>Pimp & Ride Web Application</h2>                                
-                                <p>A car pimping company site selling customised/pimped car parts and offering pimping services right at your door step.</p>
-                                <p class="text-muted">Technologies: Nodejs, Express Framework, Javascript, CSS, Mpesa, PassportJs.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="https://pimpandride.herokuapp.com/"><span class="ti-eye"></span> View Site</a></li>
-                                    <li><a href="https://github.com/petermirithu/Pimp-and-Ride"><span class="ti-github"></span> View Git Hub Code</a></li>                                    
-                                </ul>
-                            </div>
-                        </article>
+		<ul class="intro-social">
+			<li><a target="_blank" href="https://www.linkedin.com/in/peter-mirithu"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<li><a target="_blank" href="https://github.com/petermirithu"><i class="fa fa-github"></i></a></li>
+		</ul>
 
-                        <article id="transcriber" class="blog_item">
-                            <div class="blog_item_img">
-                                <img data-aos="fade-up" data-aos-duration="3000" class="card-img rounded-0" src="img/trans.png" alt="">
-                                <div class="blog_item_date">
-                                    <h3>30</h3>
-                                    <p>May, <span style="font-size:60%">2020<span></p>
-                                    
-                                </div>
-                            </div>
+	</section>
 
-                            <div class="blog_details">                            
-                                <h2>Transcriber_x Web Application</h2>                                
-                                <p>This is a web app that converts mp3 and wav audio file to text.</p>
-                                <p class="text-muted">Technologies: Python, Django Framework, Javascript, CSS, Cloudinary.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="https://transcribex.herokuapp.com/"><span class="ti-eye"></span> View Site</a></li>
-                                    <li><a href="https://github.com/petermirithu/Transcriber"><span class="ti-github"></span> View Git Hub Code</a></li>                                    
-                                </ul>
-                            </div>
-                        </article>
+	<!-- About me Section -->
+	<section id="about">
 
-                        <article id="enlighten" class="blog_item">
-                            <div class="blog_item_img">
-                                <img data-aos="fade-up" data-aos-duration="3000" class="card-img rounded-0" src="img/enlighten.png" alt="">
-                                <div class="blog_item_date">
-                                    <h3>05</h3>
-                                    <p>Apr, <span style="font-size:60%">2020<span></p>
-                                    
-                                </div>
-                            </div>
+		<div class="row section-intro">
+			<div class="col-twelve">
 
-                            <div class="blog_details">                            
-                                <h2>The Enlightenment Website</h2>                                
-                                <p>This is a website that offers free education to students ranging from primary level to univertsity level. They are more concerned on the development of the society all around the world.</p>
-                                <p class="text-muted">Technologies: Nodejs, Express Framework, PSQL Database, Javascript, CSS & Mobirise.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="https://enlightenment254.herokuapp.com"><span class="ti-eye"></span> View Site</a></li>
-                                    <li><a href="https://github.com/petermirithu/enlightenment"><span class="ti-github"></span> View Git Hub Code</a></li>                                    
-                                </ul>
-                            </div>
-                        </article>
-                        
-                        <article id="hobby" class="blog_item">
-                            <div class="blog_item_img">
-                                <img data-aos="fade-up" data-aos-duration="3000" class="card-img rounded-0" src="img/hobbylab.png" alt="">
-                                <div class="blog_item_date">
-                                    <h3>25</h3>
-                                    <p>Feb, <span style="font-size:60%">2020<span></p>
-                                </div>
-                            </div>
+				<h5>About</h5>
+				<h1>Let me introduce myself.</h1>
 
-                            <div class="blog_details">                                
-                                <h2>Hobby Lab Web Application</h2>                                
-                                <p>Hobby lab is a web application that connects people who share a hobby e.g: game,music,reading books and vlogs watching. It spears the world to be a better living place for two or more hobby lovers.</p>                                       
-                                <p class="text-muted">Technologies: Python, Django Framework, PSQL Database, Javascript, Vue js, CSS, & Sendgrid.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="https://hobbylab254.herokuapp.com/"><span class="ti-eye"></span> View Site</a></li>
-                                    <li><a href="https://github.com/petermirithu/hooby_lab"><span class="ti-github"></span> View Git Hub Code</a></li>
-                                </ul>
-                            </div>
-                        </article>                                                                                               
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget tag_cloud_widget">
-                            <h4 class="widget_title">Most Used Technologies</h4>
-                            <ul class="unordered-list">								
-                                <li>
-                                    <a href="#python">Python</a>
-                                </li>
-                                <li>
-                                    <a href="#python">Django Framework</a>
-                                </li>
-                                <li>
-                                    <a href="#ui">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#db">PSQL Database</a>
-                                </li>
-                                <li>
-                                    <a href="#js">Javascript</a>
-                                </li>                                
-                            </ul>
-                        </aside>
+				<div class="intro-info">
 
-                        <aside id="sidebarx" class="single_sidebar_widget post_category_widget">
-                            <br>
-                            <br>
-                            <h4 class="widget_title">Current Showing Projects</h4>
-                            <ul class="unordered-list">	                                                                                         						
-                                <li>
-                                    <a href="#pet-rite" class="d-flex">
-                                        <p>Petrite Bay Web App</p>                                        
-                                    </a>                                    
-                                </li>                                     
+					<img src="images/me.jpg" alt="Profile Picture">
 
-                                <li>
-                                    <a href="#kulapoa" class="d-flex">
-                                        <p>Kula Poa Web App</p>                                        
-                                    </a>                                    
-                                </li>                                     
+					<p class="lead">Hello, I'm Peter Mirithu, a dedicated Software Engineer with a passion for
+						AI, Software Development, Mobile Apps, and Web Solutions. My enthusiasm for problem-solving has
+						seamlessly transitioned into my career. Proficient in Python and JavaScript, I am committed to
+						creating impactful applications that benefit society.</p>
+				</div>
 
-                                <li>
-                                    <a href="#pimp&ride" class="d-flex">
-                                        <p>Pimp & Ride Web App</p>                                        
-                                    </a>                                    
-                                </li>                                                                
-                                <li>
-                                    <a href="#transcriber" class="d-flex">
-                                        <p>Transcriber_x Web App</p>                                        
-                                    </a>                                    
-                                </li>                                
+			</div>
+		</div>
 
-                                <li>
-                                    <a href="#enlighten" class="d-flex">
-                                        <p>The Enlightenment Website</p>                                        
-                                    </a>                                    
-                                </li>                                
-                                <li>
-                                    <a href="#hobby" class="d-flex">
-                                        <p>Hobby Lab Web App</p>                                        
-                                    </a>                                    
-                                </li>                                                                
-                            </ul>
-                        </aside>                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<div class="row about-content">
 
-    <!--end of project section-->          
-    <br>
-    <br>
-    <!-- footer part start-->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7 col-lg-6 col-sm-10">
-                <div class="section_tittle">
-                    <span id="contact" class="ti-comment-alt iconx"></span>                    
-                    <h2>Contact</h2>
-                    <p>You can find me via...</p>
-                </div>
-            </div>
-        </div>              
-    </div>        
-    <footer  class="footer-area">
-        <div id="footer" class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-4 col-sm-6 col-lg-4">
-                    <div class="single-footer-widget footer_1">
-                        <h4><span class="ti-heart"></span> Self Drive</h4>
-                        <blockquote class="generic-blockquote">
-                            <p>I'm objective-oriented with a passion for thoughtful websites & web applications development.</p>
-                            <p>Love team collaborations & always am ready to Learn more.</p>
-                        </blockquote>
-                    </div>
-                </div>
+			<div class="col-six tab-full">
 
-                <div class="col-xl-4 col-sm-8 col-lg-4">
-                    <div class="single-footer-widget footer_3">
-                        <h4><span class="ti-list"></span> Services</h4>
-                        <blockquote class="generic-blockquote">
-                            <p>Project Lead</p>
-                            <p>Front-end web development</p>
-                            <p>Back-end web development</p>                       
-                            <p>Freelance Job</p>
-                            <p>Contract Job</p>        
-                        </blockquote>
-                    </div>
-                </div>
+				<h3>Profile</h3>
+				<p>Currently, I am a Software Engineer at Vitafluence.ai where we develop ethical, representative,
+					empathetic and responsible AI solutions that improve human experienced quality of life.</p>
 
-                <div class="col-xl-3 col-sm-6 col-lg-4">
-                    <div class="single-footer-widget footer_2">
-                        <h4><span class="ti-user"></span> Contact Me</h4>
-                        <blockquote class="generic-blockquote">
-                            <div class="contact_info">
-                                <span class="ti-home"></span>
-                                <p>Nairobi, Kenya</p>                            
-                            </div>
-                            <div class="contact_info">
-                                <span class="ti-headphone-alt"></span>
-                                <p>+254 790 476 167</p>                            
-                            </div>
-                            <div class="contact_info">
-                                <span class="ti-email"></span>
-                                <p><a href="mailto: peter_mirithu@yahoo.com">peter_mirithu@yahoo.com</a></p>  
-                            </div>
-                            <div class="contact_info">
-                                <span class="ti-github"></span>
-                                <p><a href="https://github.com/petermirithu">Git Hub</a></p>  
-                            </div>                        
-                            <div class="contact_info">
-                                <span class="ti-linkedin"></span>
-                                <p><a href="https://www.linkedin.com/in/peter-mirithu">LinkedIn</a></p>  
-                            </div>                        
-                        </blockquote>                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="copyright_part">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <p class="footer-text m-0">Copyright &copy;&nbsp;&nbsp;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer part end-->    
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
-    <script src="js/bootstrap.min.js"></script>               
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>        
-    <script src="js/jquery.sudoSlider.min.js"></script>          
-    <script src="js/custom.js"></script>
-    <script src="js/script.js"></script>             
-     
+				<ul class="info-list">
+					<li>
+						<strong>Fullname:</strong>
+						<span>Peter Mirithu Kariithi</span>
+					</li>
+					<li>
+						<strong>Job:</strong>
+						<span>Software Engineer at Vitafluence.ai</span>
+					</li>
+					<li>
+						<strong>Email:</strong>
+						<span>peter_mirithu@yahoo.com</span>
+					</li>
+					<li>
+						<strong>Location:</strong>
+						<span>Kenya</span>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="col-six tab-full">
+
+				<h3>Skills</h3>
+				<p>I honed my programming skills at Moringa School and the United States International University -
+					Africa. Driven by a passion for continuous learning, I am always seeking to expand my expertise and
+					stay at the forefront of technology.</p>
+
+				<ul class="skill-bars">
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Python</strong>
+						<span>Django & Flask</span>
+					</li>
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Javascript</strong>
+						<span>NodeJS</span>
+					</li>
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Databases</strong>
+						<span>MongoDB, MySQL & PostgreSQL</span>
+					</li>
+					<li>
+						<div class="progress percent85"><span>85%</span></div>
+						<strong>User Interface</strong>
+						<span>ReactJS, React Native & Angular</span>
+					</li>
+					<li>
+						<div class="progress percent85"><span>85%</span></div>
+						<strong>Deployment</strong>
+						<span>Amazon Web Services, Google Cloud Platform & Vercel</span>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class="row button-section">
+			<div class="col-twelve">
+				<a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
+				<a target="_blank" href="https://docs.google.com/document/d/1RGk_XHW7Jc2znHHAfRiZv6PSFFaj3u-QeiyMVWfAlNQ/edit?usp=sharing" title="Download CV" class="button button-primary">Download CV</a>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Resume Section -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Resume</h5>
+				<h1>More of my credentials.</h1>
+
+				<p class="lead">Let's dive deep into my career and school journey.</p>
+
+			</div>
+		</div>
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Work Experience</h2>
+
+			</div>
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Software Engineer - Internship</h3>
+							<p>May 2024 - Present</p>
+							<p>Germany</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Vitafluence.ai</h4>
+							<p>I collaborate with diverse teams to develop innovative AI health solutions, focusing
+								primarily on the development of AI models and resolving various technical issues. I am
+								often called upon for quick fixes when any team encounters challenges. Notably, I had
+								the privilege of developing Xaidi, an AI health companion designed for the
+								neurodivergent community. Additionally, I represented the company as an exhibitor at
+								VivaTech 2024 in Paris, France, showcasing our cutting-edge AI technologies.</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Software Engineer - Part Time</h3>
+							<p>Oct 2020 - Apr 2024</p>
+							<p>Kenya</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>iZola Limited</h4>
+							<p>I have extensive experience collaborating with diverse teams on significant projects.
+								This includes taking part in the development of a research application for data
+								collection in Kenya and Germany, designing and developing the iZola Therapeutic Platform
+								connecting clients and therapists, and designing and developing an administrative
+								dashboard for managing profiles and payments. Additionally, I've represented the company
+								at community events, including engagements at Ayira's Neuro-Soul Cafe in Westlands,
+								Kenya, showcasing our innovative solutions and community involvement.</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Education</h2>
+
+			</div>
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Bachelor Degree</h3>
+							<p>May 2020 - Oct 2024</p>
+							<p>Kenya</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>United States International University - Africa</h4>
+							<p>During my time at United States International University - Africa, pursuing a Bachelor of
+								Science in Applied Computer Technology with a focus on Computer Software Engineering, I
+								engaged in a diverse range of projects. These included developing chatbots, exploring
+								machine learning applications, and tackling networking projects. Alongside my academic
+								pursuits, I maintained a strong GPA of 3.621, demonstrating my dedication to both
+								theoretical knowledge and practical application in the field of computer technology and
+								software engineering.</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Certificate of Excellence in Software Development</h3>
+							<p>Sep 2019 - Feb 2020</p>
+							<p>Kenya</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Moringa School</h4>
+							<p>At Moringa School, I embarked on a transformative journey into coding and programming,
+								earning a Certificate of Excellence in Software Development and Full-Stack Web
+								Development. During this immersive experience, I honed my skills in JavaScript,
+								specialized in Python, and independently mastered PHP within a rigorous two-week
+								application development sprint. Engaging as a project manager, I cultivated expertise in
+								team leadership and embraced a disciplined, objective-oriented approach, gaining
+								invaluable insights into agile methodologies like Scrum. Moringa School not only
+								equipped me with technical prowess but also instilled a deep commitment to continuous
+								learning and adopting industry best practices.</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Certificate of Attendance</h3>
+							<p>Apr 2019 - Jun 2019</p>
+							<p>Zambia</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Foundation for Cross-cultural Education</h4>
+							<p>My time at the Foundation for Cross-cultural Education (FCE) in Zambia was
+								transformative. It was here that I discovered profound insights into my identity and
+								faith journey. Through immersive experiences and cultural exchanges, I gained a deeper
+								understanding of God's purpose in my life. FCE provided a unique environment for
+								personal growth and spiritual reflection, shaping my perspective and fostering lasting
+								connections with fellow participants from diverse backgrounds.</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Certificate of participation in ICT Competence</h3>
+							<p>Jan 2019 - Apr 2019</p>
+							<p>Kenya</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Daystar University</h4>
+							<p>During my time at Daystar University, I furthered my skills in Information Computer
+								Technology, building upon the foundations laid during my high school and primary
+								education. The Certificate of Participation in ICT Competence reflects my dedication to
+								mastering essential technologies and methodologies essential in the field. It was here
+								that I expanded my practical knowledge and developed a deeper understanding of computer
+								systems, laying the groundwork for my professional journey in software and AI
+								engineering.</p>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- Portfolio section -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Portfolio</h5>
+				<h1>Check Out Some of My Projects.</h1>
+
+				<p class="lead">Here are a few of the projects I have worked on including those at my place of work.</p>
+
+			</div>
+		</div>
+
+		<div class="row portfolio-content">
+
+			<div class="col-twelve">
+
+				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/usiu_chat_bot.png" alt="usiu chat bot">
+							<a href="#modal-01" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">USIU-A Chat Bot</h3>
+										<span class="folio-types">This is an AI-driven virtual assistant designed to streamline communication, improve information accessibility, and enhance the overall experience for students, faculty, and staff at the university.</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> 
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/email_assistant.png" alt="email assistant">
+							<a href="#modal-02" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Email Assistant</h3>
+										<span class="folio-types">
+											This a Desktop App designed to automate the extraction and prioritization of key action points from emails, significantly reducing the manual workload for secretaries.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> 
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/pet_rite.png" alt="petrite bay">
+							<a href="#modal-03" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Petrite Bay</h3>
+										<span class="folio-types">
+											This is an e-commerce Web App which brings dog services such as dog walking, dog grooming and pet sitting closer to potential clients. It also enables clients to buy dog food remotely.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> 					
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/pimp_and_ride.png" alt="Pimp and Ride">
+							<a href="#modal-05" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Pimp & Ride</h3>
+										<span class="folio-types">
+											This is a Web application for a car pimping dealer company that sells customized car parts and offers doorstep pimping services, featuring user authentication, profile management, and seamless shopping and payment experiences.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>					
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/enlightenment.png" alt="enlightenment">
+							<a href="#modal-06" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Enlightenment</h3>
+										<span class="folio-types">
+											This web application provides free online education resources, including courses, study materials, and volunteer teaching, to support learners at all levels.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>					
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/hobby_lab.png" alt="hobby lab">
+							<a href="#modal-07" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Hobby Lab</h3>
+										<span class="folio-types">
+											Hobby lab is a web application that connects people who share a hobby e.g: game,music,reading books and vlogs watching. It spears the world to be a better living place for two or more hobby lovers.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/transcriber_x.png" alt="transcriber x">
+							<a href="#modal-08" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Transcriber X</h3>
+										<span class="folio-types">
+											This innovative web app allows users to easily convert audio files in MP3 and WAV formats into written text, making it simple to transcribe spoken content for various purposes such as note-taking, content creation, and accessibility.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/iDiscovery.png" alt="iDiscovery">
+							<a href="#modal-04" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">iDiscovery</h3>
+										<span class="folio-types">
+											This Mobile App allows users to enter, store, and manage detailed reports about cultural and social activities they attend, supporting essential functionalities such as event details input, validation, storage in SQLite databases, search capabilities, and report additions.
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div> 
+					
+					<!-- Modal Pop Up Section -->
+					<div id="modal-01" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/usiu_chat_bot.png" alt="usiu chat bot" />
+						</div>
+
+						<div class="description-box">
+							<h4>USIU-A Chat Bot</h4>
+							<p>The chatbot provides instant, accurate responses to inquiries about course registration, academic requirements, campus facilities, and FAQs, offering 24/7 support. It reduces reliance on emails, phone calls, and in-person interactions, alleviating the administrative workload by handling routine questions and tasks.</p>
+
+							<div class="categories">Technologies:- Expo React Native, Python-Django, Langchain, Open AI, Chroma DB & Mongo DB</div>							
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu?tab=repositories&q=usiu_chat_bot">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+
+					<div id="modal-02" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/email_assistant.png" alt="email assistant" />
+						</div>
+
+						<div class="description-box">
+							<h4>Email Assistant</h4>
+							<p>The Email Assistant listens to incoming emails, scans for key action points, prioritizes tasks, provides summaries, categorizes and sorts emails, reduces manual review time, manages email overload, and boosts productivity and communication efficiency.</p>
+
+							<div class="categories">Technologies:- Electron JS, Node JS, Python-Django, Mongo DB, Langchain & Open AI</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu?tab=repositories&q=email_assistant">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div> 
+
+					<div id="modal-03" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/pet_rite.png" alt="petrite bay" />
+						</div>
+
+						<div class="description-box">
+							<h4>Petrite Bay</h4>
+							<p>This web app offers essential services for dog owners, including scheduled dog walking for regular exercise, grooming appointments for hygiene and appearance, customized exercise and training programs to improve fitness and behavior, and reliable pet sitting for peace of mind during busy times. With convenient features like pickup and delivery, it ensures dogs receive top-notch care while owners manage their daily routines confidently.</p>
+
+							<div class="categories">Technologies:- Angular, Javascript, CSS & Python-Django</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu?tab=repositories&q=petrite">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+
+					<div id="modal-04" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/iDiscovery.png" alt="iDiscovery" />
+						</div>
+
+						<div class="description-box">
+							<h4>iDiscovery</h4>
+							<p>This app enhances cultural and social engagement by enabling users to input, store, and manage event details with ease. It ensures data accuracy through validation, utilizes SQLite for secure storage and retrieval, supports comprehensive search capabilities, and allows users to enrich their records with descriptive reports, fostering a more connected and organized approach to documenting their experiences.</p>
+
+							<div class="categories">Technologies:- Expo React Native, Java, Android Studio, SQLite & Native Base</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu/iDiscovery-React-Native">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+
+					<div id="modal-05" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/pimp_and_ride.png" alt="pimp and ride" />
+						</div>
+
+						<div class="description-box">
+							<h4>Pimp & Ride</h4>
+							<p>This Node.js application for a car pimping dealer offers a seamless platform for purchasing customized car parts and scheduling doorstep pimping services. Users can sign up, log in, manage profiles, add items to a cart, view order summaries, and make payments using Mpesa, all within a user-friendly interface.</p>
+
+							<div class="categories">Technologies:- Node JS, Express, Bootstrap4, CSS4, PSQL database, PassportJS & Mpesa</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu/Pimp-and-Ride">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+
+					<div id="modal-06" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/enlightenment.png" alt="enlightenment" />
+						</div>
+
+						<div class="description-box">
+							<h4>Enlightenment</h4>
+							<p>This website offers free education from primary to university levels, focusing on global societal development. It provides online studies, affordable certificate courses, and volunteer teachers. With resources like online libraries and video databases, it aims to "Forge the Future" by making education accessible to all and seeks support to expand its reach and resources.</p>
+
+							<div class="categories">Technologies:- Nodejs, Express, PSQL Database, Javascript, CSS & Mobirise</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu/enlightenment">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+
+					<div id="modal-07" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/hobby_lab.png" alt="hobby lab" />
+						</div>
+
+						<div class="description-box">
+							<h4>Hobby Lab</h4>
+							<p>This is a web application that connects people with shared hobbies like gaming, music, reading, and vlogs. It allows users to sign in, sign up, view and update profiles, play tic-tac-toe, join chat rooms, view user profiles, listen to music, and log out, fostering a sense of community among hobby enthusiasts.</p>
+
+							<div class="categories">Technologies:- Python, Django Framework, PSQL Database, Javascript, Vue js, CSS, & Sendgrid</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu/hooby_lab">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+
+					</div>
+
+					<div id="modal-08" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/transcriber_x.png" alt="transcriber x" />
+						</div>
+
+						<div class="description-box">
+							<h4>Transcriber X</h4>
+							<p>This project converts MP3 and WAV audio files into text. It offers a user-friendly interface for uploading audio files, which are processed using advanced speech recognition algorithms. With Django ensuring seamless integration and scalability, and JavaScript and CSS enhancing the user experience, the app delivers fast and accurate transcriptions. It caters to various needs, from transcription services to accessibility and content creation.</p>
+
+							<div class="categories">Technologies:- Python, Django Framework, Javascript, CSS & Cloudinary</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/petermirithu/Transcriber">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div> 														
+				</div> 
+			</div> 
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Services</h5>
+				<h1>What Can I Do For You?</h1>
+
+				<p class="lead">Below are some of the services I offer to help bring your projects to life and ensure they run smoothly and efficiently.</p>
+
+			</div>
+		</div> 
+
+		<div class="row services-content">
+
+			<div id="owl-slider" class="owl-carousel services-list">
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-mobile"></i></span>
+
+					<div class="service-content">
+
+						<h3>Mobile Application Development</h3>
+
+						<p class="desc">I specialize in creating cross-platform mobile applications using React Native, ensuring seamless performance on both Google Play Store and Apple App Store. From development to deployment, I handle the entire process to bring your app ideas to life.</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-window"></i></span>
+
+					<div class="service-content">
+
+						<h3>Web Application Development</h3>
+
+						<p class="desc">Leveraging technologies such as React.js, JavaScript, Angular, Node.js, and Django, I develop robust and dynamic web applications tailored to your specific needs. My expertise ensures a smooth, user-friendly experience across all devices.</p>
+
+					</div>
+
+				</div> 
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-chat"></i></span>
+
+					<div class="service-content">
+
+						<h3>Chatbot Development</h3>
+
+						<p class="desc">With extensive knowledge in multi-modal generative AI, I design and develop intelligent chatbots and automated systems. These can integrate with your existing applications to enhance user interaction and streamline operations, making life easier and more efficient.</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-cloud"></i></span>
+
+					<div class="service-content">
+
+						<h3>DevOps</h3>
+
+						<p class="desc">I offer comprehensive DevOps services, deploying applications to AWS or Google Cloud Platform. My solutions ensure scalability, reliability, and continuous integration and delivery for your projects.</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-calendar"></i></span>
+
+					<div class="service-content">
+
+						<h3>Consultancy</h3>
+
+						<p class="desc">I provide expert consultancy services to support your team in various areas of software development, AI, and IT strategy. Whether you need guidance on a specific project or ongoing support, I'm here to help you achieve your goals.</p>
+
+					</div>
+
+				</div>			
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- What I stand for Section-->
+	<section id="cta" class="grey-section">
+
+		<div class="row cta-content">
+
+			<div class="col-twelve section-ads">
+
+				<h2 class="h01">What stand for</h2>
+				
+				<aside class="pull-quote">
+					<blockquote cite="https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand#:~:text=Any%20fool%20can%20write%20code%20that%20a%20computer%20can%20understand,code%20that%20humans%20can%20understand.">
+						<p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>						
+						<cite>
+							<a target="_blank" href="https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand#:~:text=Any%20fool%20can%20write%20code%20that%20a%20computer%20can%20understand,code%20that%20humans%20can%20understand.">Martin Fowler</a>
+						 </cite>
+					 </blockquote>
+				 </aside>
+
+				<div class="action">					
+					<a href="#contact" title="Contact Me" class="button button-primary large smoothscroll">Let's write good code</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section> 
+	
+	<!-- Contact Section -->
+	<section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Contact</h5>
+				<h1>I'd Love To Hear From You.</h1>
+
+				<p class="lead">Whether you have questions, feedback, or just want to connect, feel free to reach out. You can contact me via email, connect with me on LinkedIn, or follow my projects on GitHub. Looking forward to connecting with you!</p>
+
+			</div>
+		</div>
+		
+		<div class="row contact-info">
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<i class="icon-car"></i>
+				</div>
+
+				<h5>Self Drive powered by:</h5>
+				<p>Passion, Hardwork & Goal-orientation</p>
+
+			</div>
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
+
+				<h5>Where to find me</h5>
+				<p>Nairobi, Kenya.</p>
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
+
+				<h5>Email Me At</h5>
+				<p>peter_mirithu@yahoo.com</p>
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Footer Section  -->
+	<footer>
+		<div class="row">
+			<div class="col-six tab-full pull-right social">
+				<ul class="footer-social">
+					<li><a target="_blank" href="https://www.linkedin.com/in/peter-mirithu"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li><a target="_blank" href="https://github.com/petermirithu"><i class="fa fa-github"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="col-six tab-full">
+				<div class="copyright">
+					<span>Copyright &copy;&nbsp;&nbsp;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+					</span>					
+				</div>
+			</div>			
+
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
+
+		</div> <!-- /row -->
+	</footer>	
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+	<!-- Java Script
+   ================================================== -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>
