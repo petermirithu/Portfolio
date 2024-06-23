@@ -1,4 +1,4 @@
-<img src="./img/software.png" alt="Hello" width="100%">
+<img src="./software.png" alt="Hello" width="100%">
 
 # 👋 Hi there!
 💬 I am <b>Peter Mirithu</b>, an objective-oriented Professional Software Engineer with a passion in programming.
