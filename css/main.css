@@ -2044,10 +2044,11 @@ header .logo a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 	color: white;
-	position: relative;
+	position: relative;	
 }
 #services .overlay {
 	position: absolute;
