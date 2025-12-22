@@ -10,6 +10,11 @@
 		content="I’m Peter Mirithu, a dynamic and goal-driven Software Engineer with a burning passion for Artificial Intelligence, Software Development, Mobile Apps, and Web Solutions.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- Preload critical resources -->
+	<link rel="preload" href="css/base.css" as="style">
+	<link rel="preload" href="css/main.css" as="style">
+	<link rel="preload" href="images/intro-bg.jpg" as="image">
+
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/vendor.css">
@@ -73,10 +78,11 @@
 			<div class="row">
 
 				<div class="col-twelve">
-					
-					<h5 class="typewrite" data-period="2000" data-type='[ "Hi there!", "Welcome to my space.", "Hello, World.", "Glad you are here!", "Greetings! Step right in." ]'>
+
+					<h5 class="typewrite" data-period="2000"
+						data-type='[ "Hi there!", "Welcome to my space.", "Hello, World.", "Glad you are here!", "Greetings! Step right in." ]'>
 						<span class="wrap"></span>
-					</h5>	
+					</h5>
 
 					<h1>I'm Peter Mirithu.</h1>
 
@@ -112,10 +118,18 @@
 
 					<img src="images/me.jpg" alt="Profile Picture">
 
-					<p class="lead">Hello, I'm Peter Mirithu, a dedicated Software Engineer with a passion for
-						AI, Software Development, Mobile Apps, and Web Solutions. My enthusiasm for problem-solving has
-						seamlessly transitioned into my career. Proficient in Python and JavaScript, I am committed to
-						creating impactful applications that benefit society.</p>
+					<p class="lead">
+						Hello, I'm Peter Mirithu. I've always been enthusiastic about problem-solving ever since I
+						turned the age of
+						accountability. As a Software Engineer now, I get to enjoy
+						solving problems of various kinds, making new applications, and posing a significant impact
+						wherever I go. I would say that if I had a
+						superpower, it would be problem-solving. I love working with Python and Javascript and I have a
+						strong passion for them. My main interests
+						are Software Development, Mobile Application Development, developing and working with AI Models,
+						and Website and web application
+						development.
+					</p>
 				</div>
 
 			</div>
@@ -144,7 +158,7 @@
 					</li>
 					<li>
 						<strong>Location:</strong>
-						<span>Kenya</span>
+						<span>Nairobi, Kenya</span>
 					</li>
 
 				</ul>
@@ -178,7 +192,7 @@
 						<div class="progress percent85"><span>85%</span></div>
 						<strong>User Interface</strong>
 						<span>ReactJS, React Native & Angular</span>
-					</li>					
+					</li>
 					<li>
 						<div class="progress percent85"><span>85%</span></div>
 						<strong>Deployment</strong>
@@ -199,7 +213,9 @@
 		<div class="row button-section">
 			<div class="col-twelve">
 				<a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
-				<a target="_blank" href="https://drive.google.com/file/d/1Z3svG_PjpTM_P5Ylb3WLXbrSiCFrACZY/view?usp=sharing" title="Download CV" class="button button-primary">Download CV</a>
+				<a target="_blank"
+					href="https://drive.google.com/file/d/1f0mfoxkI_-nkwpd0Thr6G3UARz8kHah4/view?usp=sharing"
+					title="Download CV" class="button button-primary">Download CV</a>
 			</div>
 		</div>
 
@@ -240,12 +256,28 @@
 						<div class="timeline-header">
 							<h3>Software Engineer - Full Time</h3>
 							<p>August 2024 - Present</p>
-							<p>Kenya</p>
+							<p>Nairobi, Kenya</p>
 						</div>
 
 						<div class="timeline-content">
 							<h4>Vitafluence.ai</h4>
-							<p>I specialize in developing AI agents, tools, and multi-agent systems, with a focus on mobile-friendly web and app interfaces. My skills cover building front-end and back-end components, as well as APIs for seamless communication between AI agents and tools. I work closely with designers to create visually appealing, AI-driven interfaces and stay up-to-date with the latest web and AI technologies. I also deploy and manage scalable applications on cloud platforms like AWS and Google Cloud.</p>
+							<ul>
+								<li>Developed AI-powered agents for Lakesai using Python, Django, and Langchain,
+									enabling seamless communication with external databases, accelerating research
+									workflows.</li>
+								<li>Designed a Windows desktop extraction software running Python scripts to process
+									data collected by Neurobee, facilitating data analysis.</li>
+								<li>Currently developing and training a gaze tracker machine learning model using
+									Python, OpenCV, and Random Forest algorithm to enhance diagnostic accuracy.</li>
+								<li>Resolved critical deployment challenges by creating a temporary AWS server to route
+									traffic while troubleshooting Google Cloud Platform issues, ensuring uninterrupted
+									service.</li>
+								<li>Collaborate closely with cross-functional teams, including AI model developers and
+									designers, to deliver visually appealing, AI-driven mobile and web interfaces.</li>
+								<li>Deploy and manage scalable applications on cloud platforms such as AWS and Google
+									Cloud, leveraging Python and React Native for front-end and back-end development.
+								</li>
+							</ul>
 						</div>
 
 					</div>
@@ -259,17 +291,31 @@
 						<div class="timeline-header">
 							<h3>Software Engineer - Internship</h3>
 							<p>May 2024 - July 2024</p>
-							<p>Germany</p>
+							<p>Frankfurt am Main, Germany</p>
 						</div>
 
 						<div class="timeline-content">
 							<h4>Vitafluence.ai</h4>
-							<p>I collaborate with diverse teams to develop innovative AI health solutions, focusing
-								primarily on the development of AI models and resolving various technical issues. I am
-								often called upon for quick fixes when any team encounters challenges. Notably, I had
-								the privilege of developing Xaidi, an AI health companion designed for the
-								neurodivergent community. Additionally, I represented the company as an exhibitor at
-								VivaTech 2024 in Paris, France, showcasing our cutting-edge AI technologies.</p>
+							<ul>
+								<li>Developed a teaching assistant AI agent for Lakesai, including an internal mobile
+									app version, enhancing learning support for students and researchers.</li>
+								<li>Created integration for AI-powered note-taking functionality similar to Notion,
+									improving user productivity.</li>
+								<li>Fixed critical issue allowing users to stop generative AI text mid-response,
+									significantly improving user control and product experience.</li>
+								<li>Built and deployed Xaidi, an AI health companion for the neurodivergent community,
+									including mobile apps (React Native), backend servers (Python Django, Node.js), and
+									AI models; deployed on Google Play Store, TestFlight, and AWS.</li>
+								<li>Added multi-agent support to Xaidi, enabling simultaneous responses to multiple
+									queries, greatly enhancing app capabilities.</li>
+								<li>Represented Vitafluence.ai at VivaTech 2024 in Paris, showcasing Xaidi and emotion
+									recognition AI models, promoting company innovations.</li>
+								<li>Collaborated cross-functionally with diverse teams to develop AI health solutions,
+									primarily using React Native, Python Django, Node.js, MongoDB, and ChromaDB for AI
+									embeddings.</li>
+								<li>Gained proficiency in React.js while working on Lakesai frontend, enhancing
+									front-end development skills.</li>
+							</ul>
 						</div>
 
 					</div>
@@ -283,18 +329,31 @@
 						<div class="timeline-header">
 							<h3>Software Engineer - Part Time</h3>
 							<p>Oct 2020 - Apr 2024</p>
-							<p>Kenya</p>
+							<p>Nairobi, Kenya</p>
 						</div>
 
 						<div class="timeline-content">
-							<h4>iZola Limited</h4>
-							<p>I have extensive experience collaborating with diverse teams on significant projects.
-								This includes taking part in the development of a research application for data
-								collection in Kenya and Germany, designing and developing the iZola Therapeutic Platform
-								connecting clients and therapists, and designing and developing an administrative
-								dashboard for managing profiles and payments. Additionally, I've represented the company
-								at community events, including engagements at Ayira's Neuro-Soul Cafe in Westlands,
-								Kenya, showcasing our innovative solutions and community involvement.</p>
+							<h4>iZola LTD</h4>
+							<ul>
+								<li>Enabled multi-language support (English/Swahili) for the Izuri research application,
+									improving accessibility for diverse users.</li>
+								<li>Implemented audio capture functionality and resolved bugs promptly to ensure smooth
+									operation of the Izuri web app.</li>
+								<li>Created and maintain Neurobee, an Android tablet app aiding early diagnosis of
+									selective mutism and autism spectrum disorder in children, supporting ongoing
+									research through regular updates and issue resolution.</li>
+								<li>Developed client and therapist pages for the iZola Therapeutic Platform, creating
+									APIs, managing databases, and ensuring intuitive UI/UX using Angular, Node.js, and
+									MongoDB.</li>
+								<li>Built an AI chatbot for user support on the Therapeutic Platform, enhancing client
+									and therapist experience.</li>
+								<li>Designed and managed an administrative dashboard for user authentication, session
+									tracking, and revenue monitoring, streamlining therapist-client management.</li>
+								<li>Represented iZola LTD at community events as a technical expert, addressing
+									technical queries and assisting users with the Therapeutic Platform.</li>
+								<li>Successfully balanced multiple projects by prioritizing tasks and managing time
+									effectively to meet deadlines and deliver quality results.</li>
+							</ul>
 						</div>
 
 					</div>
@@ -324,8 +383,8 @@
 
 						<div class="timeline-header">
 							<h3>Bachelor Degree</h3>
-							<p>May 2020 - Oct 2024</p>
-							<p>Kenya</p>
+							<p>May 2020 - Aug 2024</p>
+							<p>Nairobi, Kenya</p>
 						</div>
 
 						<div class="timeline-content">
@@ -348,9 +407,57 @@
 						</div>
 
 						<div class="timeline-header">
+							<h3>Certificate of Achievement</h3>
+							<p>Apr 2025</p>
+							<p>Nairobi, Kenya</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>AI Campus – The Learning Platform for Artificial Intelligence</h4>
+							<p>I earned a Certificate of Achievement from AI Campus, a leading learning platform
+								for Artificial Intelligence. This certification reflects my dedication to
+								advancing my knowledge and skills in AI technologies, machine learning concepts,
+								and practical applications in the field of artificial intelligence.</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Certificate of Recognition</h3>
+							<p>Aug 2024 - Oct 2024</p>
+							<p>Nairobi, Kenya</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>A2SV | Africa to Silicon Valley</h4>
+							<p>I received a Certificate of Recognition from A2SV (Africa to Silicon Valley) for
+								participating in a hackathon where my team and I developed KilimoGuard – an
+								AI-powered platform focused on predicting and managing crop pests in East Africa.
+								I worked on the backed mainly, built with Django which powered the
+								platform's core services, including AI-driven pest prediction, user
+								authentication, and data management. This experience highlights my commitment to
+								technical excellence and contribution to the growing tech ecosystem in Africa.
+							</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
 							<h3>Certificate of Excellence in Software Development</h3>
-							<p>Sep 2019 - Feb 2020</p>
-							<p>Kenya</p>
+							<p>Aug 2019 - Jan 2020</p>
+							<p>Nairobi, Kenya</p>
 						</div>
 
 						<div class="timeline-content">
@@ -375,9 +482,9 @@
 						</div>
 
 						<div class="timeline-header">
-							<h3>Certificate of Attendance</h3>
+							<h3>Certificate of Attendance in Discipleship Mission Training</h3>
 							<p>Apr 2019 - Jun 2019</p>
-							<p>Zambia</p>
+							<p>Kalungu, Zambia</p>
 						</div>
 
 						<div class="timeline-content">
@@ -401,7 +508,7 @@
 						<div class="timeline-header">
 							<h3>Certificate of participation in ICT Competence</h3>
 							<p>Jan 2019 - Apr 2019</p>
-							<p>Kenya</p>
+							<p>Nairobi, Kenya</p>
 						</div>
 
 						<div class="timeline-content">
@@ -446,91 +553,105 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/usiu_chat_bot.png" alt="usiu chat bot">
+							<img loading="lazy" src="images/portfolio/usiu_chat_bot.jpg" alt="usiu chat bot">
 							<a href="#modal-01" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">USIU-A Chat Bot</h3>
-										<span class="folio-types">This is an AI-driven virtual assistant designed to streamline communication, improve information accessibility, and enhance the overall experience for students, faculty, and staff at the university.</span>
+										<span class="folio-types">This is an AI-driven virtual assistant designed to
+											streamline communication, improve information accessibility, and enhance the
+											overall experience for students, faculty, and staff at the
+											university.</span>
 									</div>
 								</div>
 							</a>
 						</div>
-					</div> 
+					</div>
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/email_assistant.png" alt="email assistant">
+							<img loading="lazy" src="images/portfolio/email_assistant.jpg" alt="email assistant">
 							<a href="#modal-02" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">Email Assistant</h3>
 										<span class="folio-types">
-											This a Desktop App designed to automate the extraction and prioritization of key action points from emails, significantly reducing the manual workload for secretaries.
+											This a Desktop App designed to automate the extraction and prioritization of
+											key action points from emails, significantly reducing the manual workload
+											for secretaries.
 										</span>
 									</div>
 								</div>
 							</a>
 						</div>
-					</div> 
+					</div>
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/pet_rite.png" alt="petrite bay">
+							<img loading="lazy" src="images/portfolio/pet_rite.jpg" alt="petrite bay">
 							<a href="#modal-03" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">Petrite Bay</h3>
 										<span class="folio-types">
-											This is an e-commerce Web App which brings dog services such as dog walking, dog grooming and pet sitting closer to potential clients. It also enables clients to buy dog food remotely.
+											This is an e-commerce Web App which brings dog services such as dog walking,
+											dog grooming and pet sitting closer to potential clients. It also enables
+											clients to buy dog food remotely.
 										</span>
 									</div>
 								</div>
 							</a>
 						</div>
-					</div> 					
+					</div>
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/pimp_and_ride.png" alt="Pimp and Ride">
+							<img loading="lazy" src="images/portfolio/pimp_and_ride.jpg" alt="Pimp and Ride">
 							<a href="#modal-05" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">Pimp & Ride</h3>
 										<span class="folio-types">
-											This is a Web application for a car pimping dealer company that sells customized car parts and offers doorstep pimping services, featuring user authentication, profile management, and seamless shopping and payment experiences.
+											This is a Web application for a car pimping dealer company that sells
+											customized car parts and offers doorstep pimping services, featuring user
+											authentication, profile management, and seamless shopping and payment
+											experiences.
 										</span>
 									</div>
 								</div>
 							</a>
 						</div>
-					</div>					
+					</div>
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/enlightenment.png" alt="enlightenment">
+							<img loading="lazy" src="images/portfolio/enlightenment.jpg" alt="enlightenment">
 							<a href="#modal-06" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">Enlightenment</h3>
 										<span class="folio-types">
-											This web application provides free online education resources, including courses, study materials, and volunteer teaching, to support learners at all levels.
+											This web application provides free online education resources, including
+											courses, study materials, and volunteer teaching, to support learners at all
+											levels.
 										</span>
 									</div>
 								</div>
 							</a>
 						</div>
-					</div>					
+					</div>
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/hobby_lab.png" alt="hobby lab">
+							<img loading="lazy" src="images/portfolio/hobby_lab.jpg" alt="hobby lab">
 							<a href="#modal-07" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">Hobby Lab</h3>
 										<span class="folio-types">
-											Hobby lab is a web application that connects people who share a hobby e.g: game,music,reading books and vlogs watching. It spears the world to be a better living place for two or more hobby lovers.
+											Hobby lab is a web application that connects people who share a hobby e.g:
+											game,music,reading books and vlogs watching. It spears the world to be a
+											better living place for two or more hobby lovers.
 										</span>
 									</div>
 								</div>
@@ -540,13 +661,16 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/transcriber_x.png" alt="transcriber x">
+							<img loading="lazy" src="images/portfolio/transcriber_x.jpg" alt="transcriber x">
 							<a href="#modal-08" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">Transcriber X</h3>
 										<span class="folio-types">
-											This innovative web app allows users to easily convert audio files in MP3 and WAV formats into written text, making it simple to transcribe spoken content for various purposes such as note-taking, content creation, and accessibility.
+											This innovative web app allows users to easily convert audio files in MP3
+											and WAV formats into written text, making it simple to transcribe spoken
+											content for various purposes such as note-taking, content creation, and
+											accessibility.
 										</span>
 									</div>
 								</div>
@@ -556,36 +680,44 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/iDiscovery.png" alt="iDiscovery">
+							<img loading="lazy" src="images/portfolio/iDiscovery.jpg" alt="iDiscovery">
 							<a href="#modal-04" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
 										<h3 class="folio-title">iDiscovery</h3>
 										<span class="folio-types">
-											This Mobile App allows users to enter, store, and manage detailed reports about cultural and social activities they attend, supporting essential functionalities such as event details input, validation, storage in SQLite databases, search capabilities, and report additions.
+											This Mobile App allows users to enter, store, and manage detailed reports
+											about cultural and social activities they attend, supporting essential
+											functionalities such as event details input, validation, storage in SQLite
+											databases, search capabilities, and report additions.
 										</span>
 									</div>
 								</div>
 							</a>
 						</div>
-					</div> 
-					
+					</div>
+
 					<!-- Modal Pop Up Section -->
 					<div id="modal-01" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/modals/usiu_chat_bot.png" alt="usiu chat bot" />
+							<img loading="lazy" src="images/portfolio/modals/usiu_chat_bot.jpg" alt="usiu chat bot" />
 						</div>
 
 						<div class="description-box">
 							<h4>USIU-A Chat Bot</h4>
-							<p>The chatbot provides instant, accurate responses to inquiries about course registration, academic requirements, campus facilities, and FAQs, offering 24/7 support. It reduces reliance on emails, phone calls, and in-person interactions, alleviating the administrative workload by handling routine questions and tasks.</p>
+							<p>The chatbot provides instant, accurate responses to inquiries about course registration,
+								academic requirements, campus facilities, and FAQs, offering 24/7 support. It reduces
+								reliance on emails, phone calls, and in-person interactions, alleviating the
+								administrative workload by handling routine questions and tasks.</p>
 
-							<div class="categories">Technologies:- Expo React Native, Python-Django, Langchain, Open AI, Chroma DB & Mongo DB</div>							
+							<div class="categories">Technologies:- Expo React Native, Python-Django, Langchain, Open AI,
+								Chroma DB & Mongo DB</div>
 						</div>
 
 						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu?tab=repositories&q=usiu_chat_bot">Details</a>
+							<a target="_blank"
+								href="https://github.com/petermirithu?tab=repositories&q=usiu_chat_bot">Details</a>
 							<a href="#" class="popup-modal-dismiss">Close</a>
 						</div>
 
@@ -594,38 +726,49 @@
 					<div id="modal-02" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/modals/email_assistant.png" alt="email assistant" />
+							<img loading="lazy" src="images/portfolio/modals/email_assistant.jpg"
+								alt="email assistant" />
 						</div>
 
 						<div class="description-box">
 							<h4>Email Assistant</h4>
-							<p>The Email Assistant listens to incoming emails, scans for key action points, prioritizes tasks, provides summaries, categorizes and sorts emails, reduces manual review time, manages email overload, and boosts productivity and communication efficiency.</p>
+							<p>The Email Assistant listens to incoming emails, scans for key action points, prioritizes
+								tasks, provides summaries, categorizes and sorts emails, reduces manual review time,
+								manages email overload, and boosts productivity and communication efficiency.</p>
 
-							<div class="categories">Technologies:- Electron JS, Node JS, Python-Django, Mongo DB, Langchain & Open AI</div>
+							<div class="categories">Technologies:- Electron JS, Node JS, Python-Django, Mongo DB,
+								Langchain & Open AI</div>
 						</div>
 
 						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu?tab=repositories&q=email_assistant">Details</a>
+							<a target="_blank"
+								href="https://github.com/petermirithu?tab=repositories&q=email_assistant">Details</a>
 							<a href="#" class="popup-modal-dismiss">Close</a>
 						</div>
 
-					</div> 
+					</div>
 
 					<div id="modal-03" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/pet_rite.png" alt="petrite bay" />
+							<img loading="lazy" src="images/portfolio/pet_rite.jpg" alt="petrite bay" />
 						</div>
 
 						<div class="description-box">
 							<h4>Petrite Bay</h4>
-							<p>This web app offers essential services for dog owners, including scheduled dog walking for regular exercise, grooming appointments for hygiene and appearance, customized exercise and training programs to improve fitness and behavior, and reliable pet sitting for peace of mind during busy times. With convenient features like pickup and delivery, it ensures dogs receive top-notch care while owners manage their daily routines confidently.</p>
+							<p>This web app offers essential services for dog owners, including scheduled dog walking
+								for regular exercise, grooming appointments for hygiene and appearance, customized
+								exercise and training programs to improve fitness and behavior, and reliable pet sitting
+								for peace of mind during busy times. With convenient features like pickup and delivery,
+								it ensures dogs receive top-notch care while owners manage their daily routines
+								confidently.</p>
 
 							<div class="categories">Technologies:- Angular, Javascript, CSS & Python-Django</div>
 						</div>
 
 						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu?tab=repositories&q=petrite">Details</a>
+							<a target="_blank"
+								href="https://github.com/petermirithu?tab=repositories&q=petrite">Details</a>
 							<a href="#" class="popup-modal-dismiss">Close</a>
 						</div>
 
@@ -634,18 +777,24 @@
 					<div id="modal-04" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/modals/iDiscovery.png" alt="iDiscovery" />
+							<img loading="lazy" src="images/portfolio/modals/iDiscovery.jpg" alt="iDiscovery" />
 						</div>
 
 						<div class="description-box">
 							<h4>iDiscovery</h4>
-							<p>This app enhances cultural and social engagement by enabling users to input, store, and manage event details with ease. It ensures data accuracy through validation, utilizes SQLite for secure storage and retrieval, supports comprehensive search capabilities, and allows users to enrich their records with descriptive reports, fostering a more connected and organized approach to documenting their experiences.</p>
+							<p>This app enhances cultural and social engagement by enabling users to input, store, and
+								manage event details with ease. It ensures data accuracy through validation, utilizes
+								SQLite for secure storage and retrieval, supports comprehensive search capabilities, and
+								allows users to enrich their records with descriptive reports, fostering a more
+								connected and organized approach to documenting their experiences.</p>
 
-							<div class="categories">Technologies:- Expo React Native, Java, Android Studio, SQLite & Native Base</div>
+							<div class="categories">Technologies:- Expo React Native, Java, Android Studio, SQLite &
+								Native Base</div>
 						</div>
 
 						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu/iDiscovery-React-Native">Details</a>
+							<a target="_blank"
+								href="https://github.com/petermirithu/iDiscovery-React-Native">Details</a>
 							<a href="#" class="popup-modal-dismiss">Close</a>
 						</div>
 
@@ -654,14 +803,18 @@
 					<div id="modal-05" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/modals/pimp_and_ride.png" alt="pimp and ride" />
+							<img loading="lazy" src="images/portfolio/modals/pimp_and_ride.jpg" alt="pimp and ride" />
 						</div>
 
 						<div class="description-box">
 							<h4>Pimp & Ride</h4>
-							<p>This Node.js application for a car pimping dealer offers a seamless platform for purchasing customized car parts and scheduling doorstep pimping services. Users can sign up, log in, manage profiles, add items to a cart, view order summaries, and make payments using Mpesa, all within a user-friendly interface.</p>
+							<p>This Node.js application for a car pimping dealer offers a seamless platform for
+								purchasing customized car parts and scheduling doorstep pimping services. Users can sign
+								up, log in, manage profiles, add items to a cart, view order summaries, and make
+								payments using Mpesa, all within a user-friendly interface.</p>
 
-							<div class="categories">Technologies:- Node JS, Express, Bootstrap4, CSS4, PSQL database, PassportJS & Mpesa</div>
+							<div class="categories">Technologies:- Node JS, Express, Bootstrap4, CSS4, PSQL database,
+								PassportJS & Mpesa</div>
 						</div>
 
 						<div class="link-box">
@@ -674,14 +827,19 @@
 					<div id="modal-06" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/modals/enlightenment.png" alt="enlightenment" />
+							<img loading="lazy" src="images/portfolio/modals/enlightenment.jpg" alt="enlightenment" />
 						</div>
 
 						<div class="description-box">
 							<h4>Enlightenment</h4>
-							<p>This website offers free education from primary to university levels, focusing on global societal development. It provides online studies, affordable certificate courses, and volunteer teachers. With resources like online libraries and video databases, it aims to "Forge the Future" by making education accessible to all and seeks support to expand its reach and resources.</p>
+							<p>This website offers free education from primary to university levels, focusing on global
+								societal development. It provides online studies, affordable certificate courses, and
+								volunteer teachers. With resources like online libraries and video databases, it aims to
+								"Forge the Future" by making education accessible to all and seeks support to expand its
+								reach and resources.</p>
 
-							<div class="categories">Technologies:- Nodejs, Express, PSQL Database, Javascript, CSS & Mobirise</div>
+							<div class="categories">Technologies:- Nodejs, Express, PSQL Database, Javascript, CSS &
+								Mobirise</div>
 						</div>
 
 						<div class="link-box">
@@ -694,14 +852,18 @@
 					<div id="modal-07" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/modals/hobby_lab.png" alt="hobby lab" />
+							<img loading="lazy" src="images/portfolio/modals/hobby_lab.jpg" alt="hobby lab" />
 						</div>
 
 						<div class="description-box">
 							<h4>Hobby Lab</h4>
-							<p>This is a web application that connects people with shared hobbies like gaming, music, reading, and vlogs. It allows users to sign in, sign up, view and update profiles, play tic-tac-toe, join chat rooms, view user profiles, listen to music, and log out, fostering a sense of community among hobby enthusiasts.</p>
+							<p>This is a web application that connects people with shared hobbies like gaming, music,
+								reading, and vlogs. It allows users to sign in, sign up, view and update profiles, play
+								tic-tac-toe, join chat rooms, view user profiles, listen to music, and log out,
+								fostering a sense of community among hobby enthusiasts.</p>
 
-							<div class="categories">Technologies:- Python, Django Framework, PSQL Database, Javascript, Vue js, CSS, & Sendgrid</div>
+							<div class="categories">Technologies:- Python, Django Framework, PSQL Database, Javascript,
+								Vue js, CSS, & Sendgrid</div>
 						</div>
 
 						<div class="link-box">
@@ -714,23 +876,29 @@
 					<div id="modal-08" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/modals/transcriber_x.png" alt="transcriber x" />
+							<img loading="lazy" src="images/portfolio/modals/transcriber_x.jpg" alt="transcriber x" />
 						</div>
 
 						<div class="description-box">
 							<h4>Transcriber X</h4>
-							<p>This project converts MP3 and WAV audio files into text. It offers a user-friendly interface for uploading audio files, which are processed using advanced speech recognition algorithms. With Django ensuring seamless integration and scalability, and JavaScript and CSS enhancing the user experience, the app delivers fast and accurate transcriptions. It caters to various needs, from transcription services to accessibility and content creation.</p>
+							<p>This project converts MP3 and WAV audio files into text. It offers a user-friendly
+								interface for uploading audio files, which are processed using advanced speech
+								recognition algorithms. With Django ensuring seamless integration and scalability, and
+								JavaScript and CSS enhancing the user experience, the app delivers fast and accurate
+								transcriptions. It caters to various needs, from transcription services to accessibility
+								and content creation.</p>
 
-							<div class="categories">Technologies:- Python, Django Framework, Javascript, CSS & Cloudinary</div>
+							<div class="categories">Technologies:- Python, Django Framework, Javascript, CSS &
+								Cloudinary</div>
 						</div>
 
 						<div class="link-box">
 							<a target="_blank" href="https://github.com/petermirithu/Transcriber">Details</a>
 							<a href="#" class="popup-modal-dismiss">Close</a>
 						</div>
-					</div> 														
-				</div> 
-			</div> 
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -745,10 +913,11 @@
 				<h5>Services</h5>
 				<h1>What Can I Do For You?</h1>
 
-				<p class="lead">Below are some of the services I offer to help bring your projects to life and ensure they run smoothly and efficiently.</p>
+				<p class="lead">Below are some of the services I offer to help bring your projects to life and ensure
+					they run smoothly and efficiently.</p>
 
 			</div>
-		</div> 
+		</div>
 
 		<div class="row services-content">
 
@@ -762,7 +931,9 @@
 
 						<h3>Mobile Application Development</h3>
 
-						<p class="desc">I specialize in creating cross-platform mobile applications using React Native, ensuring seamless performance on both Google Play Store and Apple App Store. From development to deployment, I handle the entire process to bring your app ideas to life.</p>
+						<p class="desc">I specialize in creating cross-platform mobile applications using React Native,
+							ensuring seamless performance on both Google Play Store and Apple App Store. From
+							development to deployment, I handle the entire process to bring your app ideas to life.</p>
 
 					</div>
 
@@ -776,11 +947,13 @@
 
 						<h3>Web Application Development</h3>
 
-						<p class="desc">Leveraging technologies such as React.js, JavaScript, Angular, Node.js, and Django, I develop robust and dynamic web applications tailored to your specific needs. My expertise ensures a smooth, user-friendly experience across all devices.</p>
+						<p class="desc">Leveraging technologies such as React.js, JavaScript, Angular, Node.js, and
+							Django, I develop robust and dynamic web applications tailored to your specific needs. My
+							expertise ensures a smooth, user-friendly experience across all devices.</p>
 
 					</div>
 
-				</div> 
+				</div>
 
 				<div class="service">
 
@@ -790,7 +963,10 @@
 
 						<h3>Chatbot Development</h3>
 
-						<p class="desc">With extensive knowledge in multi-modal generative AI, I design and develop intelligent chatbots and automated systems. These can integrate with your existing applications to enhance user interaction and streamline operations, making life easier and more efficient.</p>
+						<p class="desc">With extensive knowledge in multi-modal generative AI, I design and develop
+							intelligent chatbots and automated systems. These can integrate with your existing
+							applications to enhance user interaction and streamline operations, making life easier and
+							more efficient.</p>
 
 					</div>
 
@@ -804,7 +980,9 @@
 
 						<h3>DevOps</h3>
 
-						<p class="desc">I offer comprehensive DevOps services, deploying applications to AWS or Google Cloud Platform. My solutions ensure scalability, reliability, and continuous integration and delivery for your projects.</p>
+						<p class="desc">I offer comprehensive DevOps services, deploying applications to AWS or Google
+							Cloud Platform. My solutions ensure scalability, reliability, and continuous integration and
+							delivery for your projects.</p>
 
 					</div>
 
@@ -818,11 +996,13 @@
 
 						<h3>Consultancy</h3>
 
-						<p class="desc">I provide expert consultancy services to support your team in various areas of software development, AI, and IT strategy. Whether you need guidance on a specific project or ongoing support, I'm here to help you achieve your goals.</p>
+						<p class="desc">I provide expert consultancy services to support your team in various areas of
+							software development, AI, and IT strategy. Whether you need guidance on a specific project
+							or ongoing support, I'm here to help you achieve your goals.</p>
 
 					</div>
 
-				</div>			
+				</div>
 
 			</div>
 
@@ -838,26 +1018,31 @@
 			<div class="col-twelve section-ads">
 
 				<h2 class="h01">What stand for</h2>
-				
-				<aside class="pull-quote">
-					<blockquote cite="https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand#:~:text=Any%20fool%20can%20write%20code%20that%20a%20computer%20can%20understand,code%20that%20humans%20can%20understand.">
-						<p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>						
-						<cite>
-							<a target="_blank" href="https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand#:~:text=Any%20fool%20can%20write%20code%20that%20a%20computer%20can%20understand,code%20that%20humans%20can%20understand.">Martin Fowler</a>
-						 </cite>
-					 </blockquote>
-				 </aside>
 
-				<div class="action">					
-					<a href="#contact" title="Contact Me" class="button button-primary large smoothscroll">Let's write good code</a>
+				<aside class="pull-quote">
+					<blockquote
+						cite="https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand#:~:text=Any%20fool%20can%20write%20code%20that%20a%20computer%20can%20understand,code%20that%20humans%20can%20understand.">
+						<p>Any fool can write code that a computer can understand. Good programmers write code that
+							humans can understand.</p>
+						<cite>
+							<a target="_blank"
+								href="https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand#:~:text=Any%20fool%20can%20write%20code%20that%20a%20computer%20can%20understand,code%20that%20humans%20can%20understand.">Martin
+								Fowler</a>
+						</cite>
+					</blockquote>
+				</aside>
+
+				<div class="action">
+					<a href="#contact" title="Contact Me" class="button button-primary large smoothscroll">Let's write
+						good code</a>
 				</div>
 
 			</div>
 
 		</div>
 
-	</section> 
-	
+	</section>
+
 	<!-- Contact Section -->
 	<section id="contact">
 
@@ -867,11 +1052,13 @@
 				<h5>Contact</h5>
 				<h1>I'd Love To Hear From You.</h1>
 
-				<p class="lead">Whether you have questions, feedback, or just want to connect, feel free to reach out. You can contact me via email, connect with me on LinkedIn, or follow my projects on GitHub. Looking forward to connecting with you!</p>
+				<p class="lead">Whether you have questions, feedback, or just want to connect, feel free to reach out.
+					You can contact me via email, connect with me on LinkedIn, or follow my projects on GitHub. Looking
+					forward to connecting with you!</p>
 
 			</div>
 		</div>
-		
+
 		<div class="row contact-info">
 
 			<div class="col-four tab-full collapse">
@@ -925,16 +1112,16 @@
 				<div class="copyright">
 					<span>Copyright &copy;&nbsp;&nbsp;
 						<script>document.write(new Date().getFullYear());</script> All rights reserved
-					</span>					
+					</span>
 				</div>
-			</div>			
+			</div>
 
 			<div id="go-top">
 				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
 			</div>
 
 		</div> <!-- /row -->
-	</footer>	
+	</footer>
 
 	<div id="preloader">
 		<div id="loader"></div>
@@ -942,9 +1129,9 @@
 
 	<!-- Java Script
    ================================================== -->
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/jquery-2.1.3.min.js" defer></script>
+	<script src="js/plugins.js" defer></script>
+	<script src="js/main.js" defer></script>
 
 </body>
 
