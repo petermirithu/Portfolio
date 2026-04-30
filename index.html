@@ -22,13 +22,12 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 
-	<link rel="icon" type="image/png" href="./images/me.jpg">
+	<link rel="icon" type="image/png" href="./images/me-close-up.png">
 
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://petermirithu.github.io/Portfolio" />
 	<meta property="og:title" content="Portfolio" />
-	<meta property="og:image"
-		content="https://res.cloudinary.com/pyra-z/image/upload/v1655465695/banner_bg_qsg4gq.png" />
+	<meta property="og:image" content="https://res.cloudinary.com/pyra-z/image/upload/v1777537641/me-full_f16ie6.png" />
 	<meta property="og:description"
 		content="I’m Peter Mirithu, a dynamic and goal-driven Software Engineer with a burning passion for Artificial Intelligence, Software Development, Mobile Apps, and Web Solutions." />
 
@@ -39,17 +38,16 @@
 	<meta name="twitter:description"
 		content="I’m Peter Mirithu, a dynamic and goal-driven Software Engineer with a burning passion for Artificial Intelligence, Software Development, Mobile Apps, and Web Solutions." />
 	<meta name="twitter:image"
-		content="https://res.cloudinary.com/pyra-z/image/upload/v1655465695/banner_bg_qsg4gq.png" />
+		content="https://res.cloudinary.com/pyra-z/image/upload/v1777537641/me-full_f16ie6.png" />
 
+	<link rel="canonical" href="https://petermirithu.github.io/Portfolio" />
 </head>
 
 <body id="top">
 	<!-- Navbar Section -->
 	<header>
 		<div class="row">
-			<div class="top-bar">
-				<a class="menu-toggle" href="#"><span>Menu</span></a>
-
+			<div class="top-bar glass-nav">
 				<div class="logo">
 					<a href="index.html"></a>
 				</div>
@@ -64,6 +62,8 @@
 						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
 					</ul>
 				</nav>
+
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
 			</div>
 
 		</div>
@@ -116,7 +116,7 @@
 
 				<div class="intro-info">
 
-					<img src="images/me.jpg" alt="Profile Picture">
+					<img src="images/me-full.png" alt="Profile Picture">
 
 					<p class="lead">
 						Hello, I'm Peter Mirithu. I've always been enthusiastic about problem-solving ever since I
@@ -536,371 +536,214 @@
 
 		<div class="row section-intro">
 			<div class="col-twelve">
-
 				<h5>Portfolio</h5>
-				<h1>Check Out Some of My Projects.</h1>
-
-				<p class="lead">Here are a few of the projects I have worked on including those at my place of work.</p>
-
+				<h1>Check out projects I have worked on.</h1>
+				<p class="lead">I’ve had the opportunity to collaborate on exciting initiatives and develop AI
+					solutions that make a difference.</p>
 			</div>
 		</div>
 
 		<div class="row portfolio-content">
-
 			<div class="col-twelve">
 
-				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+				<div class="portfolio-carousel-wrap">
 
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/usiu_chat_bot.jpg" alt="usiu chat bot">
-							<a href="#modal-01" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">USIU-A Chat Bot</h3>
-										<span class="folio-types">This is an AI-driven virtual assistant designed to
-											streamline communication, improve information accessibility, and enhance the
-											overall experience for students, faculty, and staff at the
-											university.</span>
+					<!-- Prev Button -->
+					<button class="carousel-btn prev" id="carouselPrev" aria-label="Previous project">
+						<span class="icon"><i class="fa fa-arrow-left"></i></span>
+					</button>
+
+					<!-- Track -->
+					<div class="carousel-track-outer">
+						<div class="carousel-track" id="carouselTrack">
+
+							<!-- Slide 1: Xaidi -->
+							<div class="carousel-slide">
+								<div class="folio-card" data-modal="modal-xaidi">
+									<img src="images/portfolio/Xaidi-1.png" alt="Xaidi" loading="lazy">
+									<div class="folio-card-overlay">
+										<span class="folio-tag">iZola LTD Project</span>
+										<h3>Xaidi</h3>
+										<p>An AI health companion for the neurodivergent community.</p>
+										<div class="folio-open-btn">View Project <span>→</span></div>
 									</div>
 								</div>
-							</a>
-						</div>
-					</div>
+							</div>
 
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/email_assistant.jpg" alt="email assistant">
-							<a href="#modal-02" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Email Assistant</h3>
-										<span class="folio-types">
-											This a Desktop App designed to automate the extraction and prioritization of
-											key action points from emails, significantly reducing the manual workload
-											for secretaries.
-										</span>
+							<!-- Slide 2: MIS School -->
+							<div class="carousel-slide">
+								<div class="folio-card" data-modal="modal-mis-school">
+									<img src="images/portfolio/mis-school-1.png" alt="MIS School" loading="lazy">
+									<div class="folio-card-overlay">
+										<span class="folio-tag">Collaborated Project</span>
+										<h3>MIS School</h3>
+										<p>A collaborative platform for educational management.</p>
+										<div class="folio-open-btn">View Project <span>→</span></div>
 									</div>
 								</div>
-							</a>
-						</div>
-					</div>
+							</div>
 
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/pet_rite.jpg" alt="petrite bay">
-							<a href="#modal-03" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Petrite Bay</h3>
-										<span class="folio-types">
-											This is an e-commerce Web App which brings dog services such as dog walking,
-											dog grooming and pet sitting closer to potential clients. It also enables
-											clients to buy dog food remotely.
-										</span>
+							<!-- Slide 3: USIU Chatbot -->
+							<div class="carousel-slide">
+								<div class="folio-card" data-modal="modal-usiu">
+									<img src="images/portfolio/usiu_chat_bot.png" alt="USIU-A Chat Bot" loading="lazy">
+									<div class="folio-card-overlay">
+										<span class="folio-tag">My Project</span>
+										<h3>USIU-A Chat Bot</h3>
+										<p>AI-driven virtual assistant for student and faculty support.</p>
+										<div class="folio-open-btn">View Project <span>→</span></div>
 									</div>
 								</div>
-							</a>
-						</div>
-					</div>
+							</div>
 
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/pimp_and_ride.jpg" alt="Pimp and Ride">
-							<a href="#modal-05" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Pimp & Ride</h3>
-										<span class="folio-types">
-											This is a Web application for a car pimping dealer company that sells
-											customized car parts and offers doorstep pimping services, featuring user
-											authentication, profile management, and seamless shopping and payment
-											experiences.
-										</span>
+							<!-- Slide 4: Email Assistant -->
+							<div class="carousel-slide">
+								<div class="folio-card" data-modal="modal-email">
+									<img src="images/portfolio/email_assistant.png" alt="Email Assistant"
+										loading="lazy">
+									<div class="folio-card-overlay">
+										<span class="folio-tag">My Project</span>
+										<h3>Email Assistant</h3>
+										<p>Desktop app automating extraction and prioritization of email action points.
+										</p>
+										<div class="folio-open-btn">View Project <span>→</span></div>
 									</div>
 								</div>
-							</a>
-						</div>
+							</div>
+
+						</div><!-- /carousel-track -->
+					</div><!-- /carousel-track-outer -->
+
+					<!-- Next Button -->
+					<button class="carousel-btn next" id="carouselNext" aria-label="Next project">
+						<span class="icon"><i class="fa fa-arrow-right"></i></span>
+					</button>
+
+				</div><!-- /portfolio-carousel-wrap -->
+
+				<!-- Dots -->
+				<div class="carousel-dots" id="carouselDots"></div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- ===================== MODALS ===================== -->
+
+	<!-- Modal: Xaidi -->
+	<div class="pm-overlay" id="modal-xaidi">
+		<div class="pm-modal" role="dialog" aria-modal="true" aria-label="Xaidi project details">
+			<button class="pm-close" aria-label="Close modal">&#x2715;</button>
+			<div class="pm-img-wrap">
+				<img src="images/portfolio/modals/xaidi-2.png" alt="Xaidi screenshot">
+			</div>
+			<div class="pm-body">
+				<div class="pm-header">
+					<h4>Xaidi</h4>
+					<div class="pm-links">
+						<a class="primary" target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.vitafluence.iZolaGPT">
+							<i class="fa fa-play"></i> Play Store
+						</a>
+						<a class="secondary" target="_blank" href="https://apps.apple.com/ie/app/xaidi/id6475586861">
+							<i class="fa fa-apple"></i> App Store
+						</a>
 					</div>
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/enlightenment.jpg" alt="enlightenment">
-							<a href="#modal-06" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Enlightenment</h3>
-										<span class="folio-types">
-											This web application provides free online education resources, including
-											courses, study materials, and volunteer teaching, to support learners at all
-											levels.
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/hobby_lab.jpg" alt="hobby lab">
-							<a href="#modal-07" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Hobby Lab</h3>
-										<span class="folio-types">
-											Hobby lab is a web application that connects people who share a hobby e.g:
-											game,music,reading books and vlogs watching. It spears the world to be a
-											better living place for two or more hobby lovers.
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/transcriber_x.jpg" alt="transcriber x">
-							<a href="#modal-08" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Transcriber X</h3>
-										<span class="folio-types">
-											This innovative web app allows users to easily convert audio files in MP3
-											and WAV formats into written text, making it simple to transcribe spoken
-											content for various purposes such as note-taking, content creation, and
-											accessibility.
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img loading="lazy" src="images/portfolio/iDiscovery.jpg" alt="iDiscovery">
-							<a href="#modal-04" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">iDiscovery</h3>
-										<span class="folio-types">
-											This Mobile App allows users to enter, store, and manage detailed reports
-											about cultural and social activities they attend, supporting essential
-											functionalities such as event details input, validation, storage in SQLite
-											databases, search capabilities, and report additions.
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<!-- Modal Pop Up Section -->
-					<div id="modal-01" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/modals/usiu_chat_bot.jpg" alt="usiu chat bot" />
-						</div>
-
-						<div class="description-box">
-							<h4>USIU-A Chat Bot</h4>
-							<p>The chatbot provides instant, accurate responses to inquiries about course registration,
-								academic requirements, campus facilities, and FAQs, offering 24/7 support. It reduces
-								reliance on emails, phone calls, and in-person interactions, alleviating the
-								administrative workload by handling routine questions and tasks.</p>
-
-							<div class="categories">Technologies:- Expo React Native, Python-Django, Langchain, Open AI,
-								Chroma DB & Mongo DB</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank"
-								href="https://github.com/petermirithu?tab=repositories&q=usiu_chat_bot">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-
-					<div id="modal-02" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/modals/email_assistant.jpg"
-								alt="email assistant" />
-						</div>
-
-						<div class="description-box">
-							<h4>Email Assistant</h4>
-							<p>The Email Assistant listens to incoming emails, scans for key action points, prioritizes
-								tasks, provides summaries, categorizes and sorts emails, reduces manual review time,
-								manages email overload, and boosts productivity and communication efficiency.</p>
-
-							<div class="categories">Technologies:- Electron JS, Node JS, Python-Django, Mongo DB,
-								Langchain & Open AI</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank"
-								href="https://github.com/petermirithu?tab=repositories&q=email_assistant">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-
-					<div id="modal-03" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/pet_rite.jpg" alt="petrite bay" />
-						</div>
-
-						<div class="description-box">
-							<h4>Petrite Bay</h4>
-							<p>This web app offers essential services for dog owners, including scheduled dog walking
-								for regular exercise, grooming appointments for hygiene and appearance, customized
-								exercise and training programs to improve fitness and behavior, and reliable pet sitting
-								for peace of mind during busy times. With convenient features like pickup and delivery,
-								it ensures dogs receive top-notch care while owners manage their daily routines
-								confidently.</p>
-
-							<div class="categories">Technologies:- Angular, Javascript, CSS & Python-Django</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank"
-								href="https://github.com/petermirithu?tab=repositories&q=petrite">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-
-					<div id="modal-04" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/modals/iDiscovery.jpg" alt="iDiscovery" />
-						</div>
-
-						<div class="description-box">
-							<h4>iDiscovery</h4>
-							<p>This app enhances cultural and social engagement by enabling users to input, store, and
-								manage event details with ease. It ensures data accuracy through validation, utilizes
-								SQLite for secure storage and retrieval, supports comprehensive search capabilities, and
-								allows users to enrich their records with descriptive reports, fostering a more
-								connected and organized approach to documenting their experiences.</p>
-
-							<div class="categories">Technologies:- Expo React Native, Java, Android Studio, SQLite &
-								Native Base</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank"
-								href="https://github.com/petermirithu/iDiscovery-React-Native">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-
-					<div id="modal-05" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/modals/pimp_and_ride.jpg" alt="pimp and ride" />
-						</div>
-
-						<div class="description-box">
-							<h4>Pimp & Ride</h4>
-							<p>This Node.js application for a car pimping dealer offers a seamless platform for
-								purchasing customized car parts and scheduling doorstep pimping services. Users can sign
-								up, log in, manage profiles, add items to a cart, view order summaries, and make
-								payments using Mpesa, all within a user-friendly interface.</p>
-
-							<div class="categories">Technologies:- Node JS, Express, Bootstrap4, CSS4, PSQL database,
-								PassportJS & Mpesa</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu/Pimp-and-Ride">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-
-					<div id="modal-06" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/modals/enlightenment.jpg" alt="enlightenment" />
-						</div>
-
-						<div class="description-box">
-							<h4>Enlightenment</h4>
-							<p>This website offers free education from primary to university levels, focusing on global
-								societal development. It provides online studies, affordable certificate courses, and
-								volunteer teachers. With resources like online libraries and video databases, it aims to
-								"Forge the Future" by making education accessible to all and seeks support to expand its
-								reach and resources.</p>
-
-							<div class="categories">Technologies:- Nodejs, Express, PSQL Database, Javascript, CSS &
-								Mobirise</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu/enlightenment">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-
-					<div id="modal-07" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/modals/hobby_lab.jpg" alt="hobby lab" />
-						</div>
-
-						<div class="description-box">
-							<h4>Hobby Lab</h4>
-							<p>This is a web application that connects people with shared hobbies like gaming, music,
-								reading, and vlogs. It allows users to sign in, sign up, view and update profiles, play
-								tic-tac-toe, join chat rooms, view user profiles, listen to music, and log out,
-								fostering a sense of community among hobby enthusiasts.</p>
-
-							<div class="categories">Technologies:- Python, Django Framework, PSQL Database, Javascript,
-								Vue js, CSS, & Sendgrid</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu/hooby_lab">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div>
-
-					<div id="modal-08" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img loading="lazy" src="images/portfolio/modals/transcriber_x.jpg" alt="transcriber x" />
-						</div>
-
-						<div class="description-box">
-							<h4>Transcriber X</h4>
-							<p>This project converts MP3 and WAV audio files into text. It offers a user-friendly
-								interface for uploading audio files, which are processed using advanced speech
-								recognition algorithms. With Django ensuring seamless integration and scalability, and
-								JavaScript and CSS enhancing the user experience, the app delivers fast and accurate
-								transcriptions. It caters to various needs, from transcription services to accessibility
-								and content creation.</p>
-
-							<div class="categories">Technologies:- Python, Django Framework, Javascript, CSS &
-								Cloudinary</div>
-						</div>
-
-						<div class="link-box">
-							<a target="_blank" href="https://github.com/petermirithu/Transcriber">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
+				</div>
+				<p>Xaidi is a comprehensive AI health companion designed specifically to support the neurodivergent
+					community. It provides personalized guidance, intuitive daily interactions, and advanced health
+					tracking features to enhance quality of life.</p>
+				<div class="pm-tech">
+					<span>React
+						Native</span><span>Python-Django</span><span>Langchain</span><span>ChromaDB</span><span>Node.js</span><span>MongoDB</span>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+
+	<!-- Modal: MIS School -->
+	<div class="pm-overlay" id="modal-mis-school">
+		<div class="pm-modal" role="dialog" aria-modal="true" aria-label="MIS School project details">
+			<button class="pm-close" aria-label="Close modal">&#x2715;</button>
+			<div class="pm-img-wrap">
+				<img src="images/portfolio/modals/mis-school-2.png" alt="MIS School screenshot">
+			</div>
+			<div class="pm-body">
+				<div class="pm-header">
+					<h4>MIS School</h4>
+					<div class="pm-links">
+						<a class="primary" target="_blank" href="https://misschool.academy/">
+							<i class="fa fa-external-link"></i> Visit Site
+						</a>
+					</div>
+				</div>
+				<p>MIS School is a powerful educational management platform that streamlines administrative workflows.
+					It features seamless student tracking, comprehensive data management, and intuitive dashboards
+					designed for modern instructors and administrators.</p>
+				<div class="pm-tech">
+					<span>Next
+						JS</span><span>Node.js</span><span>TypeScript</span><span>MongoDB</span><span>Redis</span><span>Firebase</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal: USIU Chat Bot -->
+	<div class="pm-overlay" id="modal-usiu">
+		<div class="pm-modal" role="dialog" aria-modal="true" aria-label="USIU-A Chat Bot project details">
+			<button class="pm-close" aria-label="Close modal">&#x2715;</button>
+			<div class="pm-img-wrap">
+				<img src="images/portfolio/modals/usiu_chat_bot.png" alt="USIU-A Chat Bot screenshot">
+			</div>
+			<div class="pm-body">
+				<div class="pm-header">
+					<h4>USIU-A Chat Bot</h4>
+					<div class="pm-links">
+						<a class="primary" target="_blank"
+							href="https://github.com/petermirithu?tab=repositories&q=usiu_chat_bot">
+							<i class="fa fa-github"></i> GitHub
+						</a>
+					</div>
+				</div>
+				<p>The chatbot provides instant, accurate responses to inquiries about course registration, academic
+					requirements, campus facilities, and FAQs — offering 24/7 support. It reduces reliance on emails and
+					in-person interactions, alleviating administrative workload by handling routine questions.</p>
+				<div class="pm-tech">
+					<span>React
+						Native</span><span>Python-Django</span><span>Langchain</span><span>OpenAI</span><span>ChromaDB</span><span>MongoDB</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal: Email Assistant -->
+	<div class="pm-overlay" id="modal-email">
+		<div class="pm-modal" role="dialog" aria-modal="true" aria-label="Email Assistant project details">
+			<button class="pm-close" aria-label="Close modal">&#x2715;</button>
+			<div class="pm-img-wrap">
+				<img src="images/portfolio/modals/email_assistant.png" alt="Email Assistant screenshot">
+			</div>
+			<div class="pm-body">
+				<div class="pm-header">
+					<h4>Email Assistant</h4>
+					<div class="pm-links">
+						<a class="primary" target="_blank"
+							href="https://github.com/petermirithu?tab=repositories&q=email_assistant">
+							<i class="fa fa-github"></i> GitHub
+						</a>
+					</div>
+				</div>
+				<p>The Email Assistant listens to incoming emails, scans for key action points, prioritizes tasks,
+					provides summaries, categorizes and sorts emails — reducing manual review time, managing email
+					overload, and boosting productivity and communication efficiency.</p>
+				<div class="pm-tech">
+					<span>Electron
+						JS</span><span>Node.js</span><span>Python-Django</span><span>MongoDB</span><span>Langchain</span><span>OpenAI</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Services Section -->
 	<section id="services">
