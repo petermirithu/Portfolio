@@ -1329,7 +1329,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 .menu-toggle {
-	display: none; /* hidden on desktop */
+	display: none;
+	/* hidden on desktop */
 	width: 40px;
 	height: 40px;
 	position: relative;
@@ -1442,7 +1443,8 @@ header .logo a {
 
 @media only screen and (min-width: 901px) {
 	.main-navigation {
-		display: flex !important; /* Force flex on desktop, overriding any inline JS styles from mobile */
+		display: flex !important;
+		/* Force flex on desktop, overriding any inline JS styles from mobile */
 	}
 }
 
@@ -1496,7 +1498,8 @@ header .logo a {
  */
 @media only screen and (max-width: 900px) {
 	header {
-		top: 0; /* stick to top on mobile */
+		top: 0;
+		/* stick to top on mobile */
 	}
 
 	header .row {
@@ -1512,10 +1515,11 @@ header .logo a {
 	}
 
 	.menu-toggle {
-		display: block; /* show toggle on mobile */
+		display: block;
+		/* show toggle on mobile */
 		margin-right: 20px;
 	}
-	
+
 	header .logo {
 		margin-left: 20px;
 	}
@@ -1531,11 +1535,13 @@ header .logo a {
 	.main-navigation {
 		background: #000000;
 		padding: 24px 30px 42px;
-		display: none; /* hidden by default, JS slideToggle will control it inline */
-		flex-direction: column; /* Ensures vertical stacking if JS applies display: flex */
+		display: none;
+		/* hidden by default, JS slideToggle will control it inline */
+		flex-direction: column;
+		/* Ensures vertical stacking if JS applies display: flex */
 		align-items: stretch;
 	}
-	
+
 	.main-navigation>li {
 		display: block;
 		text-align: left;
@@ -1547,15 +1553,16 @@ header .logo a {
 	}
 
 	.main-navigation li a::after {
-		display: none; /* Hide the animated desktop underline on mobile */
+		display: none;
+		/* Hide the animated desktop underline on mobile */
 	}
-	
+
 	.main-navigation li a:hover {
 		color: #ffffff;
 		padding-left: 1rem;
 		border-bottom: 1px solid #c20061;
 	}
-	
+
 	.main-navigation li.current>a {
 		color: #ffffff;
 		border-bottom: 1px solid #c20061;
@@ -2550,48 +2557,80 @@ header .logo a {
 /* ── Mobile Responsive ─────────────────────────── */
 @media (max-width: 768px) {
 	.portfolio-carousel-wrap {
-		padding: 0 52px;
+		padding: 0 45px;
 	}
 
 	.carousel-btn {
-		width: 38px;
-		height: 38px;
-		font-size: 1.3rem;
+		width: 32px;
+		height: 32px;
+		font-size: 1.1rem;
+	}
+
+	.carousel-btn.prev {
+		left: -15px;
+	}
+
+	.carousel-btn.next {
+		right: -15px;
 	}
 
 	.folio-card img {
-		height: 360px;
+		height: 300px;
+	}
+
+	.folio-card-overlay {
+		position: relative;
+		background: #1a1a1a;
+		padding: 2rem 2.2rem;
+		inset: auto;
+	}
+
+	.folio-card:hover .folio-card-overlay {
+		background: #1a1a1a;
 	}
 
 	.folio-card h3 {
-		font-size: 2.2rem;
+		font-size: 2.1rem;
+	}
+
+	.folio-card p {
+		width: 100%;
+		font-size: 1.45rem;
+		margin-bottom: 1.8rem;
+	}
+
+	.folio-open-btn {
+		padding: 6px 16px;
+		font-size: 1.1rem;
 	}
 }
 
 @media (max-width: 520px) {
 	.portfolio-carousel-wrap {
-		padding: 0 44px;
+		padding: 0 35px;
 	}
 
 	.carousel-btn {
-		width: 34px;
-		height: 34px;
+		width: 28px;
+		height: 28px;
+		font-size: 1rem;
 	}
 
 	.folio-card img {
-		height: 280px;
+		height: 220px;
 	}
 
 	.folio-card-overlay {
-		padding: 1.8rem 1.8rem;
+		padding: 1.6rem 1.8rem;
 	}
 
 	.folio-card h3 {
-		font-size: 1.9rem;
+		font-size: 1.8rem;
 	}
 
 	.folio-card p {
-		font-size: 1.35rem;
+		font-size: 1.3rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.pm-body {
