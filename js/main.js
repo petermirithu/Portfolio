@@ -62,7 +62,7 @@
 				that.tick();
 			}, delta);
 		};
-		
+
 		var elements = document.getElementsByClassName('typewrite');
 		for (var i = 0; i < elements.length; i++) {
 			var toRotate = elements[i].getAttribute('data-type');
@@ -155,18 +155,108 @@
 
 
 	/*---------------------------------------------------- */
-	/*	Masonry
+	/*	Project Carousel
 	------------------------------------------------------ */
-	var containerProjects = $('#folio-wrapper');
+	(function () {
+		var track = document.getElementById('carouselTrack');
+		var dotsWrap = document.getElementById('carouselDots');
+		var btnPrev = document.getElementById('carouselPrev');
+		var btnNext = document.getElementById('carouselNext');
+		var slides = track ? track.querySelectorAll('.carousel-slide') : [];
+		var total = slides.length;
+		var current = 0;
+		var dots = [];
+		var autoTimer;
 
-	containerProjects.imagesLoaded(function () {
+		function goTo(idx) {
+			if (idx < 0) idx = total - 1;
+			if (idx >= total) idx = 0;
+			current = idx;
+			track.style.transform = 'translateX(-' + (current * 100) + '%)';
+			dots.forEach(function (d, i) {
+				d.classList.toggle('active', i === current);
+			});
+		}
 
-		containerProjects.masonry({
-			itemSelector: '.folio-item',
-			resize: true
+		function resetAuto() {
+			clearInterval(autoTimer);
+			autoTimer = setInterval(function () { goTo(current + 1); }, 5000);
+		}
+
+		// Build dots
+		if (total > 0) {
+			for (var i = 0; i < total; i++) {
+				(function (idx) {
+					var dot = document.createElement('button');
+					dot.className = 'carousel-dot' + (idx === 0 ? ' active' : '');
+					dot.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+					dot.addEventListener('click', function () { goTo(idx); resetAuto(); });
+					dotsWrap.appendChild(dot);
+					dots.push(dot);
+				})(i);
+			}
+			goTo(0);
+			resetAuto();
+		}
+
+		if (btnPrev) btnPrev.addEventListener('click', function () { goTo(current - 1); resetAuto(); });
+		if (btnNext) btnNext.addEventListener('click', function () { goTo(current + 1); resetAuto(); });
+
+		// Touch/swipe support
+		var touchStartX = 0;
+		var touchEndX = 0;
+		if (track) {
+			track.addEventListener('touchstart', function (e) { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+			track.addEventListener('touchend', function (e) {
+				touchEndX = e.changedTouches[0].screenX;
+				var diff = touchStartX - touchEndX;
+				if (Math.abs(diff) > 40) { goTo(diff > 0 ? current + 1 : current - 1); resetAuto(); }
+			}, { passive: true });
+		}
+
+		// ── Modal Logic ──────────────────────────────────
+		function openModal(id) {
+			var overlay = document.getElementById(id);
+			if (!overlay) return;
+			overlay.classList.add('open');
+			document.body.style.overflow = 'hidden';
+		}
+		function closeModal(overlay) {
+			overlay.classList.remove('open');
+			document.body.style.overflow = '';
+		}
+
+		// Open on card click
+		document.querySelectorAll('.folio-card').forEach(function (card) {
+			card.addEventListener('click', function () {
+				var id = card.getAttribute('data-modal');
+				if (id) openModal(id);
+			});
 		});
 
-	});
+		// Close on × button
+		document.querySelectorAll('.pm-close').forEach(function (btn) {
+			btn.addEventListener('click', function () {
+				var overlay = btn.closest('.pm-overlay');
+				if (overlay) closeModal(overlay);
+			});
+		});
+
+		// Close on overlay backdrop click
+		document.querySelectorAll('.pm-overlay').forEach(function (overlay) {
+			overlay.addEventListener('click', function (e) {
+				if (e.target === overlay) closeModal(overlay);
+			});
+		});
+
+		// Close on Escape
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape') {
+				document.querySelectorAll('.pm-overlay.open').forEach(closeModal);
+			}
+		});
+
+	})();
 
 
 	/*----------------------------------------------------*/
