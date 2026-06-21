@@ -154,6 +154,94 @@
 	});
 
 
+	/*----------------------------------------------------- */
+	/* Scroll Reveal — fades/slides .reveal elements into view
+		------------------------------------------------------- */
+	(function () {
+		var revealEls = $(".reveal, .reveal-left, .reveal-scale");
+
+		if (!revealEls.length) return;
+
+		function isInViewport($el) {
+			var rect = $el[0].getBoundingClientRect();
+			var viewHeight = window.innerHeight || document.documentElement.clientHeight;
+			return rect.top < viewHeight * 0.88 && rect.bottom > 0;
+		}
+
+		revealEls.each(function () {
+			var $el = $(this);
+
+			// Reveal immediately if already on-screen at load (e.g. above the fold)
+			if (isInViewport($el)) {
+				$el.addClass("in-view");
+				return;
+			}
+
+			$el.waypoint({
+				handler: function () {
+					$el.addClass("in-view");
+					this.destroy();
+				},
+				offset: "88%"
+			});
+		});
+	})();
+
+
+	/*----------------------------------------------------- */
+	/* Quick Stats — animated count-up on reveal
+		------------------------------------------------------- */
+	(function () {
+		var qsSection = $("#quick-stats"),
+			qsCounts = $(".qs-count");
+
+		if (!qsSection.length || !qsCounts.length) return;
+
+		function runCountUp() {
+			qsCounts.each(function () {
+				var $this = $(this),
+					target = parseFloat($this.attr("data-count")) || 0,
+					suffix = $this.attr("data-suffix") || "";
+
+				$({ Counter: 0 }).animate({ Counter: target }, {
+					duration: 1200,
+					easing: 'swing',
+					step: function (curValue) {
+						$this.text(Math.ceil(curValue) + suffix);
+					},
+					complete: function () {
+						$this.text(target + suffix);
+					}
+				});
+			});
+		}
+
+		var rect = qsSection[0].getBoundingClientRect();
+		var viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+		if (rect.top < viewHeight * 0.85 && rect.bottom > 0) {
+			runCountUp();
+			return;
+		}
+
+		qsSection.waypoint({
+
+			handler: function (direction) {
+
+				if (direction === "down") {
+					runCountUp();
+				}
+
+				this.destroy();
+
+			},
+
+			offset: "85%"
+
+		});
+	})();
+
+
 	/* ----------------------------------------------------------------
 	  * JOURNEY TIMELINE FILTER TABS
 	  * ---------------------------------------------------------------- */

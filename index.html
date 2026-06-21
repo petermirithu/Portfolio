@@ -153,21 +153,21 @@
   <section id="quick-stats" aria-label="Experience and highlights">
     <div class="row quick-stats-row">
 
-      <button class="quick-stat-card quick-stat-btn" type="button" style="cursor:default">
+      <button class="quick-stat-card quick-stat-btn reveal-scale" type="button" style="cursor:default">
         <h5>Experience</h5>
-        <p><strong>4+</strong> Years</p>
+        <p><strong class="qs-count" data-count="4" data-suffix="+">0</strong> Years</p>
       </button>
 
-      <button class="quick-stat-card quick-stat-btn" type="button" data-modal-target="projects-modal"
-        aria-haspopup="dialog" aria-controls="projects-modal">
+      <button class="quick-stat-card quick-stat-btn reveal-scale reveal-delay-1" type="button"
+        data-modal-target="projects-modal" aria-haspopup="dialog" aria-controls="projects-modal">
         <h5>Projects</h5>
-        <p><strong>5</strong> Completed</p>
+        <p><strong class="qs-count" data-count="5" data-suffix="">0</strong> Completed</p>
       </button>
 
-      <button class="quick-stat-card quick-stat-btn" type="button" data-modal-target="companies-modal"
-        aria-haspopup="dialog" aria-controls="companies-modal">
+      <button class="quick-stat-card quick-stat-btn reveal-scale reveal-delay-2" type="button"
+        data-modal-target="companies-modal" aria-haspopup="dialog" aria-controls="companies-modal">
         <h5>Companies</h5>
-        <p><strong>2</strong> Worked With</p>
+        <p><strong class="qs-count" data-count="3" data-suffix="">0</strong> Worked With</p>
       </button>
 
     </div>
@@ -220,7 +220,7 @@
         </div>
         <div class="qs-modal-item">
           <h6>MIS Foundry LTD</h6>
-          <p>Engineering Collaboration</p>
+          <p>Software Development</p>
         </div>
       </div>
     </div>
@@ -230,7 +230,7 @@
   <!-- About me Section -->
   <section id="about" aria-labelledby="about-heading">
 
-    <div class="row section-intro">
+    <div class="row section-intro reveal">
       <div class="col-twelve">
         <h5>About</h5>
         <h1 id="about-heading">Let me introduce myself.</h1>
@@ -257,7 +257,7 @@
     <div class="row about-content">
 
       <div class="col-twelve tab-full">
-        <div class="about-card">
+        <div class="about-card reveal">
           <h3>Skills</h3>
           <p class="about-skills-intro">
             I work across the full product lifecycle, from backend architecture and APIs to intelligent interfaces and
@@ -692,7 +692,7 @@
       <div class="journey-timeline" role="list">
 
         <!-- Vitafluence Full Time -->
-        <div class="journey-entry" data-type="work" role="listitem">
+        <div class="journey-entry reveal" data-type="work" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -703,33 +703,35 @@
             <h3 class="journey-title">The Full-Time Leap</h3>
             <p class="journey-org">Software Engineer · Vitafluence.ai</p>
             <p class="journey-narrative">
-              Earned my stripes as a full-time engineer building AI agents for Lakesai, developing a gaze-tracker ML
-              model using OpenCV and Random Forest, and keeping mission-critical cloud infrastructure alive when it
-              mattered most — routing AWS traffic in real-time to prevent downtime.
+              Stepped into a full-time role developing AI-powered agents for Lakesai with Python, Django, and
+              LangChain, building a Windows desktop extraction tool for Neurobee data, and training a gaze-tracker ML
+              model with OpenCV and Random Forest. Resolved a critical GCP outage by standing up a temporary AWS
+              server to keep traffic flowing, while deploying scalable apps with Python and React Native.
             </p>
           </div>
         </div>
 
         <!-- AI Campus Certificate -->
-        <div class="journey-entry" data-type="cert" role="listitem">
+        <div class="journey-entry reveal" data-type="cert" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
               <span class="journey-year">Apr 2025</span>
-              <span class="journey-location"><i class="fa fa-map-marker"></i> Online</span>
+              <span class="journey-location"><i class="fa fa-map-marker"></i> Nairobi, Kenya</span>
             </div>
             <span class="journey-emoji">🎖️</span>
             <h3 class="journey-title">AI Campus Certificate</h3>
-            <p class="journey-org">Certificate of Achievement · AI Campus</p>
+            <p class="journey-org">Certificate of Achievement · AI Campus — The Learning Platform for Artificial
+              Intelligence</p>
             <p class="journey-narrative">
-              Deepened expertise in AI technologies and machine learning through AI Campus — a leading platform for
-              applied artificial intelligence education.
+              Deepened expertise in AI technologies and machine learning through AI Campus, sharpening the skills
+              behind the agents and models I build in production today.
             </p>
           </div>
         </div>
 
         <!-- A2SV Hackathon -->
-        <div class="journey-entry" data-type="cert" role="listitem">
+        <div class="journey-entry reveal" data-type="cert" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -737,18 +739,17 @@
               <span class="journey-location"><i class="fa fa-map-marker"></i> Nairobi, Kenya</span>
             </div>
             <span class="journey-emoji">🏆</span>
-            <h3 class="journey-title">Hackathon Recognition</h3>
+            <h3 class="journey-title">Africa to Silicon Valley</h3>
             <p class="journey-org">Certificate of Recognition · A2SV (Africa to Silicon Valley)</p>
             <p class="journey-narrative">
-              Competed in the A2SV hackathon and built KilimoGuard — an AI platform predicting and managing crop pests
-              across East Africa. Led backend development with Django, powering AI-driven pest prediction and data
-              management.
+              Earned recognition through A2SV's program, sharpening problem-solving and technical skills as part of a
+              network built to connect African engineering talent with global opportunity.
             </p>
           </div>
         </div>
 
         <!-- Vitafluence Internship -->
-        <div class="journey-entry" data-type="work" role="listitem">
+        <div class="journey-entry reveal" data-type="work" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -756,17 +757,20 @@
               <span class="journey-location"><i class="fa fa-map-marker"></i> Frankfurt, Germany</span>
             </div>
             <span class="journey-emoji">✈️</span>
-            <h3 class="journey-title">From Nairobi to Paris</h3>
+            <h3 class="journey-title">The Internship That Took Me to Europe</h3>
             <p class="journey-org">Software Engineer Intern · Vitafluence.ai</p>
             <p class="journey-narrative">
-              Built Xaidi end-to-end, shipped AI note-taking features inspired by Notion, and flew to VivaTech 2024 in
-              Paris to showcase Xaidi and emotion-recognition AI models on the world stage — all in one internship.
+              Based in Frankfurt, I built a teaching-assistant AI agent for Lakesai (with an internal mobile app
+              version), shipped Notion-style AI note-taking, and fixed a critical bug to let users stop generative AI
+              responses mid-stream. Built and deployed Xaidi end-to-end — React Native apps, Django/Node.js backends,
+              and AI models — live on Google Play, TestFlight, and AWS, then added multi-agent support. Represented
+              Vitafluence.ai at VivaTech 2024 in Paris, showcasing Xaidi and emotion-recognition AI models.
             </p>
           </div>
         </div>
 
         <!-- USIU-A Degree -->
-        <div class="journey-entry" data-type="education" role="listitem">
+        <div class="journey-entry reveal" data-type="education" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -777,14 +781,15 @@
             <h3 class="journey-title">The Degree</h3>
             <p class="journey-org">B.Sc. Applied Computer Technology · USIU-Africa</p>
             <p class="journey-narrative">
-              Graduated with a GPA of 3.621, exploring chatbots, machine learning, and networking — building the
-              theoretical bedrock that would underpin every real-world problem I'd later solve.
+              Graduated Cum Laude with a 3.621 GPA in Computer Software Engineering — building the theoretical
+              bedrock in software design, systems, and engineering principles that underpins every real-world
+              problem I'd later solve.
             </p>
           </div>
         </div>
 
         <!-- iZola LTD -->
-        <div class="journey-entry" data-type="work" role="listitem">
+        <div class="journey-entry reveal" data-type="work" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -795,15 +800,17 @@
             <h3 class="journey-title">The First Real Shift</h3>
             <p class="journey-org">Software Engineer (Part-Time) · iZola LTD</p>
             <p class="journey-narrative">
-              For four years alongside university, I built Neurobee (an Android tablet app aiding early autism
-              diagnosis), a therapeutic platform with AI chatbot support, and an admin dashboard managing
-              therapist-client revenue — learning what it truly means to ship production software.
+              For four years alongside university, I added English/Swahili support and audio capture to the Izuri
+              research app, built and maintained Neurobee (an Android tablet app aiding early diagnosis of selective
+              mutism and autism spectrum disorder), developed client and therapist pages for the iZola Therapeutic
+              Platform with Angular, Node.js, and MongoDB, added an AI support chatbot, and designed an admin
+              dashboard for authentication, sessions, and revenue tracking.
             </p>
           </div>
         </div>
 
         <!-- Moringa School -->
-        <div class="journey-entry" data-type="education" role="listitem">
+        <div class="journey-entry reveal" data-type="education" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -812,16 +819,16 @@
             </div>
             <span class="journey-emoji">🔥</span>
             <h3 class="journey-title">The Spark</h3>
-            <p class="journey-org">Certificate of Excellence · Moringa School</p>
+            <p class="journey-org">Certificate of Excellence in Web Development · Moringa School</p>
             <p class="journey-narrative">
-              An intensive, immersive bootcamp that ignited my love for code. I mastered JavaScript and Python, led a
-              team as project manager, and internalised agile principles that still guide how I work today.
+              An intensive, immersive bootcamp that ignited my love for code — sharpening my web development
+              foundations and setting the trajectory for everything that came after.
             </p>
           </div>
         </div>
 
         <!-- FCE Zambia -->
-        <div class="journey-entry" data-type="cert" role="listitem">
+        <div class="journey-entry reveal" data-type="cert" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -830,16 +837,17 @@
             </div>
             <span class="journey-emoji">🌍</span>
             <h3 class="journey-title">The Mission</h3>
-            <p class="journey-org">Certificate of Attendance · Foundation for Cross-Cultural Education</p>
+            <p class="journey-org">Certificate of Attendance, Discipleship Mission Training · Foundation for
+              Cross-Cultural Education</p>
             <p class="journey-narrative">
-              A transformative three months in Zambia that forged my values, expanded my worldview through immersive
-              cultural exchange, and deepened the purpose behind everything I build.
+              Three months in Zambia immersed in discipleship mission training — an experience that forged my values
+              and expanded my worldview through cross-cultural exchange, well before code became my craft.
             </p>
           </div>
         </div>
 
         <!-- Daystar -->
-        <div class="journey-entry" data-type="education" role="listitem">
+        <div class="journey-entry reveal" data-type="education" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
           <div class="journey-card">
             <div class="journey-card-top">
@@ -848,9 +856,9 @@
             </div>
             <span class="journey-emoji">🌱</span>
             <h3 class="journey-title">The Foundation</h3>
-            <p class="journey-org">Certificate in ICT Competence · Daystar University</p>
+            <p class="journey-org">Certificate of Participation in ICT Competence · Daystar University</p>
             <p class="journey-narrative">
-              Where the seeds of my technical career were first planted — expanding practical skills in information and
+              Where the seeds of my technical career were first planted — practical skills in information and
               computer technology that laid the groundwork for everything that followed.
             </p>
           </div>
@@ -866,7 +874,7 @@
 
     <div class="overlay"></div>
 
-    <div class="row section-intro">
+    <div class="row section-intro reveal">
       <div class="col-twelve">
 
         <h5>Services</h5>
@@ -884,15 +892,32 @@
 
         <div class="service">
 
+          <span class="icon"><i class="icon-network"></i></span>
+
+          <div class="service-content">
+
+            <h3>AI/ML Engineering</h3>
+
+            <p class="desc">I build AI agents and multi-agent systems with LangChain and LangGraph, integrate LLM
+              APIs like OpenAI and Gemini, and train machine learning models with Scikit-learn and OpenCV. From
+              retrieval pipelines with ChromaDB to production-ready agentic workflows, I turn AI research into
+              shipped features.</p>
+
+          </div>
+
+        </div>
+
+        <div class="service">
+
           <span class="icon"><i class="icon-mobile"></i></span>
 
           <div class="service-content">
 
             <h3>Mobile Application Development</h3>
 
-            <p class="desc">I build cross-platform mobile apps with React Native that deliver smooth, consistent
-              experiences on both Android and iOS. From architecture to release, I turn product ideas into reliable
-              mobile solutions.</p>
+            <p class="desc">I build cross-platform mobile apps with React Native and Expo that deliver smooth,
+              consistent experiences on both Android and iOS. From architecture to App Store/Play Store release, I
+              turn product ideas into reliable mobile solutions.</p>
 
           </div>
 
@@ -906,9 +931,9 @@
 
             <h3>Web Application Development</h3>
 
-            <p class="desc">I develop modern web applications using technologies like React, Angular, Node.js, and
-              Django. The focus is on clean architecture, secure APIs, and responsive interfaces that perform well
-              across devices.</p>
+            <p class="desc">I develop modern web applications using technologies like React, Angular, Django,
+              Flask, and FastAPI. The focus is on clean architecture, secure APIs, and responsive interfaces that
+              perform well across devices.</p>
 
           </div>
 
@@ -922,9 +947,9 @@
 
             <h3>Chatbot Development</h3>
 
-            <p class="desc">I design and implement AI assistants and chatbot systems powered by modern generative AI.
-              These solutions integrate with your products to improve user support, automate workflows, and increase
-              operational efficiency.</p>
+            <p class="desc">I design and implement AI assistants and chatbot systems powered by modern generative
+              AI. These solutions integrate with your products to improve user support, automate workflows, and
+              increase operational efficiency.</p>
 
           </div>
 
@@ -936,11 +961,11 @@
 
           <div class="service-content">
 
-            <h3>DevOps</h3>
+            <h3>Cloud &amp; DevOps</h3>
 
-            <p class="desc">I support cloud deployment and DevOps workflows across platforms like AWS and Google Cloud.
-              This includes CI/CD setup, environment configuration, and delivery pipelines that keep releases fast,
-              stable, and repeatable.</p>
+            <p class="desc">I deploy and manage applications across AWS, Google Cloud, and Azure, including
+              troubleshooting production incidents and setting up CI/CD pipelines and authentication flows (Firebase
+              Auth, AWS Cognito) that keep releases fast, stable, and repeatable.</p>
 
           </div>
 
@@ -1088,7 +1113,7 @@
 
       <div class="col-six tab-full">
         <div class="copyright">
-          <span>© 2026 Peter Mirithu</span>
+          <span id="copyright-year">© Peter Mirithu</span>
         </div>
         <p class="footer-made">Built with passion from Nairobi.</p>
       </div>
@@ -1108,6 +1133,13 @@
   <script src="js/jquery-2.1.3.min.js" defer></script>
   <script src="js/plugins.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script>
+    (function () {
+      var el = document.getElementById('copyright-year');
+      if (!el) return;
+      el.textContent = '© ' + new Date().getFullYear() + ' Peter Mirithu';
+    })();
+  </script>
 
 </body>
 

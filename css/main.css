@@ -3457,7 +3457,7 @@ body.qs-modal-open {
 
 .services-list {
 	margin-top: 1.2rem;
-	text-align: center;
+	text-align: center;	
 }
 
 .services-list .service {
@@ -3468,6 +3468,7 @@ body.qs-modal-open {
 .services-list .icon {
 	display: inline-block;
 	margin-bottom: 2.1rem;
+	padding-top: 15px;	
 }
 
 .services-list .icon i {
@@ -4653,3 +4654,189 @@ body {
 		font-size: 1.55rem !important;
 	}
 	}
+
+/**
+ * ===================================================================
+ * 24. scroll reveal animations & motion
+ * -------------------------------------------------------------------
+ */
+
+/* Base reveal state: hidden + offset until triggered */
+.reveal {
+	opacity: 0;
+	transform: translateY(36px);
+	transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+		transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+	will-change: opacity, transform;
+}
+
+.reveal.in-view {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.reveal-delay-1.in-view { transition-delay: 0.1s; }
+.reveal-delay-2.in-view { transition-delay: 0.22s; }
+.reveal-delay-3.in-view { transition-delay: 0.34s; }
+.reveal-delay-4.in-view { transition-delay: 0.46s; }
+.reveal-delay-5.in-view { transition-delay: 0.58s; }
+
+/* Variant: reveal from the left (used for list/grid items where a side-slide reads better) */
+.reveal-left {
+	opacity: 0;
+	transform: translateX(-32px);
+	transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+		transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-left.in-view {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Variant: simple scale-fade, used for stat/quick-stat cards */
+.reveal-scale {
+	opacity: 0;
+	transform: scale(0.92);
+	transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+		transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale.in-view {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Journey timeline: entries slide in from alternating sides of the spine */
+#journey .journey-entry.reveal {
+	opacity: 0;
+	transform: translateX(-28px);
+	transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+		transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#journey .journey-entry.reveal.in-view {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+#journey .journey-dot {
+	transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+
+#journey .journey-entry.reveal.in-view .journey-dot {
+	transform: scale(1.15);
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+	.reveal,
+	.reveal-left,
+	.reveal-scale,
+	#journey .journey-entry.reveal {
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+	}
+
+	#journey .journey-entry.reveal.in-view .journey-dot {
+		transform: none;
+	}
+}
+
+/* -------------------------------------------------------------------
+ * Hero intro entrance
+ * ------------------------------------------------------------------- */
+@keyframes introFadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(22px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#intro .intro-content h5.typewrite {
+	animation: introFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+#intro .intro-content h1 {
+	animation: introFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+#intro .intro-content .intro-position {
+	animation: introFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+#intro .intro-cta-buttons {
+	animation: introFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
+}
+
+#intro .intro-social {
+	animation: introFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#intro .intro-content h5.typewrite,
+	#intro .intro-content h1,
+	#intro .intro-content .intro-position,
+	#intro .intro-cta-buttons,
+	#intro .intro-social {
+		animation: none;
+	}
+}
+
+/* -------------------------------------------------------------------
+ * Quick stats: lift + count-up support
+ * ------------------------------------------------------------------- */
+#quick-stats .quick-stat-card {
+	transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#quick-stats .quick-stat-btn[data-modal-target]:hover,
+#quick-stats .quick-stat-btn[data-modal-target]:focus-visible {
+	transform: translateY(-4px);
+}
+
+/* -------------------------------------------------------------------
+ * Services: card lift + icon nudge on hover
+ * ------------------------------------------------------------------- */
+.services-list .service {
+	transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.services-list .service:hover {
+	transform: translateY(-6px);
+}
+
+.services-list .icon i {
+	display: inline-block;
+	transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.services-list .service:hover .icon i {
+	transform: scale(1.15) rotate(-6deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#quick-stats .quick-stat-card,
+	.services-list .service,
+	.services-list .icon i {
+		transition: none;
+	}
+
+	#quick-stats .quick-stat-btn[data-modal-target]:hover,
+	#quick-stats .quick-stat-btn[data-modal-target]:focus-visible {
+		transform: none;
+	}
+
+	.services-list .service:hover {
+		transform: none;
+	}
+
+	.services-list .service:hover .icon i {
+		transform: none;
+	}
+}
