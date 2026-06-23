@@ -154,133 +154,262 @@
 	});
 
 
-	/*---------------------------------------------------- */
-	/*	Project Carousel
-	------------------------------------------------------ */
+	/*----------------------------------------------------- */
+	/* Scroll Reveal — fades/slides .reveal elements into view
+		------------------------------------------------------- */
 	(function () {
-		var track = document.getElementById('carouselTrack');
-		var dotsWrap = document.getElementById('carouselDots');
-		var btnPrev = document.getElementById('carouselPrev');
-		var btnNext = document.getElementById('carouselNext');
-		var slides = track ? track.querySelectorAll('.carousel-slide') : [];
-		var total = slides.length;
-		var current = 0;
-		var dots = [];
-		var autoTimer;
+		var revealEls = $(".reveal, .reveal-left, .reveal-scale");
 
-		function goTo(idx) {
-			if (idx < 0) idx = total - 1;
-			if (idx >= total) idx = 0;
-			current = idx;
-			track.style.transform = 'translateX(-' + (current * 100) + '%)';
-			dots.forEach(function (d, i) {
-				d.classList.toggle('active', i === current);
+		if (!revealEls.length) return;
+
+		function isInViewport($el) {
+			var rect = $el[0].getBoundingClientRect();
+			var viewHeight = window.innerHeight || document.documentElement.clientHeight;
+			return rect.top < viewHeight * 0.88 && rect.bottom > 0;
+		}
+
+		revealEls.each(function () {
+			var $el = $(this);
+
+			// Reveal immediately if already on-screen at load (e.g. above the fold)
+			if (isInViewport($el)) {
+				$el.addClass("in-view");
+				return;
+			}
+
+			$el.waypoint({
+				handler: function () {
+					$el.addClass("in-view");
+					this.destroy();
+				},
+				offset: "88%"
+			});
+		});
+	})();
+
+
+	/*----------------------------------------------------- */
+	/* Quick Stats — animated count-up on reveal
+		------------------------------------------------------- */
+	(function () {
+		var qsSection = $("#quick-stats"),
+			qsCounts = $(".qs-count");
+
+		if (!qsSection.length || !qsCounts.length) return;
+
+		function runCountUp() {
+			qsCounts.each(function () {
+				var $this = $(this),
+					target = parseFloat($this.attr("data-count")) || 0,
+					suffix = $this.attr("data-suffix") || "";
+
+				$({ Counter: 0 }).animate({ Counter: target }, {
+					duration: 1200,
+					easing: 'swing',
+					step: function (curValue) {
+						$this.text(Math.ceil(curValue) + suffix);
+					},
+					complete: function () {
+						$this.text(target + suffix);
+					}
+				});
 			});
 		}
 
-		function resetAuto() {
-			clearInterval(autoTimer);
-			autoTimer = setInterval(function () { goTo(current + 1); }, 5000);
+		var rect = qsSection[0].getBoundingClientRect();
+		var viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+		if (rect.top < viewHeight * 0.85 && rect.bottom > 0) {
+			runCountUp();
+			return;
 		}
 
-		// Build dots
-		if (total > 0) {
-			for (var i = 0; i < total; i++) {
-				(function (idx) {
-					var dot = document.createElement('button');
-					dot.className = 'carousel-dot' + (idx === 0 ? ' active' : '');
-					dot.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
-					dot.addEventListener('click', function () { goTo(idx); resetAuto(); });
-					dotsWrap.appendChild(dot);
-					dots.push(dot);
-				})(i);
-			}
-			goTo(0);
-			resetAuto();
+		qsSection.waypoint({
+
+			handler: function (direction) {
+
+				if (direction === "down") {
+					runCountUp();
+				}
+
+				this.destroy();
+
+			},
+
+			offset: "85%"
+
+		});
+	})();
+
+
+	/* ----------------------------------------------------------------
+	  * JOURNEY TIMELINE FILTER TABS
+	  * ---------------------------------------------------------------- */
+	(function () {
+		var tabButtons = document.querySelectorAll('.journey-tab-btn');
+		var journeyEntries = document.querySelectorAll('.journey-entry');
+
+		if (!tabButtons.length || !journeyEntries.length) return;
+
+		function setTabState(activeBtn) {
+			tabButtons.forEach(function (btn) {
+				var isActive = btn === activeBtn;
+				btn.classList.toggle('active', isActive);
+				btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+			});
 		}
 
-		if (btnPrev) btnPrev.addEventListener('click', function () { goTo(current - 1); resetAuto(); });
-		if (btnNext) btnNext.addEventListener('click', function () { goTo(current + 1); resetAuto(); });
+		function applyFilter(filter) {
+			journeyEntries.forEach(function (entry) {
+				var type = entry.getAttribute('data-type');
+				var shouldShow = filter === 'all' || type === filter;
 
-		// Touch/swipe support
-		var touchStartX = 0;
-		var touchEndX = 0;
-		if (track) {
-			track.addEventListener('touchstart', function (e) { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
-			track.addEventListener('touchend', function (e) {
-				touchEndX = e.changedTouches[0].screenX;
-				var diff = touchStartX - touchEndX;
-				if (Math.abs(diff) > 40) { goTo(diff > 0 ? current + 1 : current - 1); resetAuto(); }
-			}, { passive: true });
+				// Use inline display so it works even if .hidden/.visible css is missing
+				entry.style.display = shouldShow ? '' : 'none';
+				entry.classList.toggle('hidden', !shouldShow);
+				entry.classList.toggle('visible', shouldShow);
+			});
 		}
 
-		// ── Modal Logic ──────────────────────────────────
+		tabButtons.forEach(function (btn) {
+			btn.addEventListener('click', function () {
+				var filter = btn.getAttribute('data-filter') || 'all';
+				setTabState(btn);
+				applyFilter(filter);
+			});
+		});
+
+		// Initial state
+		var defaultBtn = document.querySelector('.journey-tab-btn.active') || tabButtons[0];
+		setTabState(defaultBtn);
+		applyFilter(defaultBtn.getAttribute('data-filter') || 'all');
+	})();
+
+	(function () {
+		var MODAL_CLOSE_MS = 260;
+
 		function openModal(id) {
 			var overlay = document.getElementById(id);
 			if (!overlay) return;
-			overlay.classList.add('open');
-			document.body.style.overflow = 'hidden';
-		}
-		function closeModal(overlay) {
-			overlay.classList.remove('open');
-			document.body.style.overflow = '';
+
+			overlay.classList.remove("is-closing");
+			overlay.classList.add("open", "is-open");
+			document.body.style.overflow = "hidden";
+
+			var closeBtn = overlay.querySelector(".pm-close");
+			if (closeBtn) setTimeout(function () { closeBtn.focus(); }, 60);
 		}
 
-		// Open on card click
-		document.querySelectorAll('.folio-card').forEach(function (card) {
-			card.addEventListener('click', function () {
-				var id = card.getAttribute('data-modal');
+		function closeModal(overlay) {
+			if (!overlay || overlay.classList.contains("is-closing")) return;
+
+			overlay.classList.add("is-closing");
+			window.setTimeout(function () {
+				overlay.classList.remove("open", "is-open", "is-closing");
+
+				var hasOpenModal = document.querySelector(".pm-overlay.open, .pm-overlay.is-open");
+				if (!hasOpenModal) document.body.style.overflow = "";
+			}, MODAL_CLOSE_MS);
+		}
+
+		document.querySelectorAll(".folio-card").forEach(function (card) {
+			card.addEventListener("click", function () {
+				var id = card.getAttribute("data-modal");
 				if (id) openModal(id);
 			});
-		});
 
-		// Close on × button
-		document.querySelectorAll('.pm-close').forEach(function (btn) {
-			btn.addEventListener('click', function () {
-				var overlay = btn.closest('.pm-overlay');
-				if (overlay) closeModal(overlay);
+			card.addEventListener("keydown", function (e) {
+				if (e.key === "Enter" || e.key === " ") {
+					e.preventDefault();
+					var id = card.getAttribute("data-modal");
+					if (id) openModal(id);
+				}
 			});
 		});
 
-		// Close on overlay backdrop click
-		document.querySelectorAll('.pm-overlay').forEach(function (overlay) {
-			overlay.addEventListener('click', function (e) {
+		document.querySelectorAll(".folio-card .folio-view-btn, .folio-card .view-btn, .folio-card .button")
+			.forEach(function (btn) {
+				btn.addEventListener("click", function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var card = btn.closest(".folio-card");
+					if (!card) return;
+					var id = card.getAttribute("data-modal");
+					if (id) openModal(id);
+				});
+			});
+
+		document.querySelectorAll(".pm-close").forEach(function (btn) {
+			btn.addEventListener("click", function () {
+				closeModal(btn.closest(".pm-overlay"));
+			});
+		});
+
+		document.querySelectorAll(".pm-overlay").forEach(function (overlay) {
+			overlay.addEventListener("click", function (e) {
 				if (e.target === overlay) closeModal(overlay);
 			});
 		});
 
-		// Close on Escape
-		document.addEventListener('keydown', function (e) {
-			if (e.key === 'Escape') {
-				document.querySelectorAll('.pm-overlay.open').forEach(closeModal);
+		document.addEventListener("keydown", function (e) {
+			if (e.key === "Escape") {
+				document.querySelectorAll(".pm-overlay.open, .pm-overlay.is-open").forEach(function (overlay) {
+					closeModal(overlay);
+				});
 			}
 		});
-
 	})();
 
 
-	/*----------------------------------------------------*/
-	/*	Modal Popup
-	------------------------------------------------------*/
-	$('.item-wrap a').magnificPopup({
 
-		type: 'inline',
-		fixedContentPos: false,
-		removalDelay: 300,
-		showCloseBtn: false,
-		mainClass: 'mfp-fade'
+	/* Quick stats modals */
+	(function () {
+		var openButtons = document.querySelectorAll('[data-modal-target]');
+		var body = document.body;
+		var activeModal = null;
 
-	});
+		function openModal(modalId) {
+			var modal = document.getElementById(modalId);
+			if (!modal) return;
+			modal.hidden = false;
+			body.classList.add('qs-modal-open');
+			activeModal = modal;
+		}
 
-	$(document).on('click', '.popup-modal-dismiss', function (e) {
-		e.preventDefault();
-		$.magnificPopup.close();
-	});
+		function closeModal(modal) {
+			if (!modal) return;
+			modal.hidden = true;
+			body.classList.remove('qs-modal-open');
+			activeModal = null;
+		}
+
+		for (var i = 0; i < openButtons.length; i++) {
+			openButtons[i].addEventListener('click', function () {
+				openModal(this.getAttribute('data-modal-target'));
+			});
+		}
+
+		document.addEventListener('click', function (e) {
+			if (e.target.classList.contains('qs-modal-overlay')) {
+				closeModal(e.target);
+			}
+
+			if (e.target.classList.contains('qs-modal-close')) {
+				closeModal(e.target.closest('.qs-modal-overlay'));
+			}
+		});
+
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape' && activeModal) {
+				closeModal(activeModal);
+			}
+		});
+	})();
 
 
 	/*-----------------------------------------------------*/
 	/* Navigation Menu
------------------------------------------------------- */
+	------------------------------------------------------ */
 	var toggleButton = $('.menu-toggle'),
 		nav = $('.main-navigation');
 
