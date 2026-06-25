@@ -2701,7 +2701,7 @@ body.qs-modal-open {
 	display: block;
 	width: 100%;
 	height: clamp(220px, 36vw, 410px);
-	object-fit: cover;
+	object-fit:contain;
 }
 
 #portfolio .pm-body {

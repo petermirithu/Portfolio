@@ -389,11 +389,33 @@
 
       <div class="projects-grid">
 
+        <!-- Mali App Website -->
+        <article class="folio-card reveal reveal-delay-1" data-modal="modal-mali-app" role="button" tabindex="0"
+          aria-label="View Mali Mobile App project details">
+          <div class="folio-card-img">
+            <img src="images/portfolio/mali-app.jpg" alt="Mali App — AI financial intelligence app" loading="lazy">
+            <div class="folio-card-overlay">
+              <div class="folio-view-btn">View Details <span>→</span></div>
+            </div>
+          </div>
+          <div class="folio-card-body">
+            <span class="folio-tag">Personal Project</span>
+            <h3>Mali Mobile App</h3>
+            <p>AI-powered Kenyan financial intelligence app that tracks fuel, food, and forex in real time, then explains what it means for your daily wallet and business decisions.</p>
+            <div class="folio-tech-pills">
+              <span class="folio-tech-pill">React Native</span>
+              <span class="folio-tech-pill">Fast API</span>
+              <span class="folio-tech-pill">Azure</span>
+              <span class="folio-tech-pill">Langchain</span>              
+            </div>
+          </div>
+        </article>
+
         <!-- Mali Website -->
         <article class="folio-card reveal reveal-delay-1" data-modal="modal-mali" role="button" tabindex="0"
           aria-label="View Mali Website project details">
           <div class="folio-card-img">
-            <img src="images/portfolio/mali.jpg" alt="Mali Website — AI financial intelligence app" loading="lazy">
+            <img src="images/portfolio/mali.jpg" alt="Mali Website — AI financial intelligence website" loading="lazy">
             <div class="folio-card-overlay">
               <div class="folio-view-btn">View Details <span>→</span></div>
             </div>
@@ -507,6 +529,40 @@
     <!-- ============================================================
          MODALS
     ============================================================ -->
+
+    
+    <!-- Modal: Mali Mobile App -->
+    <div class="pm-overlay" id="modal-mali-app" role="dialog" aria-modal="true" aria-labelledby="modal-mali-app-title">
+      <div class="pm-modal">
+        <button class="pm-close" aria-label="Close modal">&times;</button>
+        <div class="pm-img-wrap">
+          <img src="images/portfolio/modals/mali-app-2.jpg" alt="Mali Mobile App screenshot" loading="lazy">
+        </div>
+        <div class="pm-body">
+          <div class="pm-header">
+            <h4 id="modal-mali-title">Mali Mobile App</h4>
+            <div class="pm-links">
+              <a class="primary" href="https://mali-mind-website.vercel.app" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-external-link"></i> Download Android APK from Site
+              </a>
+              <a class="secondary" href="https://github.com/petermirithu?tab=repositories&q=Mali-Mind" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fa fa-github"></i> GitHub
+              </a>              
+            </div>
+          </div>
+          <p>Mali is an AI-powered Kenyan financial intelligence platform.
+            It tracks real-world economic events (fuel, food, forex) and translates them into
+            plain-language insights: <em>"What this means for your daily cost of living and business."</em> Connecting
+            news, macro data, and AI reasoning in one place.</p>
+          <div class="pm-tech">
+            <span>React Native</span><span>Fast API</span><span>SupaBase</span>
+            <span>Langchain</span><span>Langgraph</span><span>Expo</span><span>EAS</span>
+            <span>Azure</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal: Mali -->
     <div class="pm-overlay" id="modal-mali" role="dialog" aria-modal="true" aria-labelledby="modal-mali-title">
