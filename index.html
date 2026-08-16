@@ -161,13 +161,13 @@
       <button class="quick-stat-card quick-stat-btn reveal-scale reveal-delay-1" type="button"
         data-modal-target="projects-modal" aria-haspopup="dialog" aria-controls="projects-modal">
         <h5>Projects</h5>
-        <p><strong class="qs-count" data-count="7" data-suffix="">0</strong> Completed</p>
+        <p><strong class="qs-count" data-count="6" data-suffix="">0</strong> Completed</p>
       </button>
 
       <button class="quick-stat-card quick-stat-btn reveal-scale reveal-delay-2" type="button"
         data-modal-target="companies-modal" aria-haspopup="dialog" aria-controls="companies-modal">
         <h5>Companies</h5>
-        <p><strong class="qs-count" data-count="3" data-suffix="">0</strong> Worked With</p>
+        <p><strong class="qs-count" data-count="4" data-suffix="">0</strong> Worked With</p>
       </button>
 
     </div>
@@ -181,12 +181,16 @@
         <h4 id="projects-modal-title">Projects</h4>
 
         <div class="qs-modal-item">
-          <h6>Mali Website</h6>
+          <h6>Mali</h6>
           <p>AI-powered Kenyan financial intelligence app</p>
         </div>
         <div class="qs-modal-item">
           <h6>Xaidi</h6>
           <p>AI health companion for neurodivergent users</p>
+        </div>
+        <div class="qs-modal-item">
+          <h6>Neurobee</h6>
+          <p>AI-powered neurodevelopmental screening and early-detection tool</p>
         </div>
         <div class="qs-modal-item">
           <h6>MIS School</h6>
@@ -196,14 +200,7 @@
           <h6>Enabled Mashariki</h6>
           <p>Loan tracking and management platform</p>
         </div>
-        <div class="qs-modal-item">
-          <h6>EICE</h6>
-          <p>Specialised LMS for medical education and training</p>
-        </div>
-        <div class="qs-modal-item">
-          <h6>USIU-A Chat Bot</h6>
-          <p>24/7 AI virtual assistant for students</p>
-        </div>
+        
         <div class="qs-modal-item">
           <h6>Email Assistant</h6>
           <p>Desktop app for email action-point automation</p>
@@ -220,16 +217,19 @@
 
         <div class="qs-modal-item">
           <h6>Vitafluence.ai</h6>
-          <p>Software Engineer</p>
+          <p>Neurobee, Lakesai</p>
         </div>
         <div class="qs-modal-item">
           <h6>iZola LTD</h6>
-          <p>Software Development</p>
+          <p>Xaidi, iZola Therapy Platform</p>
         </div>
         <div class="qs-modal-item">
           <h6>MIS Foundry LTD</h6>
-          <p>Software Development</p>
+          <p>MIS Learning Management System</p>
         </div>
+        <div class="qs-modal-item">
+          <h6>Enabled Mashariki</h6>
+          <p>Loan and Insurance Tracker</p>
       </div>
     </div>
   </section>
@@ -400,6 +400,29 @@
 
       <div class="projects-grid">
 
+        <!-- Enabled Loan & Insurance Tracker -->
+        <article class="folio-card reveal reveal-delay-1" data-modal="modal-enabled-loan" role="button" tabindex="0"
+          aria-label="View Enabled Loan and Insurance Tracker project details">
+          <div class="folio-card-img">
+            <img src="images/portfolio/Enabled-1.png" alt="Enabled Loan and Insurance Tracker dashboard" loading="lazy">
+            <div class="folio-card-overlay">
+              <div class="folio-view-btn">View Details <span>→</span></div>
+            </div>
+          </div>
+          <div class="folio-card-body">
+            <span class="folio-tag">Enabled Mashariki</span>
+            <h3>Loan &amp; Insurance Tracker</h3>
+            <p>Loan and vehicle insurance management platform built for Enabled Mashariki to track contributions,
+              repayment progress, due dates, policy renewals, and expiring cover.</p>
+            <div class="folio-tech-pills">
+              <span class="folio-tech-pill">React</span>
+              <span class="folio-tech-pill">Next.js</span>
+              <span class="folio-tech-pill">MongoDB</span>
+              <span class="folio-tech-pill">FastAPI</span>              
+            </div>
+          </div>
+        </article>
+
         <!-- Mali App Website -->
         <article class="folio-card reveal reveal-delay-1" data-modal="modal-mali-app" role="button" tabindex="0"
           aria-label="View Mali Mobile App project details">
@@ -439,6 +462,29 @@
             <div class="folio-tech-pills">
               <span class="folio-tech-pill">React</span>
               <span class="folio-tech-pill">Vercel</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Neurobee -->
+        <article class="folio-card reveal reveal-delay-2" data-modal="modal-neurobee" role="button" tabindex="0"
+          aria-label="View Neurobee project details">
+          <div class="folio-card-img">
+            <img src="images/portfolio/Neurobee-1.png" alt="Neurobee AI-powered neurodevelopmental screening tool" loading="lazy">
+            <div class="folio-card-overlay">
+              <div class="folio-view-btn">View Details <span>→</span></div>
+            </div>
+          </div>
+          <div class="folio-card-body">
+            <span class="folio-tag">Vitafluence.ai</span>
+            <h3>Neurobee</h3>
+            <p>Gamified AI screening and early-detection tool using multimodal digital biomarkers to support clinicians
+              assessing neurodevelopmental and neuropsychiatric disorders in children.</p>
+            <div class="folio-tech-pills">
+              <span class="folio-tech-pill">React Native</span>
+              <span class="folio-tech-pill">Django</span>
+              <span class="folio-tech-pill">Scikit-learn</span>
+              <span class="folio-tech-pill">OpenCV</span>
             </div>
           </div>
         </article>
@@ -487,30 +533,7 @@
             </div>
           </div>
         </article>
-
-        <!-- USIU Chat Bot -->
-        <article class="folio-card reveal reveal-delay-1" data-modal="modal-usiu" role="button" tabindex="0"
-          aria-label="View USIU-A Chat Bot project details">
-          <div class="folio-card-img">
-            <img src="images/portfolio/usiu_chat_bot.jpg" alt="USIU-A Chat Bot — AI virtual assistant" loading="lazy">
-            <div class="folio-card-overlay">
-              <div class="folio-view-btn">View Details <span>→</span></div>
-            </div>
-          </div>
-          <div class="folio-card-body">
-            <span class="folio-tag">Personal Project</span>
-            <h3>USIU-A Chat Bot</h3>
-            <p>24/7 AI-driven virtual assistant handling student and faculty support queries — reducing admin workload
-              significantly.</p>
-            <div class="folio-tech-pills">
-              <span class="folio-tech-pill">Django</span>
-              <span class="folio-tech-pill">LangChain</span>
-              <span class="folio-tech-pill">OpenAI</span>
-              <span class="folio-tech-pill">ChromaDB</span>
-            </div>
-          </div>
-        </article>
-
+        
         <!-- Email Assistant -->
         <article class="folio-card reveal reveal-delay-2" data-modal="modal-email" role="button" tabindex="0"
           aria-label="View Email Assistant project details">
@@ -541,7 +564,35 @@
          MODALS
     ============================================================ -->
 
-    
+    <!-- Modal: Enabled Loan & Insurance Tracker -->
+    <div class="pm-overlay" id="modal-enabled-loan" role="dialog" aria-modal="true" aria-labelledby="modal-enabled-loan-title">
+      <div class="pm-modal">
+        <button class="pm-close" aria-label="Close modal">&times;</button>
+        <div class="pm-img-wrap">
+          <img src="images/portfolio/modals/Enabled-2.png" alt="Enabled Loan and Insurance Tracker screenshot" loading="lazy">
+        </div>
+        <div class="pm-body">
+          <div class="pm-header">
+            <div>              
+              <h4 id="modal-enabled-loan-title">Enabled Mashariki Loan & Insurance Tracker</h4>
+            </div>
+            <div class="pm-links">
+              <a class="primary" href="#" target="" rel="noopener noreferrer">
+                <i class="fa fa-lock"></i> Private Project
+              </a>
+            </div>
+          </div>
+          <p>I built this loan and vehicle insurance management platform for Enabled Mashariki to centralise its loan
+            portfolio, member contributions, repayment progress, due dates, and insurance policies in one place.</p>
+          <p>The platform shows which loans are on track, ahead, or behind schedule, highlights upcoming due dates and
+            overdue balances, and monitors vehicle policy renewals and expiring cover.</p>
+          <div class="pm-tech">
+            <span>React</span><span>Next.js</span><span>MongoDB</span><span>FastAPI</span><span>Firebase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal: Mali Mobile App -->
     <div class="pm-overlay" id="modal-mali-app" role="dialog" aria-modal="true" aria-labelledby="modal-mali-app-title">
       <div class="pm-modal">
@@ -606,6 +657,34 @@
         </div>
       </div>
     </div>
+    
+    <!-- Modal: Neurobee -->
+    <div class="pm-overlay" id="modal-neurobee" role="dialog" aria-modal="true" aria-labelledby="modal-neurobee-title">
+      <div class="pm-modal">
+        <button class="pm-close" aria-label="Close modal">&#x2715;</button>
+        <div class="pm-img-wrap">
+          <img src="images/portfolio/modals/Neurobee-2.png" alt="Neurobee app screenshot" loading="lazy">
+        </div>
+        <div class="pm-body">
+          <div class="pm-header">
+            <h4 id="modal-neurobee-title">Neurobee</h4>
+            <div class="pm-links">
+              <a class="primary" href="https://www.technologieland-hessen.de/mm///mm001/TLH_FuE-Meister_Vitafluence.pdf"
+                target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-external-link"></i> View Project Feature
+              </a>              
+            </div>
+          </div>
+          <p>Neurobee is an AI-powered, gamified digital screening and early-detection tool I developed while working
+            at Vitafluence.ai. I contributed to the mobile app, backend services, and AI-powered biomarker processing
+            used to simplify screening for neurodevelopmental and neuropsychiatric disorders, including autism spectrum
+            disorder in children.</p>
+          <div class="pm-tech">            
+            <span>React Native</span><span>Python-Django</span><span>Scikit-learn</span><span>OpenCV</span><span>Mongo DB</span><span>AWS</span><span>GCP</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal: Xaidi -->
     <div class="pm-overlay" id="modal-xaidi" role="dialog" aria-modal="true" aria-labelledby="modal-xaidi-title">
@@ -665,36 +744,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal: USIU Chat Bot -->
-    <div class="pm-overlay" id="modal-usiu" role="dialog" aria-modal="true" aria-labelledby="modal-usiu-title">
-      <div class="pm-modal">
-        <button class="pm-close" aria-label="Close modal">&#x2715;</button>
-        <div class="pm-img-wrap">
-          <img src="images/portfolio/modals/usiu_chat_bot.jpg" alt="USIU-A Chat Bot screenshot" loading="lazy">
-        </div>
-        <div class="pm-body">
-          <div class="pm-header">
-            <h4 id="modal-usiu-title">USIU-A Chat Bot</h4>
-            <div class="pm-links">
-              <a class="primary" href="https://github.com/petermirithu?tab=repositories&q=usiu_chat_bot" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fa fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-          <p>The chatbot provides instant, accurate responses to inquiries about course registration, academic
-            requirements, campus facilities, and FAQs — offering 24/7 support. It reduces reliance on emails and
-            in-person
-            interactions, alleviating administrative workload by handling routine questions efficiently.</p>
-          <div class="pm-tech">
-            <span>React
-              Native</span><span>Python-Django</span><span>LangChain</span><span>OpenAI</span><span>ChromaDB</span><span>MongoDB</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    
     <!-- Modal: Email Assistant -->
     <div class="pm-overlay" id="modal-email" role="dialog" aria-modal="true" aria-labelledby="modal-email-title">
       <div class="pm-modal">
