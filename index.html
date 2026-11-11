@@ -110,7 +110,7 @@
       <div class="row">
         <div class="col-twelve">
 
-          <h5 class="typewrite" data-period="2000"        
+          <h5 class="typewrite" data-period="2000"
             data-type='[ "Turning Ideas into Reality.", "Creating Intelligent Systems.", "Building Scalable Solutions." ]'>
             <span class="wrap"></span>
           </h5>
@@ -161,7 +161,7 @@
       <button class="quick-stat-card quick-stat-btn reveal-scale reveal-delay-1" type="button"
         data-modal-target="projects-modal" aria-haspopup="dialog" aria-controls="projects-modal">
         <h5>Projects</h5>
-        <p><strong class="qs-count" data-count="6" data-suffix="">0</strong> Completed</p>
+        <p><strong class="qs-count" data-count="7" data-suffix="">0</strong> Completed</p>
       </button>
 
       <button class="quick-stat-card quick-stat-btn reveal-scale reveal-delay-2" type="button"
@@ -180,6 +180,10 @@
         <button class="qs-modal-close" type="button" aria-label="Close modal">&times;</button>
         <h4 id="projects-modal-title">Projects</h4>
 
+        <div class="qs-modal-item">
+          <h6>Wazi Route</h6>
+          <p>Vehicle-aware intelligent route planner</p>
+        </div>
         <div class="qs-modal-item">
           <h6>Mali</h6>
           <p>AI-powered Kenyan financial intelligence app</p>
@@ -200,7 +204,7 @@
           <h6>Enabled Mashariki</h6>
           <p>Loan tracking and management platform</p>
         </div>
-        
+
         <div class="qs-modal-item">
           <h6>Email Assistant</h6>
           <p>Desktop app for email action-point automation</p>
@@ -229,6 +233,11 @@
         <div class="qs-modal-item">
           <h6>Enabled Mashariki</h6>
           <p>Loan and Insurance Tracker</p>
+        </div>
+        <div class="qs-modal-item">
+          <h6>Value Chain Factory</h6>
+          <p>Protected by NDA</p>
+        </div>
       </div>
     </div>
   </section>
@@ -401,6 +410,33 @@
       </div>
 
       <div class="projects-grid">
+        <!-- Wazi Route -->
+        <article class="folio-card reveal reveal-delay-1" data-modal="modal-wazi-route" role="button" tabindex="0"
+          aria-label="View Wazi Route project details">
+          <div class="folio-card-img">
+            <img src="images/portfolio/Wazi Route.png" alt="Wazi Route — vehicle-aware route planner" loading="lazy">
+            <div class="folio-card-overlay">
+              <div class="folio-view-btn">View Details <span>→</span></div>
+            </div>
+          </div>
+          <div class="folio-card-body">
+            <div class="folio-card-top">
+              <span class="folio-tag">Personal Project</span>
+              <span class="folio-badge-dev"><span class="dev-dot"></span>Still in Development</span>
+            </div>
+            <h3>Wazi Route</h3>
+            <p>A mobile-friendly web application that helps drivers choose routes based on their vehicle, driving
+              preferences and available road-condition information, not just the shortest distance or estimated travel
+              time.</p>
+            <div class="folio-tech-pills">
+              <span class="folio-tech-pill">Elixir</span>
+              <span class="folio-tech-pill">Phoenix</span>
+              <span class="folio-tech-pill">Leaflet.js</span>
+              <span class="folio-tech-pill">OpenStreetMap</span>
+              <span class="folio-tech-pill">Tailwind CSS</span>
+            </div>
+          </div>
+        </article>
 
         <!-- Enabled Loan & Insurance Tracker -->
         <article class="folio-card reveal reveal-delay-1" data-modal="modal-enabled-loan" role="button" tabindex="0"
@@ -420,7 +456,7 @@
               <span class="folio-tech-pill">React</span>
               <span class="folio-tech-pill">Next.js</span>
               <span class="folio-tech-pill">MongoDB</span>
-              <span class="folio-tech-pill">FastAPI</span>              
+              <span class="folio-tech-pill">FastAPI</span>
             </div>
           </div>
         </article>
@@ -437,12 +473,13 @@
           <div class="folio-card-body">
             <span class="folio-tag">Personal Project</span>
             <h3>Mali Mobile App</h3>
-            <p>AI-powered Kenyan financial intelligence app that tracks fuel, food, and forex in real time, then explains what it means for your daily wallet and business decisions.</p>
+            <p>AI-powered Kenyan financial intelligence app that tracks fuel, food, and forex in real time, then
+              explains what it means for your daily wallet and business decisions.</p>
             <div class="folio-tech-pills">
               <span class="folio-tech-pill">React Native</span>
               <span class="folio-tech-pill">Fast API</span>
               <span class="folio-tech-pill">Azure</span>
-              <span class="folio-tech-pill">Langchain</span>              
+              <span class="folio-tech-pill">Langchain</span>
             </div>
           </div>
         </article>
@@ -472,7 +509,8 @@
         <article class="folio-card reveal reveal-delay-2" data-modal="modal-neurobee" role="button" tabindex="0"
           aria-label="View Neurobee project details">
           <div class="folio-card-img">
-            <img src="images/portfolio/Neurobee-1.png" alt="Neurobee AI-powered neurodevelopmental screening tool" loading="lazy">
+            <img src="images/portfolio/Neurobee-1.png" alt="Neurobee AI-powered neurodevelopmental screening tool"
+              loading="lazy">
             <div class="folio-card-overlay">
               <div class="folio-view-btn">View Details <span>→</span></div>
             </div>
@@ -535,7 +573,7 @@
             </div>
           </div>
         </article>
-        
+
         <!-- Email Assistant -->
         <article class="folio-card reveal reveal-delay-2" data-modal="modal-email" role="button" tabindex="0"
           aria-label="View Email Assistant project details">
@@ -566,16 +604,55 @@
          MODALS
     ============================================================ -->
 
-    <!-- Modal: Enabled Loan & Insurance Tracker -->
-    <div class="pm-overlay" id="modal-enabled-loan" role="dialog" aria-modal="true" aria-labelledby="modal-enabled-loan-title">
+    <!-- Modal: Wazi Route -->
+    <div class="pm-overlay" id="modal-wazi-route" role="dialog" aria-modal="true"
+      aria-labelledby="modal-wazi-route-title">
       <div class="pm-modal">
         <button class="pm-close" aria-label="Close modal">&times;</button>
         <div class="pm-img-wrap">
-          <img src="images/portfolio/modals/Enabled-2.png" alt="Enabled Loan and Insurance Tracker screenshot" loading="lazy">
+          <img src="images/portfolio/modals/Wazi Route 2.png" alt="Wazi Route application screenshot" loading="lazy">
         </div>
         <div class="pm-body">
           <div class="pm-header">
-            <div>              
+            <div>
+              <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <h4 id="modal-wazi-route-title" style="margin: 0;">Wazi Route</h4>
+                <span class="folio-badge-dev"><span class="dev-dot"></span>Still in Development</span>
+              </div>
+            </div>
+            <div class="pm-links">
+              <a class="primary" href="https://wazi-route.onrender.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-external-link"></i> Live App
+              </a>
+              <a class="secondary" href="https://github.com/petermirithu/Wazi-Route" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fa fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <p>A mobile-friendly web application that helps drivers choose routes based on their vehicle, driving
+            preferences and available road-condition information, not just the shortest distance or estimated travel
+            time.</p>
+          <div class="pm-tech">
+            <span>Elixir</span><span>Phoenix</span><span>Leaflet.js</span><span>OpenStreetMap</span><span>Tailwind
+              CSS</span><span>Render</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Enabled Loan & Insurance Tracker -->
+    <div class="pm-overlay" id="modal-enabled-loan" role="dialog" aria-modal="true"
+      aria-labelledby="modal-enabled-loan-title">
+      <div class="pm-modal">
+        <button class="pm-close" aria-label="Close modal">&times;</button>
+        <div class="pm-img-wrap">
+          <img src="images/portfolio/modals/Enabled-2.png" alt="Enabled Loan and Insurance Tracker screenshot"
+            loading="lazy">
+        </div>
+        <div class="pm-body">
+          <div class="pm-header">
+            <div>
               <h4 id="modal-enabled-loan-title">Enabled Mashariki Loan & Insurance Tracker</h4>
             </div>
             <div class="pm-links">
@@ -612,7 +689,7 @@
               <a class="secondary" href="https://github.com/petermirithu?tab=repositories&q=Mali-Mind" target="_blank"
                 rel="noopener noreferrer">
                 <i class="fa fa-github"></i> GitHub
-              </a>              
+              </a>
             </div>
           </div>
           <p>Mali is an AI-powered Kenyan financial intelligence platform.
@@ -659,7 +736,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Modal: Neurobee -->
     <div class="pm-overlay" id="modal-neurobee" role="dialog" aria-modal="true" aria-labelledby="modal-neurobee-title">
       <div class="pm-modal">
@@ -674,15 +751,16 @@
               <a class="primary" href="https://www.technologieland-hessen.de/mm///mm001/TLH_FuE-Meister_Vitafluence.pdf"
                 target="_blank" rel="noopener noreferrer">
                 <i class="fa fa-external-link"></i> View Project Feature
-              </a>              
+              </a>
             </div>
           </div>
           <p>Neurobee is an AI-powered, gamified digital screening and early-detection tool I developed while working
             at Vitafluence.ai. I contributed to the mobile app, backend services, and AI-powered biomarker processing
             used to simplify screening for neurodevelopmental and neuropsychiatric disorders, including autism spectrum
             disorder in children.</p>
-          <div class="pm-tech">            
-            <span>React Native</span><span>Python-Django</span><span>Scikit-learn</span><span>OpenCV</span><span>Mongo DB</span><span>AWS</span><span>GCP</span>
+          <div class="pm-tech">
+            <span>React Native</span><span>Python-Django</span><span>Scikit-learn</span><span>OpenCV</span><span>Mongo
+              DB</span><span>AWS</span><span>GCP</span>
           </div>
         </div>
       </div>
@@ -746,7 +824,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Modal: Email Assistant -->
     <div class="pm-overlay" id="modal-email" role="dialog" aria-modal="true" aria-labelledby="modal-email-title">
       <div class="pm-modal">
@@ -820,11 +898,15 @@
             <h3 class="journey-title">Developing at Value Chain Factory</h3>
             <p class="journey-org">Software Engineer · Internship</p>
             <p class="journey-narrative">
-              In September 2026, I joined Value Chain Factory as a Software Engineer Intern, contributing to the development of web applications using Elixir and Phoenix. I am working on building scalable backend systems, and enhancing the user experience of existing applications. This role has allowed me to learn new skills and improve my existing ones in a collaborative environment, focusing on delivering high-quality software solutions that meet the needs of our clients.
+              In September 2026, I joined Value Chain Factory as a Software Engineer Intern, contributing to the
+              development of web applications using Elixir and Phoenix. I am working on building scalable backend
+              systems, and enhancing the user experience of existing applications. This role has allowed me to learn new
+              skills and improve my existing ones in a collaborative environment, focusing on delivering high-quality
+              software solutions that meet the needs of our clients.
             </p>
           </div>
         </div>
-        
+
         <!-- Freelance -->
         <div class="journey-entry reveal" data-type="work" role="listitem">
           <div class="journey-dot" aria-hidden="true"></div>
@@ -1155,12 +1237,13 @@
       <div class="cta-inner reveal">
         <span class="cta-quote-mark">&ldquo;</span>
         <p class="cta-quote">
-          Any fool can write code that a computer can understand.<br>
-          Good programmers write code that <em>humans</em> can understand.
+          This was one of the best parts of being a coder, and an artist: <br />
+          the thrill of being in the middle of creating something delightful. <br />
+          It’s like the anticipation of eating freshly baked bread after its aroma fills the room.
         </p>
-        <span class="cta-cite">— Martin Fowler</span>
+        <span class="cta-cite">— Dr. Joy Buolamwini, Unmasking AI</span>
         <a href="#contact" class="btn btn-primary smoothscroll" id="btn-cta-contact">
-          <i class="fa fa-paper-plane"></i> Let's write good code together
+          <i class="fa fa-paper-plane"></i> Let's build intelligent systems together
         </a>
       </div>
     </div>
