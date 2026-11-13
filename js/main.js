@@ -264,10 +264,15 @@
 				var type = entry.getAttribute('data-type');
 				var shouldShow = filter === 'all' || type === filter;
 
-				// Use inline display so it works even if .hidden/.visible css is missing
+				// Entries outside the initial viewport may still be waiting for their
+				// scroll-reveal waypoint. A filtered result must be visible immediately.
 				entry.style.display = shouldShow ? '' : 'none';
 				entry.classList.toggle('hidden', !shouldShow);
 				entry.classList.toggle('visible', shouldShow);
+
+				if (shouldShow) {
+					entry.classList.add('in-view');
+				}
 			});
 		}
 
